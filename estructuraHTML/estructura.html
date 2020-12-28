@@ -245,7 +245,8 @@
   <p>
     La etiqueta de las listas desordenadas es "ul" y para crear objetos en esta lista se usa "li", como en las listas ordenadas <br/>
     Estas listas no se van a enlistar númericamente, solo van a tener un pequeño icono que se puede cambiar con css (despues veremos como hacerlo) <br/>
-    Estas listas se pueden incluir en las listas ordenadas, para crear un subgrupo en estas.
+    Estas listas se pueden incluir en las listas ordenadas, para crear un subgrupo en estas. <br/>
+    Ejemplos <br/>
   </p>
   <ul>
     <h4>Lista desordenada</h4>
@@ -274,5 +275,52 @@
   </ol>
   <!-- Lista De Definiciones -->
   <h3>Lista de Definiciones</h3>
+  <p>
+    Esta lista es un poco diferente a las otras listas, la etiqueta de inicio de esta es "dl", las etiquetas de contenido de esta tabla son: <br/>
+    "dt", etiqueta donde se pone la palabra, cosa, objeto, etc, que se va a definir. "dd", etiqueta de definicion de la anterior etiqueta <br/>
+    Ejemplo <br/>
+  </p>
+  <dl>
+    <dt>Perros</dt>
+    <dd>Feos, sucios y caros</dd>
+    <dt>Gatos</dt>
+    <dd>No tan feos, medio limpios y caros</dd>
+  </dl>
+
+  <hr/>
+
+  <!-- Tablas en HTML -->
+  <h2>Tablas en Html</h2>
+  <p>
+    Las tablas en html, tienen varias etiquetas como las listas. La etiqueta base de la tabla es "table", en esta se usan <br/>
+    En "table", se puede usar el "tr" para crear una fila horizontal <br/>
+    En esta fila se puede hacer una columna vertical con "td" y un header en una columna con "th" <br/>
+    <br/>
+    Con los Header se pueden expandir para ocupar el espacio de 2 o más filas/columnas, usando los atributos colspan y rowspan del "th". <br/>
+    Ejemplos <br/>
+  </p>
+  <table>
+    <tr>
+      <th>Header de Tabla</th>
+      <th colspan="2">Header de Tabla 2</th>
+    </tr>
+    <tr>
+      <td>Contenido</td>
+      <td>Contenido</td>
+      <td>Contenido</td>
+    </tr>
+    <tr>
+      <td>Contenido</td>
+      <td>Contenido</td>
+      <td>Contenido</td>
+    </tr>
+  </table>
+  <p>
+    Para hacerle bordes o diseño a estas tablas, debemos aplicarle un style con css
+  </p>
+
+  <hr/>
+
+  <!-- -->
   </body>
 </html>
