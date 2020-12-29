@@ -2,6 +2,7 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estructura HTML</title>
   </head>
   <body>
@@ -414,7 +415,56 @@
     </ul>
   </ol>
 
-  <h1>Y eso fue todo por ahora, hasta luego :)</h1>
+  <!-- Meta Datos en HTML5-->
+  <h2>Meta Datos</h2>
+  <p>
+    Los metadatos son informacion que el navegador va a leer y utilizar al momento de mostrar el documento <br/>
+    Estos metadatos pueden tener informacion de que tipo de caracteres que se va a usar (UTF-8 es el standard mundial) <br/>
+    Pueden tener informacion de los creadores y del proyecto & sitio/pagina web. <br/>
+    Y puede tener informacion en como se va a mostrar dependiendo de en que dispositivo se vaya a abrir el documento (desk, cell, tablet, etc.) <br/>
+    <br/>
+    Estos metadatos se les puede dar a el navegador en la parte del "Head" con la etiqueta "meta" <br/>
+    Esta etiqueta tiene unos atributos que definen el tipo y la informacion del dato que se le va a entregar a el navegador <br/>
+    Ejemplos <br/>
+  </p>
+
+  <ul>
+    <li>
+      Definir el tipo de caracter: <br/>
+      <b>name="UTF-8"</b>
+    </li>
+
+    <br/>
+
+    <li>
+      Definir Informacion del autor: <br/>
+      <b>name="author" content="Joe Mama"</b>
+    </li>
+
+    <br/>
+
+    <li>
+      Definir la descripcion del sitio/pagina web: <br/>
+      <b>name="description" content="Descripcion sitio web"</b> <br/>
+      Esta descripcion ayuda mucho a los buscadores como Google a encontrar y recomendar tu pagina & sitio web
+    </li>
+
+    <br/>
+
+    <li>
+      Definir las "Keywords" del sitio/pagina web <br/>
+      <b>name="keywords" content="etiquetas o keywords"</b> <br/>
+      Estas keywords ayuda mucho a los buscadores como Google a encontrar y recomendar tu pagina & sitio  web
+    </li>
+
+    <br/>
+
+    <li>
+      Definir el "viewport" o como va a ver el usuario el documento <br/>
+      <b>name="viewport" content="width=(ancho de la pantalla del usuario) initial-scale=(La escala del zoom inicial del documento)"</b> <br/>
+      Generalmente, se usa en este content <b>width="device-width" initial-scale=1.0</b>, para que obtenga el ancho de la pantalla del usuario y se ajusta el documento a esta. <br/>
+    </li>
+  </ul>
 
   </body>
 </html>
