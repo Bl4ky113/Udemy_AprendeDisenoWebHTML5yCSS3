@@ -1,0 +1,26 @@
+.doc-header {
+    width: 90%;
+    height: 3em;
+
+    margin: 5px 5%;
+    border: 4px solid #001a66;
+    border-radius: 1em;
+    padding: 5px;
+
+    background-color: #002db3;
+}
+
+.doc-header__title {
+    width: 25%;
+
+    margin: 5px 10%;
+    border: 1px solid #001a66;
+    padding: 0 5px;
+
+    background-color: lightskyblue;
+}
+
+
+/* RESET CSS ON THE DOC */
+
+body{margin:0;padding:0;}
