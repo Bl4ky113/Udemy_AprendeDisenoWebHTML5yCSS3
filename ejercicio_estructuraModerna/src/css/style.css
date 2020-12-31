@@ -2,9 +2,8 @@
 
 .doc-header {
     width: 90%;
-    height: 50px;
 
-    margin: 5px 5%;
+    margin: 0 auto 5px;
     border: 4px solid #001a66;
     border-radius: 1em;
     padding: 5px;
@@ -17,7 +16,27 @@
     padding: 0 5px;
 
     color: white;
-    font-size: 36px;    
+    font-size: 36px;   
+    text-align: center; 
+}
+
+/* -- Nav Header Style -- */
+
+.header-nav {
+    width: 80%;
+    height: 30px;
+
+    margin: 0 auto;
+    border: 4px solid #001a66;
+    border-radius: 1em;
+
+
+    background-color: #002db3;
+}
+
+.header-nav__text {
+    margin: 0 10px;
+    color: white;
 }
 
 /* ----- Obj-Main Style ----- */
@@ -26,7 +45,7 @@
     width: 90%;
     height: 400px;
 
-    margin: 5px 5%;
+    margin: 5px auto;
     border: 4px solid #001a66;
     border-radius: 1em;
     padding: 5px;
@@ -40,9 +59,41 @@
 
     color: white;
     font-size: 30px;
+    text-align: center;
 }
 
+/* -- Nav Main Style -- */
+
+.main-nav {
+    width: 15%;
+    height: 80%;
+
+    margin: 0 5px;
+    border: 4px solid #001a66;
+    border-radius: 1em;
+
+    float: right; /* Changes with JS */
+}
+
+.main-nav__text {
+    color:white;
+    text-align: center;
+}
+
+.main-nav__btn {
+    width: 70%;
+    height: 60px;
+
+    margin: 0 auto;
+    border: 1px solid black;
+
+    background-color: #001a66;
+
+    color: white;
+
+    display: block;
+}
 
 /* ----- RESET CSS ON THE DOC ----- */
 
-body{margin:0;padding:0;}
+body{margin:0;} h1{margin:0;} h2{margin:0;}

@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/style.css">
     <title>Estructura Moderna en Páginas Webs</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
     <!-- Header -->
     <header class="doc-header">
         <h1 class="doc-header__title">Hello I'm a Header</h1>
+        <!-- Nav-Header Menu -->
+        <nav class="header-nav">
+            <h2 class="header-nav__text">Hello I'm a Nav Menu in the Header!!!</h2>
+        </nav>
     </header>
     <!-- Main -->
     <main class="doc-main">
         <h2 class="doc-main__text">Hello I'm a Main</h2>
+        <!-- Nav-Main Menu-->
+        <nav class="main-nav" id="nav">
+            <h2 class="main-nav__text">Hello I'm a Nav Menu in the Main!!!</h2>
+            <br/>
+            <button class="main-nav__btn" type="button" onclick="changeSide()">
+                Click Me to Change the Nav Side
+            </button>
+        </nav>
     </main>
+    <!-- Script -->
+    <script src="./src/js/script.js"></script>
 </body>
 </html>
