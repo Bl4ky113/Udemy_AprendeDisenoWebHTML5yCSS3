@@ -1,21 +1,30 @@
+/* ---- CSS Global Variables ---- */
+
+:root{
+    --blanco: #fefefe;
+    --azulBase: #002db3;
+    --azulOscuro: #001a66;
+    --azulBase_2: #0000aa;
+}
+
 /* ----- Header Style ----- */
 
 .doc-header {
     width: 90%;
 
     margin: 0 auto 5px;
-    border: 4px solid #001a66;
+    border: 4px solid var(--azulOscuro);
     border-radius: 1em;
     padding: 5px;
 
-    background-color: #002db3;
+    background-color: var(--azulBase);
 }
 
 .doc-header__title {
     margin: 5px;
     padding: 0 5px;
 
-    color: white;
+    color: var(--blanco);
     font-size: 36px;   
     text-align: center; 
 }
@@ -27,37 +36,37 @@
     height: 30px;
 
     margin: 0 auto;
-    border: 4px solid #001a66;
+    border: 4px solid var(--azulOscuro);
     border-radius: 1em;
 
 
-    background-color: #002db3;
+    background-color: var(--azulBase);
 }
 
 .header-nav__text {
     margin: 0 10px;
-    color: white;
+    color: var(--blanco);
 }
 
 /* ----- Obj-Main Style ----- */
 
 .doc-main {
     width: 90%;
-    height: 400px;
+    height: 350px;
 
     margin: 5px auto;
-    border: 4px solid #001a66;
+    border: 4px solid var(--azulOscuro);
     border-radius: 1em;
     padding: 5px;
 
-    background-color: #0000aa;
+    background-color: var(--azulBase_2);
 }
 
 .doc-main__text {
     margin: 5px;
     padding: 0 5px;
 
-    color: white;
+    color: var(--blanco);
     font-size: 30px;
     text-align: center;
 }
@@ -69,14 +78,14 @@
     height: 80%;
 
     margin: 0 5px;
-    border: 4px solid #001a66;
+    border: 4px solid var(--azulOscuro);
     border-radius: 1em;
 
     float: right; /* Changes with JS */
 }
 
 .main-nav__text {
-    color:white;
+    color: var(--blanco);
     text-align: center;
 }
 
@@ -87,13 +96,49 @@
     margin: 0 auto;
     border: 1px solid black;
 
-    background-color: #001a66;
+    background-color: var(--azulOscuro);
 
-    color: white;
+    color: var(--blanco);
 
     display: block;
 }
 
+/* -- Section Main Style -- */
+
+.main-section {
+    width: 25%;
+
+    margin: 0 8px;
+    border: 2px solid black;
+    border-radius: 1em;
+    padding: 5px;
+
+    float: left;
+    background-color: var(--azulOscuro);
+}
+
+.main-section__text {
+    color: var(--blanco);
+    text-align: center;
+}
+
+/* Article Style */
+
+.section-article {
+    height: 100px;
+
+    margin: 5px 0;
+    border: 1px inset var(--azulOscuro);
+    border-radius: 1em;
+    padding: 10px;
+
+    background-color: var(--azulBase_2);
+}
+
+.section-article__text {
+    color: var(--blanco);
+}
+
 /* ----- RESET CSS ON THE DOC ----- */
 
-body{margin:0;} h1{margin:0;} h2{margin:0;}
+body{margin:0;} h1{margin:0;} h2{margin:0;} h3{margin:0;} 
