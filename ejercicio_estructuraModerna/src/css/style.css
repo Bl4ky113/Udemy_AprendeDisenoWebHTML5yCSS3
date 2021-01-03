@@ -5,12 +5,14 @@
     --azulBase: #002db3;
     --azulBase_2: #0000aa;
     --azulOscuro: #001a66;
+
+    --ancho_doc: 90%;
 }
 
-/* ----- Header Style ----- */
+/* ---- Header Style ---- */
 
 .doc-header {
-    width: 90%;
+    width: var(--ancho_doc);
 
     margin: 0 auto 5px;
     border: 4px solid var(--azulOscuro);
@@ -29,7 +31,7 @@
     text-align: center; 
 }
 
-/* -- Nav Header Style -- */
+/* - Nav Header Style - */
 
 .header-nav {
     width: 80%;
@@ -48,10 +50,10 @@
     color: var(--blanco);
 }
 
-/* ----- Obj-Main Style ----- */
+/* ---- Obj-Main Style ---- */
 
 .doc-main {
-    width: 90%;
+    width: var(--ancho_doc);
     height: 350px;
 
     margin: 5px auto;
@@ -145,7 +147,7 @@
     text-align: center;
 }
 
-/* - Section-Article Style - */
+/* -- Section-Article Style -- */
 
 .section-article {
     width: 90%;
@@ -225,6 +227,45 @@
 
     display: block;
 }
+
+/* ---- Footer Style ---- */
+
+.doc-footer {
+    width: var(--ancho_doc);
+    height: 150px;
+
+    margin: 5px auto 0;
+    border: 4px outset var(--azulBase_2);
+    border-radius: 1em;
+    padding: 5px;
+
+    background-color: #001a66;
+}
+
+.doc-footer__text {
+    margin: 20px 0;
+
+    color: var(--blanco);
+}
+
+/* -- Footer-Nav Style --*/
+
+.footer-nav {
+    width: 90%;
+
+    margin: 0 auto;
+    border: 2px solid var(--azulBase);
+    border-radius: 0.5em;
+    padding: 5px;
+
+    background-color: var(--azulBase_2);
+}
+
+.footer-nav__text {
+    color: var(--blanco);
+    text-align: center;
+}
+
 /* ----- RESET CSS ON THE DOC ----- */
 
 body{margin:0;} h1{margin:0;} h2{margin:0;} h3{margin:0;} 
