@@ -13,50 +13,64 @@
         <h1 class="doc-header__title">Hello I'm a Header</h1>
         <!-- Nav-Header Menu -->
         <nav class="header-nav">
-            <h2 class="header-nav__text">Hello I'm a Nav Menu in the Header!!!</h2>
+            <h2 class="header-nav__text">Hello I'm a Nav Menu inside Header!!!</h2>
         </nav>
     </header>
     <!-- Main -->
     <main class="doc-main">
         <h2 class="doc-main__text">Hello I'm a Main</h2>
+
         <!-- Nav-Main Menu-->
         <nav class="main-nav" id="nav">
-            <h2 class="main-nav__text">Hello I'm a Nav Menu in the Main!!!</h2>
+            <h2 class="main-nav__text">Hello I'm a Nav Menu inside Main!!!</h2>
             <br/>
-            <button class="main-nav__btn" type="button" onclick="changeSide()">
+            <button class="main-nav__btn" type="button" onclick="changeSide(1)">
                 Click Me to Change the Nav Side
             </button>
         </nav>
+
+        <!-- Main-Aside -->
+        <aside class="main-aside" id="main-aside">
+            <h2 class="main-aside__text">Hello I'm a Aside inside Main</h2>
+        </aside>
+
         <!-- Sections & Articles -->
         <section class="main-section">
             <h2 class="main-section__text">Hello I'm a Section</h2>
             <article class="section-article">
                 <h3 class="section-article__text">Hello I'm a Article</h3>
+                <aside class="article-aside--right article-aside">
+                    <h3 class="article-aside__text">Hello I'm a Aside inside a Article</h3>
+                </aside>
             </article>
             <article class="section-article">
-                <h3 class="section-article__text">Hello I'm other Article</h3>
+                <h3 class="section-article__text">Hello I'm a diferent article</h3>
+                <aside class="article-aside--left article-aside">
+                    <h3 class="article-aside__text">Hello I'm a Aside inside a Article</h3>
+                </aside>
             </article>
         </section>
+
         <section class="main-section">
             <h2 class="main-section__text">Hello I'm a Section</h2>
-            <article class="section-article">
+            <aside class="section-aside">
+                <h3 class="section-aside__text"> Hello I'm a aside inside Section</h3>
+                <button class="section-aside__btn" type="button" onclick="changeSide(2)">
+                    Click Me To Change the Aside side
+                </button>
+            </aside>
+            <article class="section-article--small section-article">
                 <h3 class="section-article__text">Hello I'm a Article</h3>
             </article>
-            <article class="section-article">
+            <article class="section-article--small section-article">
                 <h3 class="section-article__text">Hello I'm other Article</h3>
             </article>
         </section>
-        <section class="main-section">
-            <h2 class="main-section__text">Hello I'm a Section</h2>
-            <article class="section-article">
-                <h3 class="section-article__text">Hello I'm a Article</h3>
-            </article>
-            <article class="section-article">
-                <h3 class="section-article__text">Hello I'm other Article</h3>
-            </article>
-        </section>
+
     </main>
+
     <!-- Script -->
     <script src="./src/js/script.js"></script>
+
 </body>
 </html>

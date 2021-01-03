@@ -3,8 +3,8 @@
 :root{
     --blanco: #fefefe;
     --azulBase: #002db3;
-    --azulOscuro: #001a66;
     --azulBase_2: #0000aa;
+    --azulOscuro: #001a66;
 }
 
 /* ----- Header Style ----- */
@@ -71,7 +71,7 @@
     text-align: center;
 }
 
-/* -- Nav Main Style -- */
+/* - Nav Main Style - */
 
 .main-nav {
     width: 15%;
@@ -103,10 +103,33 @@
     display: block;
 }
 
+
+/* - Main-Aside Style - */
+
+.main-aside {
+    width: 15%;
+    height: 80%;
+
+    margin: 0 10px;
+    border: 2px solid black;
+    border-radius: 1em;
+    padding: 5px;
+
+    background-color: var(--azulOscuro);
+
+    float: left;
+}
+
+.main-aside__text {
+    color: var(--blanco);
+    font-size: 20px;
+    text-align: center;
+}
+
 /* -- Section Main Style -- */
 
 .main-section {
-    width: 25%;
+    width: 30%;
 
     margin: 0 8px;
     border: 2px solid black;
@@ -122,9 +145,10 @@
     text-align: center;
 }
 
-/* Article Style */
+/* - Section-Article Style - */
 
 .section-article {
+    width: 90%;
     height: 100px;
 
     margin: 5px 0;
@@ -132,13 +156,75 @@
     border-radius: 1em;
     padding: 10px;
 
+    float: left;
+
     background-color: var(--azulBase_2);
 }
 
 .section-article__text {
     color: var(--blanco);
+    font-size: 18px;
 }
 
+.section-article--small {width: 50%;}
+
+/* - Article-Aside Style - */
+
+.article-aside {
+    width: 20%;
+    height: 70%;
+
+    border: 2px outset var(--azulBase);
+    border-radius: 1em;
+    padding: 5px;
+
+    background-color: var(--azulOscuro);
+}
+
+.article-aside__text {
+    color: var(--blanco);
+    font-size: 15px;
+    text-align: center;
+}
+
+/* change float Value without JS */
+.article-aside--right {float:right;}
+.article-aside--left {float: left;}
+
+/* - Section-Aside Style - */
+
+.section-aside {
+    width: 30%;
+    height: 180px;
+
+    margin: 30px 5px;
+    border: 2px outset var(--azulOscuro);
+    border-radius: 0.5em;
+    padding: 10px;
+    
+    float: right;
+
+    background-color: var(--azulBase);
+}
+
+.section-aside__text {
+    color: var(--blanco);
+    text-align: center;
+}
+
+.section-aside__btn {
+    width: 90%;
+
+    margin: 20px auto;
+    border: 2px inset black;
+    padding: 10px;
+
+    background-color: var(--azulOscuro);
+
+    color: var(--blanco);
+
+    display: block;
+}
 /* ----- RESET CSS ON THE DOC ----- */
 
 body{margin:0;} h1{margin:0;} h2{margin:0;} h3{margin:0;} 
