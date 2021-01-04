@@ -66,6 +66,11 @@
       <ol>
         <h2>Etiquetas de Texto</h2>
         <li><a href="#Semantica-texto">Semantica En HTML5</a></li>
+        <li><a href="#Codigo-texto">Semantica de Texto para el Codigo</a></li>
+        <li><a href="#Codigo_Code-texto">Semantica para representar el Codigo</a></li>
+        <li><a href="#Codigo_Sample-texto">Semantica para representar los resultados</a></li>
+        <li><a href="#Codigo_Var-texto">Semantica para representar las variables</a></li>
+        <li><a href="#Codigo_Key-texto">Semantica para representar las teclas o los shortcuts</a></li>
       </ol>
     </nav>
 
@@ -677,6 +682,67 @@
       </ul>
     </p>
 
+    <hr>
+
     <!-- Texto Codigo-->
+    <h2 id="Codigo-texto">Etiquetas de texto para mostrar Codigo</h2>
+    <p>
+      Gracias a HTML5 podemos representar el código con algunas etiquetas que muestran el codigo de diferentes formas <br>
+      <br>
+      Estas etiquetas tienen un Style Pre-definido, por lo tanto vas a tener que reinicar estos Styles en el CSS si quieres aplicar un buen Style a estas etiquetas
+    </p>
+    <!-- Texto Code -->
+    <h3 id="Codigo_Code-texto">Etiqueta de texto para Codigo</h3>
+    <p>
+      Esta etiqueta <i>code</i>, tiene su uso de <b>Semantica</b> cuando queremos representar un código (.js, .py, .html, .css, etc) SIN VARIABLES <br> 
+      (Ya que hay una etiqueta para estas) <br>
+      Ejemplo de Code: 
+    </p>
+    <code>
+      console.log("Hello World!!!");
+    </code>
+    <!-- Texto Sample -->
+    <h3 id="Codigo_Sample-texto">Etiqueta de texto para Resultados & Pruebas</h3>
+    <p>
+      Esta etiqueta <i>samp</i> ,viene junto a la anterior mencionada <b>Code</b>, su uso de <b>Semantica</b> es para cuando queremos representar el resultado del codigo <br>
+      generalmente se representa como si el resultado fuera dado por el mismo codigo <br>
+      Ejemplo de samp:
+    </p>
+    <code
+    >console.log("Hello World")
+    </code>
+    <samp>
+      > "Hello World"
+    </samp>
+    <!-- Texto Var -->
+    <h3 id="Codigo_Var-texto">Etiqueta de Texto para Variables</h3>
+    <p>
+      Esta etiqueta <i>var</i>, el uso de Semantica es cuando necesitamos representar a una variables, estas pueden ser usadas en un codigo <br>
+      o simplemente ser usadas de demostracion & explicacion <br>
+      Ejemplo de var:
+    </p>
+    <var>
+      let saludo = "Hello World !!!"; <br>
+      let num = 50 - 10;
+    </var>
+    <br>
+    <code>
+      console.log(saludo, num);
+    </code>
+    <br>
+    <samp>
+      > "Hello World", 40
+    </samp> 
+    <!-- Texto kbd -->
+    <h3 id="Codigo_Key-texto">Etiqueta de Texto para "Key Shortcuts"</h3>
+    <p>
+      Esta etiqueta <i>kbd</i>, la Semantica de esta etiqueta, es cuando necesitamos representar un shortcut de teclas, como por ejemplo el ctrl + c, ctrl + v <br>
+      O simplemete necesitamos representar las teclas solas, como "Insert", "alt" <br>
+      Ejemplo de kbd:
+    </p>
+    <kbd>ctrl + c</kbd> <br>
+    <kbd>ctrl + v</kbd> <br>
+    <kbd>Shift + Insert</kbd> <br>
+    <kbd>Insert</kbd> <br>
   </body>
 </html>
