@@ -765,7 +765,19 @@
     <p>
       Existen diferentes etiquetas y por lo tanto Semanticas para los formatos anteriormente vistos en la clase <br>
       por eso vamos a repsarlos, pero con una mejor semantica y sus respectivas etiquetas <br>
+      <br>
+      Algunos de los formatos ya vistos son: <br>
     </p>
+    <ul>
+      <li>Bold</li>
+      <li>Italic</li>
+      <li>Big</li>
+      <li>Small</li>
+      <li>Sub</li>
+      <li>Sup</li>
+      <li>Ins</li>
+      <li>Del</li>
+    </ul>
     <!-- Semantica Formato Negrita-->
     <h3 id="Formatos_Bold-texto">Semantica del Formato de Negrita</h3>
     <p>
@@ -838,7 +850,61 @@
     <!-- Semantica Formato Inserted -->
     <h3 id="Formatos_Ins-texto">Semantica del Formato Subrayado</h3>
     <p>
-      
+      El formato de subrayado tiene dos etiquetas, la etiqueta <b>isn</b> y la etiqueta <b>u</b> <br>
+      Estas dos etiquetas tienen la misma funcion, darle un subrayado a nuestro texto, pero cada etiqueta tiene una semantica diferente <br>
+      <br>
+      Pero cada una de estas no debe ser puesta cerca de un hyperlink o un link "<b>a</b>". Para evitar confuciones. <br>
+      <br>
+      la etiqueta <b>ins</b> se usa cuando debemos denotar un texto que ha sido actualizado o insertado a el documento <br>
+      <b>ins</b> ademas de los atributos comunes, tiene 2 atributos que ayudan a su semantica y dan a conocer informacion del texto insertado: <br>
+      <ul>
+        <li>
+          cite="url"<br>
+          Especifica una URL donde se explica porque el texto fue insertado & cambiado <br>
+        </li>
+        <li>
+          datetime="YYYY-MM-DD hh:mm:ss" <br>
+          Especifica el tiempo cuando el texto fue insertado & modificado <br>
+        </li>
+      </ul>
+      La etiqueta <b>u</b> se usa cuando debemos mostrar, denotar o identificar un error de escritura & algunos casos unicos <br>
+      como el denotar nombres propios en el Chino Escrito <br>
+      Generalmente para que no se confundan o no se malinterprete. Se cambia el style del subrayado con CSS & la etiqueta Style. <br>
+      <br>
+      Ejemplos de ins y u: <br>
     </p>
-  </body>
+    <p>
+      <u style="text-decoration-style: wavy;">ohla kmo stas</u> <br>
+      Bien muchas gracias, estoy subiendo este texto: <br>
+      <ins datetime="2021-1-5 3:13:34">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, molestiae?</ins> <br>
+    </p>
+    <!-- Semantica Formato Deleted -->
+    <h3 id="Formatos_Del-texto">Semantica del Formato Eliminado</h3>
+    <p>
+      El formato de Eliminado tiene dos etiquetas para dar este formato, pero cada una tiene una semantica diferente <br>
+      estas etiquetas son <b>del</b> y <b>s</b> <br>
+      <br>
+      La etiqueta <b>del</b> se usa cuando necesitamos definir que un texto fue o esta eliminado del documento, dando un efecto de correccion <br>
+      Esta etiqueta tambien tiene los atributos para tener informacion del el texto eliminado: <br>
+      <ul>
+        <li>
+          cite="url"<br>
+          Especifica una URL donde se explica porque el texto fue eliminado & cambiado <br>
+        </li>
+        <li>
+          datetime="YYYY-MM-DD hh:mm:ss" <br>
+          Especifica el tiempo cuando el texto fue eliminado & modificado <br>
+        </li>
+      </ul>
+      La etiqueta <b>s</b> se usa cuando necesitamos mostrar texto que ya no es correcto, certero o importante <br>
+      Generalmente se usa en anuncios de compra y venta, para mostrar el stock de un articulo <br>
+      <br>
+      Ejemplo de del y de s: <br>
+    </p>
+    <p>
+     <del>Hoy es 2020</del> Hoy es 2021!!! <br>
+     <br>
+     <s>10 Articulos disponibles !!!</s> <br>
+     VENDIDOS <br>
+    </p>
 </html>
