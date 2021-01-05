@@ -16,8 +16,8 @@
       content_subContent-Section
     -->
     <nav>
+      <h2>Estructuras Básicas con HTML</h2>
       <ol>
-        <h2>Estructuras Básicas con HTML</h2>
         <br>
         <li><a href="#Etiquetas-html">Etiquetas en HTML</a></li>
         <li><a href="#Parrafos-html">Parrafos en HTML</a></li>
@@ -52,8 +52,8 @@
         <li><a href="#Meta-html">Meta Datos en HTML</a></li>
       </ol>
 
+      <h2>Estructura Moderna del Documento</h2>
       <ol>
-        <h2>Estructura Moderna del Documento</h2>
         <li><a href="#Header-estructura">Header En la Estructura</a></li>
         <li><a href="#Main-estructura">Main En la Estructura</a></li>
         <li><a href="#Nav-estructura">Nav En la Estructura</a></li>
@@ -63,8 +63,8 @@
         <li><a href="#Footer-estrucutra">Footer En la Estructura</a></li>
       </ol>
 
+      <h2>Etiquetas de Texto</h2>
       <ol>
-        <h2>Etiquetas de Texto</h2>
         <li><a href="#Semantica-texto">Semantica En HTML5</a></li>
         <li><a href="#Codigo-texto">Semantica de Texto para el Codigo</a></li>
         <ol>
@@ -72,6 +72,17 @@
           <li><a href="#Codigo_Sample-texto">Semantica para representar los resultados</a></li>
           <li><a href="#Codigo_Var-texto">Semantica para representar las variables</a></li>
           <li><a href="#Codigo_Key-texto">Semantica para representar las teclas o los shortcuts</a></li>
+        </ol>
+        <li><a href="#Formatos-texto">Semantica para los formatos de texto</a></li>
+        <ol>
+          <li><a href="#Formatos_Bold-texto">Semantica para el Formato Bold</a></li>
+          <li><a href="#Formatos_Italic-texto">Semantica para el Formato Cursiva</a></li>
+          <li><a href="#Formatos_Big-texto">Semantica para el Formato Big</a></li>
+          <li><a href="#Formatos_Small-texto">Semantica para el Formato Small</a></li>
+          <li><a href="#Formatos_Sub-texto">Semantica para el Formato Sub</a></li>
+          <li><a href="#Formatos_Sup-texto">Semantica para el Formato Sup</a></li>
+          <li><a href="#Formatos_Ins-texto">Semantica para el Formato Subrayado</a></li>
+          <li><a href="#Formatos_Del-texto">Semantica Para el Formato Eliminado</a></li>
         </ol>
       </ol>
     </nav>
@@ -756,7 +767,7 @@
       por eso vamos a repsarlos, pero con una mejor semantica y sus respectivas etiquetas <br>
     </p>
     <!-- Semantica Formato Negrita-->
-    <h3 id="Formatos_Negrita-texto">Semantica del Formato de Negrita</h3>
+    <h3 id="Formatos_Bold-texto">Semantica del Formato de Negrita</h3>
     <p>
       Para el Formato de Negrita generalmente se usaria la etiqueta <b>b</b>, pero esto no esta bien Semanticamente <br>
       Para arreglar este error en la Semantica se usa la etiqueta <b>strong</b>, que se usa cuando un texto es más importante que otro en un parrafo <br>
@@ -769,7 +780,7 @@
       Cabe aclarar que usando <b>b</b>, <b>Strong</b> o El Style de CSS, vas a obtener el mismo resultado si no modificas el style del objeto. <br>
       Ejemplo del Uso de Strong: <br>
     </p>
-    <p>La importancia de este texto esta en esta frace, <strong>hoy me he comido un platillo de pasta que estaba <strong>exquisito!!!</strong></strong</p>
+    <p>La importancia de este texto esta en esta frace, <strong>hoy me he comido un platillo de pasta que estaba exquisito!!!</strong></p>
     <!-- Semantica Formato Italic -->
     <h3 id="Formatos_Italic-texto">Semantica del Formato de Cursiva</h3>
     <p>
@@ -786,6 +797,48 @@
       Siembargo la otra etiqueta con el mismo uso, <b>em</b>, se usa para darle enfasis o acento a las palabras. <br>
       Ejemplo del Uso de i y de em: <br>
     </p>
-    <!--  -->
+    <p>Vamos a manejar el <i>Style</i> para obtener un resultado más <em>Esplendido</em>.</p>
+    <!-- Semantica Formato Big -->
+    <h3 id="Formatos_Big-texto">Semantica del Formato Big</h3>
+    <p>
+      La etiqueta <b>big</b> no es soportada por HTML5, entonces existen diferentes formas para volver el texto un poco mas grande <br>
+      Obviamente usando CSS y preferiblemente usando un selector unico. <br>
+      O Tambien se podria usar el atributo Style, y poniendo el codigo de css ahi. <br>
+      Ejemplo del atributo Style: <br>
+    </p>
+    <p style="font-size: 30px;">Hola yo soy un texto grande sin usar Big</p>
+    <!-- Semantica Formato Small -->
+    <h3 id="Formatos_Small-texto">Semantica del Formato Small</h3>
+    <p>
+      La etiqueta <b>small</b> si es soportada por HTML5, pero es mucho mejor usar CSS o el atributo Style para obtener el mismo resultado & mejor <br>
+      O se puede combinar la estiqueta con un style, para obtener un mejor resultado y una semantica en tu codigo <br>
+      La semantica de esta etiqueta generalmente se usa en Comentarios o en Texto de Copyright <br>
+      Ejemplo de small y atributo Style: <br>
+    </p>
+    <p style="font-size: 8px;">Atributo Style</p>
+    <small>Etiqueta Small</small>
+    <!-- Semantica Formato Sub -->
+    <h3 id="Formatos_Sub-texto">Semantica del Formato Sub</h3>
+    <p>
+      La etiqueta <b>sub</b> es usada para dar un formato de subindice a nuestros textos, el correcto uso & semantica de esta etiqueta <br>
+      es cuando debemos agregar el subindice como complementario a un objeto en especifico, como por ejemplo formulas matematicas, fisicas e Quimicas <br>
+      No se debe usar para volver más pequeña la letra o algun diseño por el estilo <br>
+      Ejemplo de sub: <br>
+    </p>
+    <p>Agua es H<sub>2</sub>O y Hidrogeno Molecular es H<sub>2</sub></p>
+    <!-- Semantica Formato Sup -->
+    <h3 id="Formatos_Sup-texto">Semantica del Formato Sup</h3>
+    <p>
+      La etiqueta <b>sup</b> es usada para dar un formato de supindice a nuestros textos, el correcto uso & semantica de esta etiqueta <br>
+      es cuando debemos utilizar, mencionar o usar notas de pie, o notas de refetencia, explicacion, comentario, entre otros. <br>
+      No se debe usar para volver más pequeña la letra o algun diseño parecido <br>
+      Ejemplos de sup: <br>
+    </p>
+    <p>El gran estudio de nuestra empresa <sup>Referencia</sup>, refleja que...</p></p>
+    <!-- Semantica Formato Inserted -->
+    <h3 id="Formatos_Ins-texto">Semantica del Formato Subrayado</h3>
+    <p>
+      
+    </p>
   </body>
 </html>
