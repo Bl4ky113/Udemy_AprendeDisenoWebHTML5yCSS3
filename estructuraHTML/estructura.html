@@ -73,16 +73,25 @@
           <li><a href="#Codigo_Var-texto">Semantica para representar las variables</a></li>
           <li><a href="#Codigo_Key-texto">Semantica para representar las teclas o los shortcuts</a></li>
         </ol>
-        <li><a href="#Formatos-texto">Semantica para los formatos de texto</a></li>
+        <li><a href="#Formatos-texto">Semantica para los Formatos de texto</a></li>
         <ol>
-          <li><a href="#Formatos_Bold-texto">Semantica para el Formato Bold</a></li>
-          <li><a href="#Formatos_Italic-texto">Semantica para el Formato Cursiva</a></li>
-          <li><a href="#Formatos_Big-texto">Semantica para el Formato Big</a></li>
-          <li><a href="#Formatos_Small-texto">Semantica para el Formato Small</a></li>
-          <li><a href="#Formatos_Sub-texto">Semantica para el Formato Sub</a></li>
-          <li><a href="#Formatos_Sup-texto">Semantica para el Formato Sup</a></li>
-          <li><a href="#Formatos_Ins-texto">Semantica para el Formato Subrayado</a></li>
-          <li><a href="#Formatos_Del-texto">Semantica Para el Formato Eliminado</a></li>
+          <li><a href="#Formatos_Bold-texto">Formato Bold</a></li>
+          <li><a href="#Formatos_Italic-texto"></a>Formato Cursiva</a></li>
+          <li><a href="#Formatos_Big-texto">Formato Big</a></li>
+          <li><a href="#Formatos_Small-texto">Formato Small</a></li>
+          <li><a href="#Formatos_Sub-texto">Formato Sub</a></li>
+          <li><a href="#Formatos_Sup-texto">Formato Sup</a></li>
+          <li><a href="#Formatos_Ins-texto">Formato Subrayado</a></li>
+          <li><a href="#Formatos_Del-texto">Formato Eliminado</a></li>
+          <li><a href="#Formatos_Mark-texto">Formato Mark</a></li>
+        </ol>
+        <li><a href="#Abbr-texto">Semantica para Abreviaciones</a></li>
+        <li><a href="#Address-texto">Semantica para Contacto</a></li>
+        <li><a href="#Quote-texto">Semantica para las citaciones</a></li>
+        <ol>
+          <li><a href="#Quote_InlineQuote-texto">Citacion de linea</a></li>
+          <li><a href="#Quote_BlockQuote-texto">Citacion de Bloque</a></li>
+          <li><a href="#Quote_Cite-texto">Citacion de Obra</a></li>
         </ol>
       </ol>
     </nav>
@@ -902,9 +911,117 @@
       Ejemplo de del y de s: <br>
     </p>
     <p>
-     <del>Hoy es 2020</del> Hoy es 2021!!! <br>
-     <br>
-     <s>10 Articulos disponibles !!!</s> <br>
-     VENDIDOS <br>
+      <del>Hoy es 2020</del> Hoy es 2021!!! <br>
+      <br>
+      <s>10 Articulos disponibles !!!</s> <br>
+      VENDIDOS <br>
     </p>
+    <!-- Semantica Formato Mark -->
+    <h3 id="Formatos_Mark-texto">Semantica del Formato Mark</h3>
+    <p>
+      La etiqueta <b>mark</b>, tiene de uso cuando un texto debe ser marcado o es revelante para el usuario <br>
+      Es importante reconocer la diferencia entre <b>strong</b> y <b>mark</b>, ya que ambos tienen semanticas muy diferentes <br>
+      <b>mark</b> solo se usa para denotar contenido que le importa a el usuario, mas no en general toda la informacion importante <br>
+      Otro uso del mark, es el uso comun que las personas le damos a un resaltador en un libro de texto. <br>
+      <br>
+      Esta va a destacar el texto con un fondo colorido y un color de texto. Los colores se pueden cambiar con CSS o un atributo Style <br>
+      Ejemplo de mark <br>
+    </p>
+    <p>Acuerdate de <mark>Pasear a el Perro</mark> y <mark>Comprar Leche</mark></p>
+
+    <hr>
+
+    <!-- Semantica Abbreviation -->
+    <h3 id="Abbr-texto">Semantica de Abbreviacion</h3>
+    <p>
+      La etiqueta <b>abbr</b>, tiene su uso en abreviaciones o acronimos, dando el nombre completo o el acronimo cuando pasamos el mouse por encima <br>
+      Pero esta informacion se debe incluir en un atributo del elemento, este elemento es title="". <br>
+      Ejemplo de abbr: <br>
+    </p>
+
+    <p>Hola Mi nombre es <abbr title="Martin Steven Hernandez Ortiz">M.S.H.O</abbr> y trabajo en <abbr title="Plantillas para Paginas Educativas">PPE</abbr></p>
+
+    <hr>
+
+    <!-- Semantica Address -->
+    <h3 id="Addres-texto">Semantica de Contacto</h3>
+    <p>
+      La etiqueta <b>address</b>, se usa generalmente para dar informacion de contacto como: <br>
+      <ul>
+        <li>Email</li>
+        <li>Numero de Contacto</li>
+        <li>Informacion Personal</li>
+        <li>Nombre Y Apillidos</li>
+        <li>Organizacion</li>
+        Entre otros...
+      </ul>
+      Puede ser usada en varios contextos, como en un article para dar contacto con la persona que escribio el article <br>
+      O contacto de negocios en el Header de la pagina web <br>
+      <br>
+      address, tiene un Style predefinido, puedes cambiarselo con CSS o con un atributo Style <br>
+      Ejemplo de address:
+    </p>
+    <address>
+      Martin Steven <br>
+      Hernandez Ortiz <br> 
+      Numero: 1010100101 <br>
+      Email: Email@Email.com <br>
+      Contacto: Contact. <br>
+    </address>
+
+    <hr>
+
+    <!-- Semantica Quote -->
+    <h3 id="Quote-texto">Semantica para Citar o Citacion</h3>
+    <p>
+      Para Citar a diferentes autores y sus obras existen diferentes podemos usar diferentes etiequetas para tener una mejor semantica <br>
+      generalmente en estas etiquetas se va a cambiar el style de la letra a Cursiva o Italic, pero puedes cambiarselo usando CSS o el atributo Style <br>
+      <br>
+      Las etiquetas que se usan son:
+      <ul>
+        <li>q</li>
+        <li>blockquote</li>
+        <li>cite</li>
+      </ul>
+    </p>
+    <!-- Semantica Quote InlineQuote -->
+    <h3 id="Quote_InlineQuote-texto">Quote InlineQuote</h3>
+    <p>
+      La etiqueta <b>q</b>, se usa para hacer una citacion de una sola linea o una citacion sencilla <br>
+      Generalmente los navegadores encierran en Comillas ( " " ) estas citaciones <br>
+      Se puede usar el atributo cite="" para añadir un contexto & URL a nuestra citacion <br>
+      Ejemplo de q:
+    </p>
+    <p>
+      <q>Hello World!</q> <br>
+      - Todos al empezar a programar <br>
+    </p>
+    <!-- Semantica Quote BlockQuote -->
+    <h3 id="Quote_BlockQuote-texto">Qoute Blockquote</h3>
+    <p>
+      La etiqueta <b>blockquote</b>, se usa para hacer una citacion larga o de bloque <br>
+      Tambien se puede usar el atributo cite="" para añadir contexto & URL a nuestra citacion <br>
+      Esta etiqueta tiene con un margen predefinido, este se puede cambiar con CSS o el atributo Style <br>
+      Ejemplo de blockquote: <br>
+    </p>
+    <blockquote>
+      Hello World !!! <br>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consectetur sunt, nobis asperiores a vero? Exercitationem quas dicta impedit possimus.
+    </blockquote>
+    <!-- Semantica Quote Cite -->
+    <h3 id="Quote_Cite-texto">Quote Cite</h3>
+    <p>
+      La etiqueta <b>cite</b>, tiene el uso de definir el titulo de un trabajo creativo, como por ejemplo una cancion, poema, pintura, escultura, pelicula, entre otros. <br>
+      No confundas el nombre del autor con el titulo de su o sus obras <br>
+      Pero si quieres hacer una citacion a el trabajo, debes usar otra etiquetas para tener una buena semantica <br>
+      <br>
+      La citacion se va a realizar en Cursiva o Italic, pero puedes darle un mejor o otro style con CSS o el atributo style <br>
+      Ejemplo de Cite: <br>
+    </p>
+    <img src="./src/img/TheStarryNight.jpg" alt="La noche Estrellada, una pintura que muestra la vista de una ciudad con una noche estrellada">
+    <p><cite>The Starry Night</cite> Hecha por Vincent Van Gogh, En Junio de 1889. </p>
+
+    <hr>
+
+    </body>
 </html>
