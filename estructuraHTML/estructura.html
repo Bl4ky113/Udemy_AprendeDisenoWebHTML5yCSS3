@@ -60,7 +60,7 @@
         <li><a href="#Section-estructura">Secciones En la Estructura</a></li>
         <li><a href="#Article-estructura">Articulos En la Estructura</a></li>
         <li><a href="#Aside-estructura">Aside En La Estructura</a></li>
-        <li><a href="#Footer-estrucutra">Footer En la Estructura</a></li>
+        <li><a href="#Footer-estructura">Footer En la Estructura</a></li>
       </ol>
 
       <h2>Etiquetas de Texto</h2>
@@ -93,6 +93,21 @@
           <li><a href="#Quote_BlockQuote-texto">Citacion de Bloque</a></li>
           <li><a href="#Quote_Cite-texto">Citacion de Obra</a></li>
         </ol>
+      </ol>
+
+      <h2>Atributos</h2>
+      <ol>
+        <li><a href="#Atributos-atributos">Atributos en Html5</a></li>
+        <li><a href="#Style-atributos">Atributo Style</a></li>
+        <li><a href="#Class-atributos">Atributo Class</a></li>
+        <li><a href="#Id-atributos">Atributo Id</a></li>
+        <li><a href="#Accesskey-atributos">Atributo Accesskey</a></li>
+        <li><a href="#EditableSpell-atributos">Atributos contentEditable y SpellCheck</a></li>
+        <li><a href="#Dir-atributos">Atributo Dir</a></li>
+        <li><a href="#Draggable-atributos">Atributo Draggable</a></li>
+        <li><a href="#Hidden-atributos">Atributo Hidden</a></li>
+        <li><a href="#Tabindex-atributos">Atributo TabIndex</a></li>
+        <li><a href="#Title-atributos">Artibuto Title</a></li>
       </ol>
     </nav>
 
@@ -944,7 +959,7 @@
     <hr>
 
     <!-- Semantica Address -->
-    <h3 id="Addres-texto">Semantica de Contacto</h3>
+    <h3 id="Address-texto">Semantica de Contacto</h3>
     <p>
       La etiqueta <b>address</b>, se usa generalmente para dar informacion de contacto como: <br>
       <ul>
@@ -1023,5 +1038,152 @@
 
     <hr>
 
+    <!-- Atributos HTML5 -->
+    <h2 id="Atributos-atributos">Atributos para los Elementos de Html5</h2>
+    <p>
+      En Html5 los atributos son informacion extra que le podemos dar a todos los objetos <br>
+      algunos son opcionales en algunos objetos, pero otros son obligatorios para su funcionamiento <br>
+      <br>
+      Estos le puede dar una aparencia, identificacion o funcionalidad a nuestros elementos <br>
+      Algunos de los atributos que vamos a ver son: <br>
+      <ul>
+        <li>Style</li>
+        <li>Class</li>
+        <li>Id</li>
+        <li>Accesskey</li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <!-- Atributo Style -->
+    <h3 id="Style-atributos">Atributo Style</h3>
+    <p>
+      El atributo <b>style</b>, se usa para aplicarle un Style a un Elemento, usando CSS en esta etiqueta <br>
+      Ejemplo del atributo style:
+    </p>
+    <p style="background-color: blueviolet;">Hello</p>
+
+    <hr>
+
+    <!-- Atributo Class -->
+    <h3 id="Class-atributos">Atributo Class</h3>
+    <p>
+      El atributo <b>class</b>, se usa para que el navegador y nuestros codigos de CSS, JS, entre otros, pueda diferenciar a este o estos elementos <br>
+      Generalmente class se usa para styles de CSS <br>
+      Al no ser class unico de un solo elemento, se puede aplicarle esta class a varios elementos <br>
+    </p>
+
+    <hr>
+
+    <!-- Atributo Id -->
+    <h3 id="Id-atributos">Atributo Id</h3>
+    <p>
+      El atributo <b>id</b>, se usa para diferenciar un solo elemento de todos los otros elementos del documento, tiene la misma funcion que el atributo <b>class</b> <br>
+      Que el navegador pueda identificar y diferenciar este elemento, para que se les pueda dar funcionalidades diferentes <br>
+      El Id se usa mucho cuando queremos darle un uso con JS o PHP a un elemento <br>
+      Es mala practica usar mas de una vez un mismo id en diferentes elementos, ya que el Id es algo unico de cada elemento <br>
+      <br>
+      Una funcion que tienen los Ids, es poder redirigir a un contenido dentro de la pagina web, desde la misma pagina web. <br>
+      Eso se hace poniendo un link o <b>a</b> y en <b>href=""</b> ponemos un Numeral (#) con el id que necesitamos usar <br>
+      Un ejemplo de esto es el indice de este documentos <br>
+    </p>
+
+    <hr>
+
+    <!-- Atributo Accesskey -->
+    <h3 id="Accesskey-atributos">Atributo Accesskey</h3>
+    <p>
+      El atributo <b>accesskey</b>, se usa para agregar atajos o shortcuts dentro de nuestro sitio web <br>
+      Esots atajos se pueden usar en links o <b>a</b>, para poder acceder a el link de una forma mas rapida a un contenido <br>
+      estos shortcuts son ejecutados usando: <br>
+      <kbd>alt + "tecla del atributo"</kbd> Alt no puede ser cambiado, pero la tecla del atributo si <br>
+      Toca tener mucho cuidado, ya que hay algunos shortcuts que los navegadores ya tienen predefinidos, entonces puede generar muchos problemas de compatibilidad <br>
+      Ejemplo de accesskey:
+    </p>
+    <a href="#Atributos-atributos" accesskey="n">Puedes usar <kbd>alt + n</kbd> Para ir a Atributos de Html5</a>
+
+    <hr>
+
+    <!-- Atributo ContentEditable y SpellCheck -->
+    <h3 id="EditableSpell-atributos">Atributos ContentEditable y SpellCheck</h3>  
+    <p>
+      Los atributos <b>contenteditable</b> y <b>spellcheck</b>, son atributos que nos deja poder manipular texto y elementos de un elemento <br>
+      Con <b>contenteditable</b>, podemos permitir o denegar, modificar un elemento, agregandole o eliminandole texto <br>
+      Con <b>spellcheck</b>, podemos permitir o denegar, revisar si el texto que se esta cambiando esta bien escrito segun el idioma del navegador <br>
+      Ejemplo de contenteditable y spellcheck: (mi navegador esta en ingles)<br>
+    </p>
+    <p contenteditable="true" spellcheck="true"> Hola me puedes cambiar :)</p>
+
+    <hr>
+
+    <!-- Atributo dir -->
+    <h3 id="Dir-atributos">Atributo Dir</h3>
+    <p>
+      El atributo <b>dir</b>, se usa para darle la direccion a el texto de un contenido <br>
+      No confundirlo con el elemento div <br>
+      Se puede poner en 3 valores: <br>
+      <ul>
+        <li>auto</li>
+        <li>ltr (left to right)</li>
+        <li>rtl (right to left)</li>
+      </ul>
+      Ejemplo de dir: <br>
+      <p dir="rtl" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nulla laudantium eaque nesciunt doloremque obcaecati, ratione hic quam autem harum</p>
+    </p>
+
+    <hr>
+
+    <!-- Atributo draggable -->
+    <h3 id="Draggable-atributos">Atributo Draggable</h3>
+    <p>
+      El atributo <b>draggable</b>, se usa para poder arrastrar o mover los elementos para copiarlos y pegarlos <br>
+      O con JS puedes darles un movimiento por el documento a estos elementos <br>
+      Los links y imagenes son arrastables por defecto, para poder ser copiados y pegados <br>
+      Ejemplo de draggable: Este ejemplo use el atributo draggable y contenteditable <br>
+    </p>
+    <img src="./src/img/html5.png" alt="icono de html5" draggable="true" width="100px" height="100px">
+    <br>
+    <div contenteditable="true" height="200px" width="200px">Puedes poner la imagen aca :)</div>
+
+    <hr>
+
+    <!-- Atributo Hidden -->
+    <h3 id="Hidden-atributos">Atributo Hidden</h3>
+    <p>
+      El atributo <b>hidden</b>, se usa para ocultar elementos del documento <br>
+      este atributo no tiene ningun valor, solo se debe poner el atributo <b>hidden</b> en la etiqueta <br>
+      Ejemplo de hidden (? :
+    </p>
+    <p hidden>La verdad no se como ver esto ayuda o con consola se puede ?</p>
+
+    <hr>
+
+    <!-- Atributo tabindex -->
+    <h3 id="Tabindex-atributos">Atributo TabIndex</h3>
+    <p>
+      El atributo <b>tabindex</b>, se usa para agregar un orden a el momento de navegar lapagina web con <kbd>tab</kbd> <br>
+      Al poder ser usado en todos los elementos, debes hacer una lista de importancia con los elementos que usan este atributo <br>
+      Despues de completar la lista, va a seguir con la lista predefenida por el documento (Top to Bottom) <br>
+      Ejemplo de tabindex: <br>
+    </p>
+    <p tabindex="3">Hello3</p>
+    <p tabindex="2">Hello2</p>
+    <p tabindex="4">Hello4</p>
+    <p tabindex="1">Hello1</p>
+
+    <hr>
+
+    <!-- Atributo title -->
+    <h3 id="Title-atributos">Atributo Title</h3>
+    <p>
+      el atributo <b>title</b>, se usa para agregar mas informacion a una etiqueta <br>
+      esta informacion se muestra cuando el usuario pasa por el elemento su mouse <br>
+      Aunque se puede usar en todos los elementos, generalmente solo se usa en elementos donde su uso es obligatorio <br>
+      Ejemplo de title: 
+    </p>
+    <abbr title="HelloFellowFriend">H.F.F</abbr>
+
+    <hr>
     </body>
 </html>
