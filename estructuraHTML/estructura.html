@@ -109,6 +109,15 @@
         <li><a href="#Tabindex-atributos">Atributo TabIndex</a></li>
         <li><a href="#Title-atributos">Artibuto Title</a></li>
       </ol>
+
+      <h2>Multimedia</h2>
+      <ol>
+        <li><a href="#Multimedia-multimedia">Multimedia en Html5</a></li>
+        <li><a href="#Video-multimedia">Video en Html5</a></li>
+        <li><a href="#Audio-multimedia">Audio en Html5</a></li>
+      </ol>
+
+
     </nav>
 
     <hr>
@@ -1183,6 +1192,100 @@
       Ejemplo de title: 
     </p>
     <abbr title="HelloFellowFriend">H.F.F</abbr>
+
+    <hr>
+
+    <!-- Multimedia -->
+    <h2 id="Multimedia-multimedia">Multimedia en Html5</h2>
+    <p>
+      Se puede usar la multimedia para dar un ambiente mas vivo en nuestro sitio web, estos objetos multimedia pueden ser de dos tipos <br>
+      <ul>
+        <li>Videos</li>
+        <li>Audios</li>
+      </ul>
+      Las imagenes no llegan a esta categoria <br>
+    </p>
+
+    <hr>
+
+    <!-- Video-multimedia -->
+    <h3 id="Video-multimedia">Video en Html5</h3>
+    <p>
+      La etiqueta <b>video</b>, funciona para poder anexar un video a nuestra pagina web <br>
+      Podemos usar la etiqueta <b>source</b>, para agregarle más de una fuente a el video <br>
+      si algun tipo de video no es soportado por un navegador o si ese tipo de archivo no carga o esta caido <br> 
+      se va a mostrar el texto o el contenido escrito entre la etiqueta <br>
+      <br>
+      Esta etiqueta tiene muchos atributos para su buen funcionamiento, estos atributos son: <br>
+      <ul>
+        <li>
+          <b>src="URL"</b><br>
+          Se usa para darle la URL del video a el elemento <br>
+          aunque se puede usar la etiqueta source dentro del elemento para tener multiples fuentes <br>
+        </li>
+        <li>
+          height/width="tamaño en pixeles" <br>
+          Se usa para determinar el tamaño del reproductor de video <br>
+          Asegurate que sea un rectangulo y que el video si se pueda ver bien <br>
+        </li>
+        <li>
+          <b>controls="Controles"</b> <br>
+          Se usa para definir si se muestran o se ocultan los controles del reproductor de video <br>
+          puedes elegir cuales si y cuales no se pueden mostrar, esta es la lista de controles <br>
+          <ul>
+            <li>play</li>
+            <li>Pause</li>
+            <li>Seeking (Barra de progreso)</li>
+            <li>Volume</li>
+            <li>Fullscreen toggle</li>
+            <li>Captions/Subtitles</li>
+            <li>Track</li>
+          </ul>
+          Si quieres poner todos, puedes poner el atributo sencillo, sin ningun valor. <br>
+        </li>
+        <li>
+          <b>preload="auto|metadata|none" </b> <br>
+          Define si se quiere que el video carge con la pagina, carge solo la metadata o que solo cargue cuando el usuario inicia el video <br>
+          Esto puede afectar o ayudar a el desempeño de las paginas web. <br>
+        </li>
+        <li>
+          <b>loop="Loop"</b> <br>
+          Define si el video se va a repetir cada vez que termina <br>
+          Se puede usar sin ningun valor, sencillo <br>
+        </li>
+        <li>
+          <b>autoplay="AutoPlay"</b> <br>
+          Define si el video va a iniciar una vez que este haya cargado, no importa el atributo <b>preload</b> <br>
+          Se puede usar sin ningun valor <br>
+        </li>
+        <li>
+          <b>muted="Muted"</b> <br>
+          Define si el video va a estar muteado <br>
+          Se puede usar sin ningun valor <br>
+        </li>
+        <li>
+          <b>poster="URL-Imagen"</b>
+          Usa una imagen como poster para cuando el video este cargando <br>
+          incompatible con autoplay <br>
+        </li>
+      </ul>
+      Con JS podemos modificar la reproduccion del video, dandole un mejor efecto y uso a el usuario <br>
+      <br>
+      Se puede usar videos de youtube usando la etiqueta <b>iframe</b> <br> 
+      pero los atributos se usan agregandole a la URL del src los atributos con sus valores <br>
+      Peroa algunos no se pueden usar en este reproductor <br>
+      <br>
+      Ejemplo de Video:
+    </p>
+    <video src="https://static.videezy.com/system/resources/previews/000/044/479/original/banana.mp4" width="400px" height="300px" preload="auto" controls muted>STOCK BANANAS, Btw tu navegador no soporta video</video>
+
+    <hr>
+
+    <!-- Audio-multimedia -->
+    <h3 id="Audio-multimedia">Audio en Html5</h3>
+    <p>
+
+    </p>
 
     <hr>
     </body>
