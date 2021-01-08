@@ -123,18 +123,23 @@
     <hr>
 
     <!-- Etiquetas HTML -->
-    <h2 id="Etiquetas-html"> Etiquetas En Html 5 </h2>
+    <h2 id="Etiquetas-html"> Etiquetas y Atributos En Html 5 </h2>
     <p>
       En html se usa el sistemas de etiquetas, estas funcionan para que el navegador en cuestión <br>
       intérprete las acciones que se le programan o se le ordenan de una forma grafica en la página web. <br>
       Para escribir una etiqueta toca tener en cuenta la siguiente estructura: <br>
       <br>
-      <b><"InicioEiqueta"></b> Contenido Etiqueta <b>< /"CierreEtiqueta" ></b> <br>
+      <b>< "InicioEiqueta" > Contenido Etiqueta < /"CierreEtiqueta" ></b> <br>
       <br>
       A estas Etiquetas se les puede agregar atributos, para información, reglas o ordenes extra para el navegador, estas <br>
-      van dentro de la etiqueta de inicio o <"InicioEtiqueta">. Siguiendo la forma de la estructura, quedaria asi: <br>
+      van dentro de la etiqueta de inicio o < "InicioEtiqueta" >. Siguiendo la forma de la estructura, quedaria asi: <br>
       <br>
-      <b><"InicioEtiqueta" atributo="valorAtributo"></b> contendio Etiqueta <b>< /"CierreEtiqueta"></b> <br>
+      <b>< "InicioEtiqueta" atributo="valorAtributo" > contendio Etiqueta < /"CierreEtiqueta"></b> <br>
+      <br>
+      Algunos atributos son <i>Bolean</i>, osea solo tienen como valor a <i>true</i> o <i>false</i> <br>
+      Eso nos permite que con solo escribir el atributo, sin ningun valor, este funcione <br>
+      <br>
+      <b>< "InicioEtiqueta" atributoBoleano > Contenido Etiqueta < /"CierreEtiqueta" ></b>
     </p>
 
     <hr>
@@ -1212,7 +1217,6 @@
     <h3 id="Video-multimedia">Video en Html5</h3>
     <p>
       La etiqueta <b>video</b>, funciona para poder anexar un video a nuestra pagina web <br>
-      Podemos usar la etiqueta <b>source</b>, para agregarle más de una fuente a el video <br>
       si algun tipo de video no es soportado por un navegador o si ese tipo de archivo no carga o esta caido <br> 
       se va a mostrar el texto o el contenido escrito entre la etiqueta <br>
       <br>
@@ -1221,7 +1225,7 @@
         <li>
           <b>src="URL"</b><br>
           Se usa para darle la URL del video a el elemento <br>
-          aunque se puede usar la etiqueta source dentro del elemento para tener multiples fuentes <br>
+          aunque se puede usar la etiqueta <b>source</b> dentro del elemento para tener multiples fuentes <br>
         </li>
         <li>
           height/width="tamaño en pixeles" <br>
@@ -1277,16 +1281,60 @@
       <br>
       Ejemplo de Video:
     </p>
-    <video src="https://static.videezy.com/system/resources/previews/000/044/479/original/banana.mp4" width="400px" height="300px" preload="auto" controls muted>STOCK BANANAS, Btw tu navegador no soporta video</video>
+    <video src="https://static.videezy.com/system/resources/previews/000/044/479/original/banana.mp4" width="400px" height="300px" preload="auto" autoplay muted loop>STOCK BANANAS, Btw tu navegador no soporta video</video>
 
     <hr>
 
     <!-- Audio-multimedia -->
     <h3 id="Audio-multimedia">Audio en Html5</h3>
     <p>
-
+      La etiqueta <b>audio</b>, nos permite agregar a nuestra pagina web un audio <br>
+      Si por alguna razon estamos en un navegador que no soporte los elementos de audio <br>
+      Se va a mostrar el texto o contenido dentro del elemento <br>
+      <br>
+      Esta etiqueta tiene varios atributos para un mejor funcionamiento, estos son: <br>
+      <ul>
+        <li>
+          <b>src="URL"</b> <br>
+          Agrega una URL de referencia o fuente del audio <br>
+          Se puede usar la etiqueta <b>source</b> para utilizar más de una fuente, si algo llegara a pasar <br>
+        </li>
+        <li>
+          <b>controls="Controles"</b> <br>
+          Agrega que controles quieres que el usuario pueda usar, estos son: <br>
+          <ul>
+            <li>play</li>
+            <li>pause</li>
+            <li>seeking (barra de progreso)</li>
+            <li>Volume</li>
+          </ul>
+          O si quieres deja el atributo solo, para dejar todos los controles <br>
+        </li>
+        <li>
+          <b>preload="auto|metadata|none"</b> <br>
+          Define si y como se va a precargar el archivo de auido <br>
+          cargar junto a el documento, cargar solo la metadata o no cargar el archivo de audio <br>
+        </li>
+        <li>
+          <b>autoplay="autoplay"</b> <br>
+          Define si quieres que se reproduzca automaticamente el audio cuando se carge la pagina web <br>
+          Puede afectar el desempeño de la pagina web <br>
+        </li>
+        <li>
+          <b>loop="loop"</b> <br>
+          Define si quieres que se repita el audio cada vez que este termine <br>
+        </li>
+        <li>
+          <b>muted="muted"</b> <br>
+          Define si quieres que el audio este muteado o silenciado <br>
+        </li>
+      </ul>
+      Ejemplo de audio:
     </p>
+    <audio src="./src/img/mixkit-lonely-in-the-bar-518.mp3" preload="metadata" loop controls>Tu Navegador no soporta la etiqueta Audio :C</audio>
 
     <hr>
+
+    <!-- Inputs y Form en HTML5 -->
     </body>
 </html>
