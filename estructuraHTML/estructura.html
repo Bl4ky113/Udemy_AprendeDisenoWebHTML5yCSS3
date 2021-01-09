@@ -117,7 +117,24 @@
         <li><a href="#Audio-multimedia">Audio en Html5</a></li>
       </ol>
 
-
+      <h2>Inputs</h2>
+      <ol>
+        <li><a href="#InputsYForms-inputs">Inputs y Formularios en Html5</a></li>
+        <li><a href="#Label-inputs">Etiqueta Label</a></li>
+        <li><a href="#Vistos-inputs">Inputs anteriormente vistos</a></li>
+        <ol>
+          <li><a href="#Vistos_Text-inputs">Input de Texto</a></li>
+          <li><a href="#Vistos_Password-inputs">Input de Claves</a></li>
+          <li><a href="#Vistos_Radio-inputs">Input de Radio</a></li>
+          <li><a href="#Vistos_Checkbox-inputs">Input de Checkbox</a></li>
+        </ol>
+        <li><a href="#Tiempo-inputs">Inputs de Tiempo</a></li>
+        <ol>
+          <li><a href="#Tiempo_Fecha-inputs">Input de Fecha</a></li>
+          <li><a href="#Tiempo_Hora-inputs">Input de Hora</a></li>
+          <li><a href="#Tiempo_FechaYHora-inputs">Input de Fecha Y Hora</a></li>
+        </ol>
+      </ol>
     </nav>
 
     <hr>
@@ -458,25 +475,25 @@
       <input id="password-usuario" type="password"/>
       <br>
       <label for="randomRadios_1">Radio 1</label>
-      <input id="randomRadios_1" type="radio">
+      <input id="randomRadios_1" type="radio" name="radio">
       <br>
       <label for="randomRadios_2">Radio 2</label>
-      <input id="randomRadios_2" type="radio">
+      <input id="randomRadios_2" type="radio" name="radio">
       <br>
       <label for="randomRadios_3">Radio 3</label>
-      <input id="randomRadios_3" type="radio">
+      <input id="randomRadios_3" type="radio" name="radio">
       <br>
       <label for="randomRadios_4">Radio 4</label>
-      <input id="randomRadios_4" type="radio">
+      <input id="randomRadios_4" type="radio" name="radio">
       <br>
       <label for="checkbox_1">Checkboxes 1</label>
-      <input id="checkbox_1" type="checkbox">
+      <input id="checkbox_1" type="checkbox" name="check">
       <br>
       <label for="checkbox_2">Checkboxes 2</label>
-      <input id="checkbox_2" type="checkbox">
+      <input id="checkbox_2" type="checkbox" name="check">
       <br>
       <label for="checkbox_3">Checkboxes 3</label>
-      <input id="checkbox_3" type="checkbox">
+      <input id="checkbox_3" type="checkbox" name="check">
     </form>
 
     <hr>
@@ -1336,5 +1353,69 @@
     <hr>
 
     <!-- Inputs y Form en HTML5 -->
+    <h2 id="InputsYForms-inputs">Inputs y Formularios en Html5</h2>
+    <p>
+      Los formularos, son espacios donde el usuario va a rellenar informacion, para que una app-web pueda usar esta info para diferentes acciones <br>
+      Como crear o iniciar una cuenta, calcular un dato, mostrar informacion, etc. <br>
+    </p>
+
+    <hr>
+
+    <!-- Label x inputs -->
+    <h3 id="Label-inputs">Etiqueta Label</h3>
+    <p>
+      La etiqueta <b>Label</b>, es una gran etiquetapara acompañar los inputs <br>
+      Esta da informacion sobre que es el imput, puede describir que es que valor tiene el input (en checkbox y radius) o el uso del input (text y password)<br>
+      Se usa el atributo <b>for=""</b> para indicar un Id de un input, este determina a que input pertenece el label y ayuda a identificacion <br>
+      Ejemplo de label: <br>
+    </p>
+
+    <div>
+      <label for="labeltest">Hello I'm a Label!!!</label>
+      <input type="text" name="texto" id="labeltest">
+    </div>
+    <hr>
+
+    <!-- Inputs ya vistos -->
+    <h3 id="Vistos-inputs">Inputs ya Vistos</h3>
+    <p>
+      Anteriormente ya habiamos visto algunos imputs sencillos, pero no esta mal repasarlos <br>
+      Estos eran:
+      <ul>
+        <li>input de texto</li>
+        <li>input de contraseña</li>
+        <li>input de radio o bolita</li>
+        <li>input de checkbox o cajita</li>
+      </ul>
+    </p>
+    <h3 id="Vistos_Texto-inputs">Input de texto</h3>
+    <p>
+      El input de texto, se usa para entradas de informacion de texto cortas <br>
+      Estas pueden ser claves, nombres, palabras, objetos o otros <br>
+      Ejemplo de input de texto: <br>
+    </p>
+    <input type="text">
+    <h3 id="Vistos_Password-inputs">Input de Contraseña</h3>
+    <p>
+      El input de contraseña, se comporta como el input de texto, solo que este cubre la informacion que se esta escribriendo <br>
+      Ejemplo de input de contraseña: <br>
+    </p>
+    <input type="password">
+    <h3 id="Vistos_Radio-inputs">Input de Radio</h3>
+    <p>
+      El input de radio, se usa cuando queremos que el usuario eliga una opcion entre grupos de opciones <br>
+      Para hacer estos grupos de opciones usamos el atributo <b>name=""</b> en todos con el mismo valor <br>
+      Si no se forman estos grupos los radios actuaran por si solos y se podran seleccionar todos y no solo una opcion (Si necesitamos elegir mas de una opcion usamos otro tipo de input)<br>
+      Otro atributo que es necesario es <b>value=""</b>, este define que valor va a dar cuando se suba la informacion, este debe ser diferentes entre todos los radio <br>
+      Ejemplo de inputs de Radio:
+    </p>
+    <label for="rad1">Radio 1</label>
+    <input type="radio" name="ejemplo" id="rad1"> <br>
+    <label for="rad2">Radio 2</label>
+    <input type="radio" name="ejemplo" id="rad2"> <br>
+    <label for="rad3">Radio 3</label>
+    <input type="radio" name="ejemplo" id="rad3"> <br>
+    <label for="rad4">Radio 4</label>
+    <input type="radio" name="ejemplo" id="rad4"> <br>
     </body>
 </html>
