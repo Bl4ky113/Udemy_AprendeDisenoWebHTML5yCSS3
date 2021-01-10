@@ -130,9 +130,9 @@
         </ol>
         <li><a href="#Tiempo-inputs">Inputs de Tiempo</a></li>
         <ol>
-          <li><a href="#Tiempo_Fecha-inputs">Input de Fecha</a></li>
-          <li><a href="#Tiempo_Hora-inputs">Input de Hora</a></li>
-          <li><a href="#Tiempo_FechaYHora-inputs">Input de Fecha Y Hora</a></li>
+          <li><a href="#Tiempo_Date-inputs">Input de Fecha</a></li>
+          <li><a href="#Tiempo_Time-inputs">Input de Hora</a></li>
+          <li><a href="#Tiempo_DateTime-inputs">Input de Fecha Y Hora</a></li>
         </ol>
       </ol>
     </nav>
@@ -1361,7 +1361,7 @@
 
     <hr>
 
-    <!-- Label x inputs -->
+    <!-- <3 Label x inputs <3 -->
     <h3 id="Label-inputs">Etiqueta Label</h3>
     <p>
       La etiqueta <b>Label</b>, es una gran etiquetapara acompañar los inputs <br>
@@ -1388,6 +1388,7 @@
         <li>input de checkbox o cajita</li>
       </ul>
     </p>
+    <!-- Text Inputs -->
     <h3 id="Vistos_Texto-inputs">Input de texto</h3>
     <p>
       El input de texto, se usa para entradas de informacion de texto cortas <br>
@@ -1395,19 +1396,22 @@
       Ejemplo de input de texto: <br>
     </p>
     <input type="text">
+    <!-- Password Inputs -->
     <h3 id="Vistos_Password-inputs">Input de Contraseña</h3>
     <p>
       El input de contraseña, se comporta como el input de texto, solo que este cubre la informacion que se esta escribriendo <br>
+      Tiene mayor proteccion y prioridad de seguridad al momento de subir la informacion <br>
       Ejemplo de input de contraseña: <br>
     </p>
     <input type="password">
+    <!-- Radio Inputs -->
     <h3 id="Vistos_Radio-inputs">Input de Radio</h3>
     <p>
       El input de radio, se usa cuando queremos que el usuario eliga una opcion entre grupos de opciones <br>
       Para hacer estos grupos de opciones usamos el atributo <b>name=""</b> en todos con el mismo valor <br>
       Si no se forman estos grupos los radios actuaran por si solos y se podran seleccionar todos y no solo una opcion (Si necesitamos elegir mas de una opcion usamos otro tipo de input)<br>
       Otro atributo que es necesario es <b>value=""</b>, este define que valor va a dar cuando se suba la informacion, este debe ser diferentes entre todos los radio <br>
-      Ejemplo de inputs de Radio:
+      Ejemplo de inputs de Radio: <br>
     </p>
     <label for="rad1">Radio 1</label>
     <input type="radio" name="ejemplo" id="rad1"> <br>
@@ -1417,5 +1421,63 @@
     <input type="radio" name="ejemplo" id="rad3"> <br>
     <label for="rad4">Radio 4</label>
     <input type="radio" name="ejemplo" id="rad4"> <br>
+    <!-- CheckBox Inputs -->
+    <h3 id="Vistos_Checkbox-inputs">Input de Checkbox</h3>
+    <p>
+      El input de checkbox, se usa cuando queremos que el usuario eliga entre un grupo de opciones <br>
+      Estos grupos no tienen que ser armados o hechos con el atributo <b>name=""</b>, como el input de radio <br>
+      El usuario puede elegir más de una opcion, esto se puede usar en diferentes tipos de pregunta y cuestionarios <br>
+      Otro atributo que le da un valor a los inputs es <b>value=""</b>, este define el valor que va a dar cuando se suba la informacion <br>
+      Ejemplo de inputs de Checkbox: <br>
+    </p>
+    <label for="che1">Checkbox 4</label>
+    <input type="checkbox" name="check" id="che1"> <br>
+    <label for="che2">Checkbox 3</label>
+    <input type="checkbox" name="check" id="che2"> <br>
+    <label for="che3">Checkbox 2</label>
+    <input type="checkbox" name="check" id="che3"> <br>
+    <label for="che4">Checkbox 1</label>
+    <input type="checkbox" name="check" id="che4"> <br>
+
+    <hr>
+
+    <!-- Inputs de Tiempo -->
+    <h3 id="Tiempo-inputs">Inputs de Tiempo/Fechas/Horas/Etc...</h3>
+    <p>
+      Estos inputs se usan para que se pueda enviar informacion de fechas, horas, tiempo en general, entre otros <br>
+      Esto puede ayudar en casos de registros, fechas de cumpleaños, etc. <br>
+      Los inputs que vamos a ver son: <br>
+      <ul>
+        <li>date</li>
+        <li>time</li>
+        <li>datetime-local</li>
+      </ul>
+    </p>
+    <!-- Date Input -->
+    <h3 id="Tiempo_Date-inputs">Input de Fecha</h3>
+    <p>
+      El input date, se usa para que el usuario pueda elegir una fecha de Año, Mes y Día<br>
+      Ejemplo de input de date: <br>
+    </p>
+    <label for="dateInput">Input de date</label>
+    <input type="date" name="" id="dateInput">
+    <!-- Time Input -->
+    <h3 id="Tiempo_Time-inputs">Input de Hora</h3>
+    <p>
+      El input time, se usa para que el usuario pueda elegir una hora especifica <br>
+      Ejemplo de input de time: <br>
+    </p>
+    <label for="timeInput">Input de Hora</label>
+    <input type="time" name="" id="timeInput">
+    <!-- DateTime Input -->
+    <h3 id="Tiempo_DateTime-inputs">Input de Fecha y Hora</h3>
+    <p>
+      El input datetime-local, se usa para que los usuarios puedan elegir una fecha y hora <br>
+      NO se debe confundir con datetime, ya que este no funciona en los navegadores actuales <br>
+      Ejemplo de input datetime-local: <br>
+    </p>
+    <label for="datetimeInput">Input de Hora y Fecha</label>
+    <input type="datetime-local" name="" id="datetimeInput">
+    <!--  -->
     </body>
 </html>
