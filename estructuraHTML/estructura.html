@@ -133,6 +133,8 @@
           <li><a href="#Tiempo_Date-inputs">Input de Fecha</a></li>
           <li><a href="#Tiempo_Time-inputs">Input de Hora</a></li>
           <li><a href="#Tiempo_DateTime-inputs">Input de Fecha Y Hora</a></li>
+          <li><a href="#Tiempo_Month-inputs">Input de Mes y Año</a></li>
+          <li><a href="#Tiempo_Week-inputs">Input de Semana de un Año</a></li>
         </ol>
       </ol>
     </nav>
@@ -1370,10 +1372,10 @@
       Ejemplo de label: <br>
     </p>
 
-    <div>
-      <label for="labeltest">Hello I'm a Label!!!</label>
-      <input type="text" name="texto" id="labeltest">
-    </div>
+
+    <label for="labeltest">Hello I'm a Label!!!</label>
+    <input type="text" name="texto" id="labeltest" value="And I'm a Text Input">
+
     <hr>
 
     <!-- Inputs ya vistos -->
@@ -1451,6 +1453,8 @@
         <li>date</li>
         <li>time</li>
         <li>datetime-local</li>
+        <li>month</li>
+        <li>week</li>
       </ul>
     </p>
     <!-- Date Input -->
@@ -1478,6 +1482,25 @@
     </p>
     <label for="datetimeInput">Input de Hora y Fecha</label>
     <input type="datetime-local" name="" id="datetimeInput">
+    <!-- Month Input  -->
+    <h3 id="Tiempo_Month-inputs">Input de Mes</h3>
+    <p>
+      El input de month, se usa para que el usuario pueda elegir un mes de un año, su formato es AAAA/MM <br>
+      Ejemplo de input de month: <br>
+    </p>
+    <label for="monthInput">Input de mes y año</label>
+    <input type="month" name="month" id="monthInput">
+    <!-- Week Input -->
+    <h3 id="Tiempo_Week-inputs">Input de Semana</h3>
+    <p>
+      El input de Week, se usa para que el usuario pueda elegir una semana de un año, su formato es de NumeroSemana/AAAA <br>
+      Ejemplo de input de week:
+    </p>
+    <label for="weekInput">Input de semana de un año</label>
+    <input type="week" name="week" id="weekInput">
+
+    <hr>
+
     <!--  -->
     </body>
 </html>
