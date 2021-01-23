@@ -144,6 +144,12 @@
         <li><a href="#Search-inputs">Input de Barra de Busqueda</a></li>
         <li><a href="#Email-inputs">Input de Email</a></li>
         <li><a href="#Color-inputs">Input de Colores</a></li>
+        <li><a href="#Form-inputs">Elementos en los Formularios</a></li>
+        <ol>
+          <li><a href="#Form_Progress-inputs">Elemento de progreso</a></li>
+          <li><a href="#Form_Meter-inputs">Elemento de Medir</a></li>
+          <li><a href="#"></a></li>
+        </ol>
       </ol>
     </nav>
 
@@ -1569,5 +1575,30 @@
       Ejemplo del input Color: <br>
     </p>
     <input type="color">
+
+    <hr>
+
+    <!-- Elementos en los Formularios -->
+    <h3 id="Form-inputs">Elementos En Los Formularios</h3>
+    <p>
+      Como sabemos bien los formularios son lo que se encargan de enviar la informacion de los inputs, para que esta sea procesada y usada <br>
+      Pero estos ademas de los elementos <b>input</b> y <b>label</b>, tienen otros elementos que nos pueden ayudar <br>
+    </p>
+    <!-- Progress Element -->
+    <h3 id="Form_Progress-inputs">Elemento de Progreso</h3>
+    <p>
+      Se usa la etiqueta <b>progress</b>, para que el usuario pueda ver el progreso de un proceso <br>
+      Este elemento tiene dos atributos, <b>max="valor"</b> para el valor maximo del progreso (No tiene minimo, el minimo siempre sera 0) <br>
+      <b>value="valor"</b>, para indicar el valor del progreso, debe ser menor a el valor maximo <br>
+      Para utilizar bien el atributo de value, se debe implementar JS o PHP, sino este sera estatico y inutilizable <br>
+      Ejemplo de progress: <br>
+    </p>
+    <progress value="50" max="100"></progress>
+    <!-- Meter Element -->
+    <h3 id="Form_Meter-inputs">Elemento de medir</h3>
+    <p>
+
+    </p>
+
     </body>
 </html>
