@@ -139,7 +139,7 @@
         <li><a href="#Numero-inputs">Inputs Númericos</a></li>
         <ol>
           <li><a href="#Numero_Numbers-inputs">Input de Números</a></li>
-          <li><a href="#"></a></li>
+          <li><a href="#Numero_Range-inputs">Input de Rango</a></li>
           <li><a href="#"></a></li>
         </ol>
       </ol>
@@ -1522,8 +1522,17 @@
       Se usa el input <b>number</b>, para que el usuario pueda ingresar solamente un valor númerico <br>
       Este se puede ingresar con unas flechas que tiene el input, o por solo escribiendo el número <br>
       Se puede limitar el número minimo y maximo del input usando los atributos <b>min="valorMinimo"</b> y <b>max="valorMaximo"</b> <br>
-      Ejemplo del input number <br>
+      Ejemplo del input number: <br>
     </p>
     <input type="number" max="20" min="-10">
+    <!-- Input Range -->
+    <h3 id="Numero_Range-inputs">Input de Rango</h3>
+    <p>
+      Se usa el input <b>range</b>, para que el usuario pueda ingresar un valor númerico dentro un un rango limitado <br>
+      Este se ingresa cambiando el valor de una barra, tambien se puede limitar el max y el minimo del valor de la barra, lo defecto es 0 min y 100 en max <br>
+      Tambien se puede determinar cuanto va a avanzar o contar el valor de la barra con el atributo <b>step="valor"</b> <br>
+      Ejemplo del input range: <br>
+    </p>
+    <input type="range" step="2">
     </body>
 </html>
