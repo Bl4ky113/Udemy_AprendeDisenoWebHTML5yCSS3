@@ -1597,8 +1597,35 @@
     <!-- Meter Element -->
     <h3 id="Form_Meter-inputs">Elemento de medir</h3>
     <p>
-
+      Se usa la etiqueta <b>meter</b>, para medir un valor de el usuario como la capacidad del disco duro, entre otros <br>
+      este tiene varios atributos, estos son: <b>min</b> y <b>max</b>, para indicar el minimo y el maximo de la medicion <br>
+      <b>low</b>, para indicar cuando la medida es baja. <b>high</b>, para indicar cuando la cantidad es alta <br>
+      El valor entre <b>low</b> y <b>high</b>, va a ser considerado como una cantidad media <br>
+      <b>optimum</b> la cantidad optima de la medida, puede ser menor que <b>low</b>, para que la cantidad optima sea baja<br>
+      o ser mayor que <b>high</b>, para que la cantidad optima sea alta. Esto afecta en el color que va a mostrar la medida <br> 
+      (rojo = malo, naranja = medio, verde = Bueno) <br>
+      Y <b>value</b>, que se usa para determinar el valor de la medida, para utilizar bien este aatributo debemos usar JS o PHP, sino este sera estatico e inservible <br>
+      Ejemplo de meter:<br>
     </p>
-
+    <meter min="0" max="100" low="30" high="70" optimum="90" value="46"></meter>
+    <!-- DataList Object -->
+    <h3 id="Form_Datalist-inputs">Listas de informacion</h3>
+    <p>
+      Se usan las etiquetas <b>datalist</b> y <b>option</b>, para hacer una lista de posibles opciones para el usuario en el momento de usar un input<br>
+      <b>datalist</b> debe tener un atributo <b>id</b>, para poder ser usado en un input se debe incluir el atributo <b>list</b> y el valor va a ser el <b>id</b> de la lista <br>
+      Ahora dentro de datalist, va a ir la etiqueta <b>option</b>, estas van a tener los diferentes valores que podria elegir un usuario, para determinar estos valores, debemos usar algunos atributos <br>
+      los atributos importantes de object son: <b>value="valor"</b>, define el valor que va a tener el input cuando se haga submit del formulario, si este se llega a omitir, se reemplazara con el texto del elemento  <br>
+      <b>label="valor"</b>, es un texto que muestra el valor de la opcion, si esta no se define se cambiara por el texto del elemento o el valor del <b>value</b> <br>
+      <b>selected</b>, define una opcion elegida inicialmente. <b>disabled</b>, impide que el objeto no sea posible elegirlo, pero el navegador lo mostrara de una forma diferente a los demas objetos <br>
+      Ejemplo de datalist y object: <br>
+    </p>
+    <input type="text" list="datalist">
+    <datalist id="datalist">
+      <option value="Perro">Hello</object>
+      <option value="Perro">
+      <option value="Perro" label="Gato">
+    </datalist>
+    <!--  -->
+    
     </body>
 </html>
