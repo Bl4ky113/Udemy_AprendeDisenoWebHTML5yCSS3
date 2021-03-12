@@ -1,0 +1,125 @@
+/* Reset the Style Sheets */
+body, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
+
+/* Variables in the StyleSheet */
+:root {
+ --blue: #66b6ff;
+ --lightblue: #b3daff;
+ --darkblue: #0084ff;
+}
+
+
+/* ---- Header Style ---- */ 
+.header {
+ width: 95%;
+
+ margin: 20px auto;
+ border-radius: 0.5em;
+ padding: 20px;
+
+ background-color: var(--blue);
+
+ font-family: 'Montserrat', sans-serif;
+
+ display: flex;
+ flex-flow: column wrap;
+ justify-content: center;
+}
+
+/* Titulo del Header */
+.header__title {
+ width: 60%;
+
+ border-radius: 0.25em;
+ padding: 10px;
+
+ color: white;
+ font-size: 36px;
+
+ background-color: var(--darkblue);
+}
+
+/* ---- Navigation Menu ---- */
+.nav {
+ width: 50%;
+
+ margin: 5px 30px;
+ border: 5px outset var(--darkblue);
+ border-radius: 1em;
+ padding: 10px;
+
+ font-family: 'Montserrat', sans-serif;
+}
+
+/* Nav Title */
+.nav__title {
+ margin: 5px;
+ border-radius: 0.5em;
+ padding: 15px;
+
+ background-color: var(--lightblue);
+}
+
+/* List in the Navigation */
+
+.navList {
+ width: 80%;
+
+ margin: 0 auto; 
+ border: 2px outset var(--darkblue);
+ border-radius: 0.5em;
+ padding: 5px;
+}
+
+/* Objects in List in the Nav */
+.navList__object {
+ margin: 5px;
+
+ list-style-position: inside;
+}
+/* marker in the object */
+.navList__object::marker {
+ color: var(--darkblue);
+ font-weight: 800;
+}
+
+/* Links in the object */
+.navList__object a {
+ color: darkblue;
+ font-weight: 400;
+ text-decoration: none;
+}
+.navList__object a:hover {
+ color: var(--darkblue);
+ text-decoration: underline var(--blue);
+}
+
+/* -- SubLists in the Lists -- */
+
+.navList ol {
+ margin: 5px;
+ padding-left: 25px;
+}
+
+/* Objects in SubList in the Lists */
+.navList ol li {
+ margin: 2px;
+
+ list-style-position: inside;
+}
+/* marker in the object */
+.navList ol li::marker {
+ color: var(--darkblue);
+ font-weight: 600;
+}
+
+/* Link in the Sublist */
+.navList ol li a {
+ color: darkblue;
+ font-weight: 400;
+ text-decoration: none;
+}
+.navList ol li a:hover {
+ color: var(--darkblue);
+ text-decoration: underline var(--blue);
+}
