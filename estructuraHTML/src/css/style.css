@@ -136,6 +136,8 @@ body, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
  border-right: 5px solid var(--blue);
  border-radius: 0.5em;
  padding: 20px;
+
+ font: 500 16px 'Montserrat', sans-serif;
 }
 
 /* Titles in the Article */
@@ -149,6 +151,29 @@ body, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
  color: white;
  font-size: 28px;
  font-family: 'Montserrat', sans-serif;
+}
+
+/* Paragraphs in the Article */
+.article p {
+ width: 95%;
+
+ margin: 5px auto;
+ padding: 15px; 
+}
+
+/* Lists in the Article */
+.article ol, .article ul {
+ margin: 5px;
+ margin-inline-start: 10%;
+ border-left: 2px solid var(--darkblue);
+ padding-inline-start: 10px;
+
+ list-style-position: inside;
+}
+
+/* Markers in the List Objects */
+.article ol li::marker, .article ul li::marker {
+ color: var(--darkblue);
 }
 
 /* - Section in the Article - */
