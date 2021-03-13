@@ -54,10 +54,11 @@ body, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
 /* Nav Title */
 .nav__title {
  margin: 5px;
- border-radius: 0.5em;
+ border-radius: 0.25em;
  padding: 15px;
 
- background-color: var(--lightblue);
+ background-color: var(--blue);
+ color: white;
 }
 
 /* List in the Navigation */
@@ -122,4 +123,53 @@ body, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
 .navList ol li a:hover {
  color: var(--darkblue);
  text-decoration: underline var(--blue);
+}
+
+/* ---- Main ---- */
+
+/* --- Articles --- */
+.article {
+ width: 85%;
+
+ margin: 10px auto;
+ border-left: 5px solid var(--blue);
+ border-right: 5px solid var(--blue);
+ border-radius: 0.5em;
+ padding: 20px;
+}
+
+/* Titles in the Article */
+.article__title {
+ margin: 10px auto;
+ border-radius: 0.25em;
+ padding: 10px;
+
+ background-color: var(--blue);
+
+ color: white;
+ font-size: 28px;
+ font-family: 'Montserrat', sans-serif;
+}
+
+/* - Section in the Article - */
+.article .section {
+ width: 90%;
+
+ margin: 10px auto;
+ border-left: 1px solid var(--blue);
+ border-right: 1px solid var(--blue);
+ padding: 15px;
+}
+
+/* Titles in the Section */
+.article .section__title {
+ margin: 10px auto;
+ border-radius: 0.25em;
+ padding: 10px;
+
+ background-color: var(--blue);
+
+ color: white;
+ font-size: 24px;
+ font-family: 'Montserrat', sans-serif;
 }
