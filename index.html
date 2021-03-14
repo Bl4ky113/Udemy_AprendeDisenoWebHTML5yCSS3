@@ -158,6 +158,7 @@
       <h2 class="nav__title">Canvas</h2>
       <ol class="navList"> 
         <li class="navList__object"><a href="#QueEs-canvas">¿Que es Canvas?</a></li>
+        <li class="navList__object"><a href="#Usar-canvas">Usar Canvas</a></li>
       </ol>
     </nav>
 
@@ -1767,58 +1768,83 @@
             <option value="Perro" label="Gato">
           </datalist>
         </section>
+      </article>
 
-        <!-- Canvas -->
-        <article class="article">
-          <h3 class="article__title" id="QueEs-canvas">¿Que es Canvas?</h3>
+      <!-- Canvas -->
+      <article class="article">
+        <h3 class="article__title" id="QueEs-canvas">¿Que es Canvas?</h3>
+        <p>
+          Es una <em>API</em> que funciona para dibujar graficos, composiciones de fotos, animaciones o aplicaciones, generalmente usando <em>JavaScript</em>.
+          De hecho canvas viene a sustituir tecnologias como <em>Flash Media</em> y otras. 
+        </p>
+        <p>
+          Para tener un mejor uso de <strong>canvas</strong>, tenemos que saber que <strong>canvas</strong> usa un sistema de coordenadas como el plano cartesiano.
+          Este inicia en la esquina superior de la izquierda. Dando como marca el punto (0,0), 0 en el eje <em>X</em> y 0 en el eje <em>Y</em>.
+        </p>
+      </article>
+      
+      <article class="article">
+        <h3 class="article__title" id="Usar-canvas">Usar Canvas</h3>
           <p>
-            Es una <em>API</em> que funciona para dibujar graficos, composiciones de fotos, animaciones o aplicaciones, generalmente usando <em>JavaScript</em>.
-            De hecho canvas viene a sustituir tecnologias como <em>Flash Media</em> y otras. 
+            Para usar Canvas debemos usar la etiquta <strong>canvas</strong>, este no se va a ver nada, ya que no tiene ningun contenido. Por defecto siempre va a
+            tener un ancho y alto, pero siempre le debemos asignar estos datos, ya que algunos navegadores cambian la altura y anchura del canvas por defecto.
           </p>
           <p>
-            Para tener un mejor uso de <strong>canvas</strong>, tenemos que saber que <strong>canvas</strong> usa un sistema de coordenadas como el plano cartesiano.
-            Este inicia en la esquina superior de la izquierda. Dando como marca el punto (0,0), 0 en el eje <em>X</em> y 0 en el eje <em>Y</em>.
+            Vamos a poder ser un artista como un lienzo, pero no usando un pincel si no <em>JavaScript</em>, este lo vamos a agregar a el documento de <em>html</em>. 
+            Ya sea escribiendolo en la etiqueta o usando un archivo externo.
           </p>
-        </article>
-        
-        <article class="article">
-          <h3 class="article__title" id="Usar-canvas">Usar Canvas</h3>
-            <p>
-              Para usar Canvas debemos usar la etiquta <strong>canvas</strong>, este no se va a ver nada, ya que no tiene ningun contenido. Por defecto siempre va a
-              tener un ancho y alto, pero siempre le debemos asignar estos datos, ya que algunos navegadores cambian la altura y anchura del canvas por defecto.
-            </p>
-            <p>
-              Vamos a poder ser un artista como un lienzo, pero no usando un pincel si no <em>JavaScript</em>, este lo vamos a agregar a el documento de <em>html</em>. 
-              Ya sea escribiendolo en la etiqueta o usando un archivo externo.
-            </p>
-            <p>
-              vamos a reconocer el canvas en JavaScript usando el artibuto <em>id=""</em>, creando una variable y obteniendo el <em>ID</em> del canvas.
-            </p>
+          <p>
+            vamos a reconocer el canvas en JavaScript usando el artibuto <em>id=""</em>, creando una variable y obteniendo el <em>ID</em> del canvas.
+          </p>
+          <code>
+            let canvas = document.getElementById("idCanvas"); //Se identifica y obtiene el Canvas por su Id.
+          </code>
+          <p>
+            Listo ahora necesitamos un "lapiz" virtual, para poder dibujar en el canvas. Para eso lo creamos dandole un contexto de dibujo a el canvas, generalmente 2d.
+            Casí siempre se le va a llamar a el "lapiz" <em>ctx</em>.
+          </p>
+          <code>
+            let ctx = canvas.getContext("2d") //Se le da un tipo de dibujo en 2d a el Canvas.
+          </code>
+          <p>
+            Para darle un uso sencillo, vamos a usar el sistema de coordenadas para hacer un rectangulo, primero llamamos el pincel, usamos la funcion para hacer 
+            rectangulos y agregamos nuestras coordenadas de la siguiente forma: (X inicial, Y inicial, Tamaño de X, Tamaño de Y). En las coordenadas iniciales son donde van a 
+            iniciar el rectangulo y en las finales, que tanto crecera el rectangulo.
+          </p>
+          <code>
+            ctx.fillRect(0, 0, 50, 50);
+          </code>
+          <p>
+            Ejemplo Sencillo del canvas
+          </p>
+          <canvas id="canvas-ejemplo" width="100" height="100"></canvas>
+
+          <!-- Ejemplo Complejo de Canvas-->
+          <section class="section">
+            <h3 class="section__title" id="Usar_EjemploComplejo-canvas">Ejemplo complejo de Canvas</h3>
             <code>
-              let canvas = document.getElementById("idCanvas"); //Se identifica y obtiene el Canvas por su Id.
+              /* Ejemplo complejo del Canvas */ <br>
+              let ctx = document.getElementById("canvas-complejo").getContext("2d"); <br>
+              <br>
+              // Rectangulos Rojos pequeños <br>
+              ctx.fillStyle = "rgba(255, 0, 0, 0.4)"; <br>
+              ctx.fillRect(0, 0, 30, 30); <br>
+              ctx.fillRect(270, 0, 30, 30); <br>
+              ctx.fillRect(0, 270, 30, 30); <br>
+              //Rectangulo Rojo Grande <br>
+              ctx.fillRect(30, 30, 150, 150) <br>
+              <br>
+              //Rectangulos Azules Pequeños <br>
+              ctx.fillStyle = "rgba(0, 0, 255, 0.4)"; <br>
+              ctx.fillRect(270, 270, 30, 30); <br>
+              ctx.fillRect(270, 0, 30, 30); <br>
+              ctx.fillRect(0, 270, 30, 30); <br>
+              //Rectangulo Azul Grande <br>
+              ctx.fillRect(120, 120, 150, 150); <br>
             </code>
-            <p>
-              Listo ahora necesitamos un "lapiz" virtual, para poder dibujar en el canvas. Para eso lo creamos dandole un contexto de dibujo a el canvas, generalmente 2d.
-              Casí siempre se le va a llamar a el "lapiz" <em>ctx</em>.
-            </p>
-            <code>
-              let ctx = canvas.getContext("2d") //Se le da un tipo de dibujo en 2d a el Canvas.
-            </code>
-            <p>
-              Para darle un uso sencillo, vamos a usar el sistema de coordenadas para hacer un rectangulo, primero llamamos el pincel, usamos la funcion para hacer 
-              rectangulos y agregamos nuestras coordenadas de la siguiente forma: (X inicial, Y inicial, X final, Y final). En las coordenadas iniciales son donde van a 
-              iniciar el rectangulo y en las finales, donde terminara.
-            </p>
-            <code>
-              ctx.fillRect(0, 0, 50, 50);
-            </code>
-            <p>
-              Ejemplo del canvas:
-            </p>
-            <canvas id="canvas-ejemplo" width="100" height="100"></canvas>
-            
-          </h3>
-        </article>
+            <canvas id="canvas-complejo" width="300" height="300"></canvas>
+          </section>
+      </article>
     </main>
     <script src="./src/js/canvas.js"></script>
   </body>
