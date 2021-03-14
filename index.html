@@ -159,6 +159,10 @@
       <ol class="navList"> 
         <li class="navList__object"><a href="#QueEs-canvas">¿Que es Canvas?</a></li>
         <li class="navList__object"><a href="#Usar-canvas">Usar Canvas</a></li>
+        <ol>
+          <li><a href="#Usar_EjemploComplejo-canvas">Ejemplo Complejo</a></li>
+        </ol>
+        <li class="navList__object"><a href="#Figuras-canvas">Figuras para usar en Canvas</a></li>
       </ol>
     </nav>
 
@@ -1844,6 +1848,59 @@
             </code>
             <canvas id="canvas-complejo" width="300" height="300"></canvas>
           </section>
+      </article>
+
+      <!-- Figuras en el Canvas -->
+      <article class="article">
+        <h3 class="article__title" id="Figuras-canvas">Diferentes Figuras en Canvas</h3>
+        <p>
+          En canvas podemos usar algunas funciones ya hechas para poder tener diferentes figuras. Aún que la mayoria de estas son rectangulos o cuadrados.
+        </p>
+
+        <!-- Rectangulo Relleno -->
+        <section class="section">
+          <h3 class="section__title" id="Figuras_RectanguloRelleno-canvas">Rectangulo Relleno</h3>
+          <p>
+            Se usa para crear un rectangulo relleno, en sus parametros vamos a poner la coordenada <em>X</em> donde va a iniciar el rectangulo, la 
+            coordenada <em>Y</em> donde va a iniciar el rectangulo. Y que tan grande va a ser el rectangulo en el eje <em>X</em> y en el eje <em>Y</em>.
+            (Xinicial, Yinicial, Xtamaño, Ytamaño). Ejemplo:
+          </p>
+          <code>
+            // Dibujar el Rectangulo <br>
+            rectanguloRelleno.fillRect(10, 10, 90, 90); <br>
+          </code>
+          <canvas id="canvas-rectangulorelleno" width="100" height="100"></canvas>
+        </section>
+
+        <!-- Rectangulo Vacio -->
+        <section class="section">
+          <h3 class="section__title" id="Figuras_RectanguloVacio-canvas">Rectangulo Vacio</h3>
+          <p>
+            Es lo mismo que el rectangulo anterior, pero este eliminara o borrara espacios con el tamaño de un rectangulo. Muy bueno usarlo dentro de rectangulos rellenos,
+            para dar diferentes formas en el canvas.
+          </p>
+          <code>
+            //Dibujar un Rectangulo <br>
+            ctx.fillRect(10, 10, 80, 80); <br>
+            //Eliminar parte el Rectangulo <br>
+            ctx.clearRect(20, 20, 60, 60); <br>
+          </code>
+          <canvas id="canvas-rectangulovacio" width="100" height="100"></canvas>
+        </section>
+
+        <!-- Bordes de un Recntagulo -->
+        <section class="section">
+          <h3 class="section__title" id="Figuras_RectanguloBorde-canvas">Rectangulo Con Bordes</h3>
+          <p>
+            Con esta se puede crear rectangulos que tengan sus propios bordes, evitando que tengamos que hacer un rectangulo y depues quitarle parte de este. 
+            Se puede cambiar el ancho, color y otros del borde. Pero esto lo vamos a ver más tarde. Mientras tanto, tiene los mismos parametros que las 
+            funciones anteriores, por lo tanto no debería ser tan dificil de manejar.
+          </p>
+          <code>
+
+          </code>
+          <canvas id="canvas-rectanguloborde" width="100" height="100"></canvas>
+        </section>
       </article>
     </main>
     <script src="./src/js/canvas.js"></script>
