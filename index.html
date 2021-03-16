@@ -163,6 +163,12 @@
           <li><a href="#Usar_EjemploComplejo-canvas">Ejemplo Complejo</a></li>
         </ol>
         <li class="navList__object"><a href="#Figuras-canvas">Figuras para usar en Canvas</a></li>
+        <ol>
+          <li><a href="#Figuras_RectaguloRelleno-canvas">Rectangulo Relleno</a></li>
+          <li><a href="#Figuras_RectanguloVacio-canvas">Rectangulo Vacio</a></li>
+          <li><a href="#Figuras_RectanguloBorde-canvas">Rectangulo Con Bordes</a></li>
+        </ol>
+        <li class="navList__object"><a href="#PropiasFiguras-canvas">Tus Propias Figuras en Canvas</a></li>
       </ol>
     </nav>
 
@@ -1901,6 +1907,51 @@
           </code>
           <canvas id="canvas-rectanguloborde" width="100" height="100"></canvas>
         </section>
+      </article>
+      <article class="article">
+        <h2 class="article__title" id="PropiasFiguras-canvas">Crear o Hacer otras Figuras.</h2>
+        <p>
+          Para hacer nuestras propias figuras debemos ussar varias funciones para esto. Primero vamos a crear el 
+          lapiz, ya antes mencionado, con:
+        </p>
+        <code>
+          let canvas = document.getElementById("id-canvas");
+          let ctx = getContext("2d");
+        </code>
+        <p>
+          Como lo hacemos en la vida real, vamos a iniciar un trazo para hacer una recta o segmento.
+        </p>
+        <code>
+          ctx.beginPath();
+        </code>
+        <p>
+          Vamos a mover el lapiz a las <em>coordenadas</em> que necesitemos.
+        </p>
+        <code>
+          ctx.moveTo(Xi, Yi);
+        </code>
+        <p>
+          Y vamos a trazar el segmento, dando las <em>coordenadas</em> a donde este segmento vaya a ir.
+        </p>
+        <code>
+          ctx.lineTo(Xf, Yf);
+        </code>
+        <p>
+          Despues de haber hecho todos los segmentos necesarios, vamos a cerrar el trazo para evitar problemas con futuros trazos.
+        </p>
+        <code>
+          ctx.closePath();
+        </code>
+        <p>
+          Pero ojo, que en el canvas se va a hacer todo el trazo, pero no se mostrara. Para esto podemos rellenarlo & darle un borde. 
+        </p>
+        <code>
+          // Rellernarlo <br>
+          ctx.fill(); <br>
+          // Darle un Borde <br>
+          ctx.stoke(); <br>
+        </code>
+        <canvas id="canvas-triangulo" width="100" height="100"></canvas>
       </article>
     </main>
     <script src="./src/js/canvas.js"></script>

@@ -49,3 +49,30 @@ let rectanguloBorde = document.getElementById("canvas-rectanguloborde").getConte
 
 // Dibujar el rectangulo bordeado
 rectanguloBorde.strokeRect(20, 20, 60, 60);
+
+/* -- Ejemplo Propias Figuras (Triangulo) -- */
+
+let triangulo = document.getElementById("canvas-triangulo").getContext("2d");
+
+
+// Iniciar el trazo
+triangulo.beginPath();
+// Hacer el triangulo relleno
+triangulo.moveTo(10, 10);
+triangulo.lineTo(80, 10);
+triangulo.lineTo(10, 80);
+triangulo.lineTo(10, 10);
+triangulo.fill();
+// Cerrar el trazo
+triangulo.closePath();
+
+// Iniciar el trazo
+triangulo.beginPath();
+// Hacer el triangulo con borde
+triangulo.moveTo(90, 90);
+triangulo.lineTo(20, 90);
+triangulo.lineTo(90, 20);
+triangulo.lineTo(90, 90);
+triangulo.stroke();
+// Cerrar el trazo
+triangulo.closePath();
