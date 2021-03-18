@@ -54,7 +54,6 @@ rectanguloBorde.strokeRect(20, 20, 60, 60);
 
 let triangulo = document.getElementById("canvas-triangulo").getContext("2d");
 
-
 // Iniciar el trazo
 triangulo.beginPath();
 // Hacer el triangulo relleno
@@ -76,3 +75,24 @@ triangulo.lineTo(90, 90);
 triangulo.stroke();
 // Cerrar el trazo
 triangulo.closePath();
+
+/* -- Styles en Canvas -- */
+
+/* fillStyle Color */
+
+let rellenarColor = document.getElementById("canvas-rellenarColor").getContext("2d");
+
+//Rellenar con el Color en un Rect.
+rellenarColor.fillStyle = "#d03";
+rellenarColor.fillRect(10, 10, 40, 40);
+
+// Rellenar con el Color en una figura
+rellenarColor.beginPath();
+rellenarColor.moveTo(90, 90);
+rellenarColor.lineTo(40, 90);
+rellenarColor.lineTo(65, 65);
+rellenarColor.lineTo(90, 90);
+rellenarColor.fillStyle = "#aa02df";
+rellenarColor.fill();
+rellenarColor.closePath();
+
