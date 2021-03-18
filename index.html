@@ -1994,6 +1994,33 @@
           </code>
           <canvas id="canvas-bordeColor" width="100" height="100"></canvas>
         </section>
+
+        <!-- Styles en los Strokes -->
+        <section class="section">
+          <h3 class="section__title">Styles de los Bordes & Lineas</h3>
+          <p>
+            Se puede dar diferentes cambios a el Style a las Lineas o bordes de las figuras, estas son:
+          </p>
+          <ul>
+            <li>
+              <b>ctx.lineWidth = <"Número">;</b> <br>
+              Define el ancho de la linea o del borde. Medida en <em>px</em> o pixeles.
+            </li>
+            <li>
+              <b>ctx.lineCap = butt || round || square;</b> <br>
+              Define el style del final de la linea, ya sea redondeada, cuadrada o con un cuadrado al final.
+            </li>
+            <li>
+              <b>ctx.lineJoin  = bevel || round || miter;</b> <br>
+              Define el Style de los vertices entre dos lineas, ya sea plano, redondeado o cuadrado.
+            </li>
+            <li>
+              <b>ctx.miterLimit = <"Número"></b> <br>
+              Define el limite de radio que tienen los vertices entre dos lineas, generalmente 10 es el predeterminado.
+            </li>
+          </ul>
+          <canvas id="canvas-lineStyle" width="500" height="100"></canvas>
+        </section>
       </article>
     </main>
     <script src="./src/js/canvas.js"></script>
