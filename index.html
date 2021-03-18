@@ -1962,14 +1962,15 @@
         <h2 class="article__title">Styles en Canvas</h2>
         <p>
           Para agregarle un style a nuestro canvas, podemos usar diferentes cosas desde colores, anchos de lineas, entre otros.
+          Estos Styles deben ser declarados antes de ser usados en las diferentes acciones que hay, estas pueden ser desde los bordes
+          o rellenos.
         </p>
         
         <!-- Color de Relleno -->
         <section class="section">
           <h3 class="section__title">Color de Relleno</h3>
           <p>
-            Este se usa para las figuras rellenadas, ya sea con <strong>"fillRect()"</strong> o <strong>"fill()"</strong>, debe 
-            ser puesto el style antes de rellenar la figura o esta no va a hacer efecto. 
+            Este se usa para las figuras rellenadas, ya sea con <strong>"fillRect()"</strong> o <strong>"fill()"</strong>.
             En esta función se puede poner cualquier color de <strong>CSS</strong> o un <em>Canvas Graident</em>, <em>Canvas Pattern</em>.
           </p>
           <code>
@@ -1979,7 +1980,20 @@
           <canvas id="canvas-rellenarColor" width="100" height="100"></canvas>
         </section>
 
-        
+        <!-- Color de Stroke -->
+        <section class="section">
+          <h3 class="section__title">Color del Borde</h3>
+          <p>
+            Este se usa para las figuras que tienen borde, ya sea con <strong>"strokeRect()"</strong> o <strong>"stroke()"</strong>.
+            En esta función se puede usar cualquier color de <strong>CSS</strong> o un <em>Cavas Graident</em>, <em>Canvas Pattern</em>.
+            Talvez no se note un poco el borde, pero para poder cambiar el style del Borde también existen diferentes Styles.
+          </p>
+          <code>
+            // Colear el Borde <br>
+            ctx.strokeStyle = <"Color"> <br>
+          </code>
+          <canvas id="canvas-bordeColor" width="100" height="100"></canvas>
+        </section>
       </article>
     </main>
     <script src="./src/js/canvas.js"></script>

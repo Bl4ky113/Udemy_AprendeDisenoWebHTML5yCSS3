@@ -82,7 +82,7 @@ triangulo.closePath();
 
 let rellenarColor = document.getElementById("canvas-rellenarColor").getContext("2d");
 
-//Rellenar con el Color en un Rect.
+// Rellenar con el Color en un Rect.
 rellenarColor.fillStyle = "#d03";
 rellenarColor.fillRect(10, 10, 40, 40);
 
@@ -96,3 +96,20 @@ rellenarColor.fillStyle = "#aa02df";
 rellenarColor.fill();
 rellenarColor.closePath();
 
+/* strokeStyle Color */
+
+let borderColor = document.getElementById("canvas-bordeColor").getContext("2d");
+
+// Colorear el borde de un Rect
+borderColor.strokeStyle = "#03ee01";
+borderColor.strokeRect(10, 10, 40, 40);
+
+// Colorear el borde de una figura
+borderColor.beginPath();
+borderColor.moveTo(90, 90);
+borderColor.lineTo(30, 90);
+borderColor.lineTo(60, 60);
+borderColor.lineTo(90, 90)
+borderColor.strokeStyle = "#eeee00";
+borderColor.stroke();
+borderColor.closePath();
