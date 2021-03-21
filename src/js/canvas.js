@@ -175,3 +175,18 @@ lineStyle.lineCap = "butt";
 lineStyle.lineJoin = "miter";
 lineStyle.miterLimit = 25;
 lineStyle.stroke();
+
+
+/* -- Gradiantes en Canvas -- */
+
+let gradiante = document.getElementById("canvas-gradiante");
+let gradianteContext = gradiante.getContext("2d");
+
+// Crear una gradiante
+let colorGradiante = gradianteContext.createLinearGradient(0, 0, 0, gradiante.height);
+colorGradiante.addColorStop(0, "#000");
+colorGradiante.addColorStop(1, "#fff");
+
+// Fondo con un rectangulo
+gradianteContext.fillStyle = colorGradiante;
+gradianteContext.fillRect(0, 0, gradiante.width, gradiante.height)

@@ -175,6 +175,7 @@
           <li><a href="#Styles_ColorBorde-canvas">Bordes de Colores</a></li>
           <li><a href="#Styles_Bordes-canvas">Styles de Bordes & Lineas</a></li>
         </ol>
+        <li class="navList__object"><a href="#Gradiante-canvas">Gradiantes en Canvas</a></li>
       </ol>
     </nav>
 
@@ -2027,6 +2028,47 @@
           </ul>
           <canvas id="canvas-lineStyle" width="500" height="100"></canvas>
         </section>
+      </article>
+
+      <!-- Gradiantes en Canvas -->
+      <article class="article">
+        <h2 class="article__title" id="Gradiante-canvas">Gradiantes en Canvas</h2>
+        <p>
+          Estos son colores que se le pueden aplicar a las figuras del Canvas. Para realizarlos, debemos crear una variable para 
+          la gradiante, existen diferentes tipos para crear una gradiante, esta es en una sola linea. Como si fuera una linea, nos va 
+          a pedir los siguientes parametros:
+        </p>
+        <ul>
+          <li>X inicial</li>
+          <li>Y inicial</li>
+          <li>X Final</li>
+          <li>Y Final</li>
+        </ul>
+        <p>
+          Generalmente queremos que nuestra gradiante ocupe todo el canvas, para eso podemos usar unos valores de la variable de canvas, para 
+          usarlos acá: canvas.height y canvas.width, nos va a dar respectivamente el alto y ancho del objecto. <strong>Ojo, este truco solo func
+          funciona si tienen un objecto con el elemento del canvas, no si lo tienes ya hecho con context, tampoco se puede hacer si no tienes una
+          anchura y altura ya puesta, ya que se toma el valor de los atributos, más no del canvas en general</strong>
+        </p>
+        <code>
+          let grandiante = ctx.createLinearGradient(xi, yi, xf, yf); <br>
+        </code>
+        <p>
+          Despues vamos a formar nuestra gradiante, esta debe tenre 2 colores, uno al iniciar y otro al terminar, la funcion que vamos a
+          usar va a pedir 2 parametros sencillos, el número del color (0 = inicio; 1 = final) y el color de CSS para usarlo.
+        </p>
+        <code>
+          gradiante.addColorStop(0, black); <br>
+          gradiante.addColorStop(1, white); <br>
+        </code>
+        <p>
+          Listo! ahora podemos usar nuestra gradiante como si fuera un color. Yo lo voy a usar para colorear un cuadrado que ocupe todo el canvas
+        </p>
+        <code>
+          ctx.fillStyle = grandiante; <br>
+          ctx.fillRect(0, 0, canvas.width, canvas.height); <br>
+        </code>
+        <canvas id="canvas-gradiante" width="200" height="200"></canvas>
       </article>
     </main>
     <script src="./src/js/canvas.js"></script>
