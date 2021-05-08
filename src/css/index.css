@@ -8,165 +8,189 @@ body, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
  --darkblue: #0084ff;
 }
 
+.wrapper {
+ display: grid;
+
+ grid-template-areas: "header  header  header"
+                      "content content nav"
+                      "footer  footer  footer";
+ grid-gap: 1em;
+}
+
 
 /* ---- Header Style ---- */ 
 .header {
  width: 95%;
 
- margin: 20px auto;
+ margin: 0.5em auto;
  border-radius: 0.5em;
- padding: 20px;
+ padding: 1em;
 
  background-color: var(--blue);
 
- font-family: 'Montserrat', sans-serif;
+ grid-area: header;
 
  display: flex;
- flex-flow: column wrap;
+
+ flex-flow: row wrap;
  justify-content: center;
+ align-items: baseline;
 }
 
 /* Titulo del Header */
-.header__title {
- width: 60%;
-
+.header .header__title {
+ margin: 0 0.5em;
  border-radius: 0.25em;
- padding: 10px;
+ padding: 0.6em 3em;
 
  color: white;
- font-size: 36px;
+ font: 800 1.5em 'Montserrat', sans-serif;
 
  background-color: var(--darkblue);
 }
 
+/* Texto junto a el Titulo */
+.header .header__text {
+ color: white;
+ font: 600 1.2em 'Montserrat', sans-serif;
+ text-decoration: underline solid var(--lightblue) 0.15em;
+}
+
 /* ---- Navigation Menu ---- */
 .nav {
- width: 50%;
+ margin-right: 1em;
+ border-left: 0.2em solid var(--darkblue);
+ border-bottom: 0.2em solid var(--darkblue);
+ padding: 0.6em 0.6em 1.5em 0.6em;
 
- margin: 5px 30px;
- border: 5px outset var(--darkblue);
- border-radius: 1em;
- padding: 10px;
-
- font-family: 'Montserrat', sans-serif;
+ grid-area: nav;
+ align-self: start;
 }
 
 /* Nav Title */
-.nav__title {
- margin: 5px;
+.nav .nav__title {
+ margin: 0.5em 0.5em 0 0.5em;
  border-radius: 0.25em;
- padding: 15px;
+ padding: 1em;
 
  background-color: var(--blue);
  color: white;
+ font: 600 1.1em 'Montserrat', sans-serif;
+ text-decoration: underline solid var(--lightblue) 0.15em;
 }
 
 /* List in the Navigation */
 
-.navList {
- width: 80%;
-
- margin: 0 auto; 
- border: 2px outset var(--darkblue);
- border-radius: 0.5em;
- padding: 5px;
+.navList { 
+ margin: 0 1em;
+ border-left: 0.2em solid var(--blue);
+ border-bottom: 0.2em solid var(--blue);
+ padding: 0.25em 0.25em 0.5em 0.25em;
 }
 
 /* Objects in List in the Nav */
-.navList__object {
- margin: 5px;
+.navList .navList__object {
+ margin: 0.2em;
 
  list-style-position: inside;
 }
 /* marker in the object */
 .navList__object::marker {
- color: var(--darkblue);
- font-weight: 800;
+ color: var(--blue);
+ font: 800 1.1em 'Montserrat', sans-serif;
 }
 
 /* Links in the object */
 .navList__object a {
- color: darkblue;
- font-weight: 400;
+ color: black;
+ font: 500 1em 'Montserrat', sans-serif;
  text-decoration: none;
 }
 .navList__object a:hover {
- color: var(--darkblue);
+ color: var(--blue);
  text-decoration: underline var(--blue);
 }
 
 /* -- SubLists in the Lists -- */
 
 .navList ol {
- margin: 5px;
- padding-left: 25px;
+ margin: 0 1em 0.25em 1em;
+ border-left: 0.2em solid var(--blue);
+ border-bottom: 0.2em solid var(--blue);
+ padding: 0.25em 0.25em 0.5em 0.5em;
 }
 
 /* Objects in SubList in the Lists */
 .navList ol li {
- margin: 2px;
+ margin: 0.2em;
 
  list-style-position: inside;
 }
 /* marker in the object */
 .navList ol li::marker {
- color: var(--darkblue);
- font-weight: 600;
+ color: var(--blue);
+ font: 800 1.1em 'Montserrat', sans-serif;
 }
 
 /* Link in the Sublist */
 .navList ol li a {
- color: darkblue;
- font-weight: 400;
+ color: black;
+ font: 500 1em 'Montserrat', sans-serif;
  text-decoration: none;
 }
 .navList ol li a:hover {
- color: var(--darkblue);
+ color: var(--blue);
  text-decoration: underline var(--blue);
 }
 
 /* ---- Main ---- */
 
+.main {
+ grid-area: content;
+}
+
 /* --- Articles --- */
 .article {
- width: 85%;
+ width: 90%;
 
- margin: 10px auto;
- border-left: 5px solid var(--blue);
- border-right: 5px solid var(--blue);
+ margin: 0 auto 0.8em auto;
+ border-left: 0.2em solid var(--blue);
+ border-right: 0.2em solid var(--blue);
  border-radius: 0.5em;
- padding: 20px;
+ padding: 1em;
 
- font: 500 16px 'Montserrat', sans-serif;
 }
 
 /* Titles in the Article */
 .article__title {
- margin: 10px auto;
+ margin: 0.25em auto;
  border-radius: 0.25em;
- padding: 10px;
-
+ padding: 0.5em;
+ 
  background-color: var(--blue);
 
  color: white;
- font-size: 28px;
- font-family: 'Montserrat', sans-serif;
+ font: 800 1.5em 'Montserrat', sans-serif;
 }
 
 /* Paragraphs in the Article */
 .article p {
  width: 95%;
 
- margin: 5px auto;
- padding: 15px; 
+ margin: 0.3em auto;
+ padding: 1em; 
+
+ font: 500 1em 'Montserrat', sans-serif;
 }
 
 /* Lists in the Article */
 .article ol, .article ul {
- margin: 5px;
- margin-inline-start: 10%;
- border-left: 2px solid var(--darkblue);
- padding-inline-start: 10px;
+ width: 85%;
+
+ margin: 0.25em;
+ margin-left: 2em;
+ border-left: 0.18em solid var(--darkblue);
+ padding-inline-start: 0.5em;
 
  list-style-position: inside;
 }
@@ -174,27 +198,59 @@ body, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
 /* Markers in the List Objects */
 .article ol li::marker, .article ul li::marker {
  color: var(--darkblue);
+ font: 800 1.2em 'Montserrat', sans-serif;
+}
+
+/* List objects */
+
+.article ol li, .article ul li {
+ color: black;
+ font: 500 1em 'Montserrat', sans-serif;
+}
+
+/* Titles on the list objects */ 
+.article ol li h4 , .article ul li h4 {
+ color: var(--darkblue);
+ font: 700 1em 'Montserrat', sans-serif;
+ 
+ display: inline-block;
+}
+
+/* Code demonstrations in the articles and sections */
+code {
+ width: 90%;
+
+ margin: 0.5em;
+ border-left: 0.25em solid var(--darkblue);
+ border-radius: 0.25em;
+ padding: 1em;
+
+ background-color: #333;
+
+ color: white;
+ font: 600 0.8em 'montserrat', sans-serif;
+
+ display: block;
 }
 
 /* - Section in the Article - */
 .article .section {
  width: 90%;
 
- margin: 10px auto;
- border-left: 1px solid var(--blue);
- border-right: 1px solid var(--blue);
- padding: 15px;
+ margin: 0.5em auto;
+ border-left: 0.125em solid var(--blue);
+ border-right: 0.125em solid var(--blue);
+ padding: 1em;
 }
 
 /* Titles in the Section */
 .article .section__title {
- margin: 10px auto;
+ margin: 0.75em auto;
  border-radius: 0.25em;
- padding: 10px;
+ padding: 0.5em;
 
  background-color: var(--blue);
 
  color: white;
- font-size: 24px;
- font-family: 'Montserrat', sans-serif;
+ font: 800 1.6em 'Montserrat', sans-serif;
 }
