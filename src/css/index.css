@@ -187,7 +187,7 @@ body, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
 .article ol, .article ul {
  width: 85%;
 
- margin: 0.25em;
+ margin: 0.5em;
  margin-left: 2em;
  border-left: 0.18em solid var(--darkblue);
  padding-inline-start: 0.5em;
@@ -201,6 +201,17 @@ body, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
  font: 800 1.2em 'Montserrat', sans-serif;
 }
 
+/* Titles on the list */ 
+.article ol h4 , .article ul h4 {
+ margin: 0 0.25em;
+
+ color: var(--darkblue);
+ font: 700 1em 'Montserrat', sans-serif;
+ text-decoration: underline solid var(--darkblue) 0.15em;
+ 
+ display: inline-block;
+}
+
 /* List objects */
 
 .article ol li, .article ul li {
@@ -208,13 +219,6 @@ body, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
  font: 500 1em 'Montserrat', sans-serif;
 }
 
-/* Titles on the list objects */ 
-.article ol li h4 , .article ul li h4 {
- color: var(--darkblue);
- font: 700 1em 'Montserrat', sans-serif;
- 
- display: inline-block;
-}
 
 /* Code demonstrations in the articles and sections */
 code {
