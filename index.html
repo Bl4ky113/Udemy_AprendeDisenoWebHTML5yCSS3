@@ -2094,6 +2094,81 @@
             Vamos a usar una API, para poder obtener nuestra Geolocalización en Coórdenadas. Para esto simplemente vamos a tener que usar 
             un poco de JavaScript, un lugar donde poner núestras coórdenadas y un botón para que busque y tome nuestras coórdenadas.
           </p>
+          
+          <p>
+            Para hacerla, vamos a usar un button con una función que se active cuando le demos "click".
+          </p>
+          <code class="code">
+            < button  onlick="getLocation();"> "texto del button" < /button >
+          </code>
+          <p>
+            Esto va a ser un iniciador del script, pero vamos a necesitar un lugar donde mostrar las coordenadas. Creando 
+            otra etiqueta con un atributo ID.
+          </p>
+          <code class="code">
+            < p id="location-output"> Texto < /p >
+          </code>
+          <p>
+            Aquí el texto dentro de la etiqueta puede no importar mucho, ya que generalmente vamos a cambiarlo y borrarlo por 
+            otros contenidos.
+          </p>
+          <p>
+            Teniendo todo, ahora vamos a hacer el script. Vamos a inciar por obtener la salida de los datos, que es la 
+            etiqueta p con el atributo ID. Lo que le vamos a decir a el navegador es:
+          </p>
+          <ol>
+            <li>Nombra esta variable "output"</li>
+            <li>Busca en el documento un elemento con el atributo ID "location-output"</li>
+            <li>Este elemento asignalo a la variable "output"</li>
+          </ol>
+          <code class="code">
+            let output = document.getElementById("location-output");
+          </code>
+          <p>
+            Ahora vamos a hacer la funcion con el API de Geolocalización de la siguiente forma.
+          </p>
+          <code class="code">
+            function getLocation () { <br>
+            <br>
+            } <br>
+          </code>
+          <p>
+            Dento de los "brackets", vamos a primero verificar si el navegador soporta el API de geolocalizacion de la siguiente forma:
+          </p>
+          <code class="code">
+            if (navigator.geolocation) { <br>
+              <span style="margin-left: 1em">/* Si sí lo soporta */ <br>
+            } else { <br>
+              <span style="margin-left: 1em">/* Si no lo soporta */ <br>
+            } <br>
+          </code>
+          <p>
+            Ahora si lo soporta vamos a usar la API para que use una funcion y nos devuelva el valor en otra función
+          </p>
+          <code class="code">
+            navigator.geolocation.getCurrentPosition("funcion");
+          </code>
+          <p>
+            Si no lo soporta vamos a escribir en el HTML interno de la salida, que no lo soporta.
+          </p>
+          <code class="code">
+            output.innerHTML = "No soporta la API de geolocalización";
+          </code>
+          <p>
+            En la funcion o una inline-function, que va a tener el valor de nuestras coordenadas, vamos a mostrarla en 
+            el output, ingresando a el objeto de coordenadas y mostrando su latitud y longitud.
+          </p>
+          <code class="code">
+            function "funcion" (posicion) { <br>
+              <span style="margin-left: 1em">output.innerHTML = "Latitud: " + posicion.coords.latitude + <br>
+              <span style="margin-left: 1em">" Longitud: " + posicion.coords.longitud; <br>
+            } <br>
+          </code>
+
+          <p>
+            Como resultado dará este funcionamiento:
+          </p>
+
           <button onclick="getLocation();">Buscar Geolocalización</button>
           <p id="location-output">
             Dalé click a el botón, para obtener tu Geolocalización en Coórdenadas.

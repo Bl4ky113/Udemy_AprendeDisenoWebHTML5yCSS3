@@ -6,7 +6,7 @@ let output = document.getElementById("location-output");
 function getLocation () {
  if (navigator.geolocation) { 
   navigator.geolocation.getCurrentPosition( (position) => {
-   output.innerHTML = "Sus Latitud es:  " + position.coords.latitude + ".<br>" +
+   output.innerHTML = "Su Latitud es:  " + position.coords.latitude + ".<br>" +
                       "Y su Longitud es:  " + position.coords.longitude + ".";
   })
  } else {
