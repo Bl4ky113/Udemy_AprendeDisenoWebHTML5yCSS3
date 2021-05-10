@@ -179,6 +179,12 @@
           </ol>
           <li class="navList__object"><a href="#Gradiante-canvas">Gradiantes en Canvas</a></li>
         </ol>
+
+        <h2 class="nav__title">API Geolocalización</h2>
+        <ol class="navList">
+          <li class="navList__object"><a href="#Coordenadas-apigeo">Geolocalización con Coórdenadas<a></li>
+          <li class="navList__object"><a href="#Mapa-apigeo">Geolocalización en el Mapa</a></li>
+        </ol>
       </nav>
 
       <main class="main">
@@ -2080,8 +2086,22 @@
           </code>
           <canvas id="canvas-gradiante" width="200" height="200"></canvas>
         </article>
+
+        <!-- API de Geolocalización por Coordenadas -->
+        <article class="article">
+          <h2 class="article__title" id="Coordenadas-apigeo">Geolocalización por Coórdenadas</h2>
+          <p>
+            Vamos a usar una API, para poder obtener nuestra Geolocalización en Coórdenadas. Para esto simplemente vamos a tener que usar 
+            un poco de JavaScript, un lugar donde poner núestras coórdenadas y un botón para que busque y tome nuestras coórdenadas.
+          </p>
+          <button onclick="getLocation();">Buscar Geolocalización</button>
+          <p id="location-output">
+            Dalé click a el botón, para obtener tu Geolocalización en Coórdenadas.
+          </p>
+        </article>
       </main>
     </div>
     <script src="./src/js/canvas.js"></script>
+    <script src="./src/js/geolocalizacion.js"></script>
   </body>
 </html>
