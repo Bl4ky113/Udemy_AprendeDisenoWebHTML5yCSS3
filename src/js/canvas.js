@@ -120,8 +120,8 @@ let lineStyle = document.getElementById("canvas-lineStyle").getContext("2d");
 
 // Line Width
 lineStyle.beginPath();
-lineStyle.moveTo(40, 20);
-lineStyle.lineTo(40, 80);
+lineStyle.moveTo(20, 20);
+lineStyle.lineTo(20, 80);
 lineStyle.lineWidth = 10;
 lineStyle.lineCap = "butt";
 lineStyle.stroke();
@@ -129,16 +129,20 @@ lineStyle.closePath();
 
 // Line Cap
 lineStyle.beginPath();
-lineStyle.moveTo(80, 20);
-lineStyle.lineTo(80, 80);
-lineStyle.lineWidth = 5;
+lineStyle.moveTo(40, 20);
+lineStyle.lineTo(40, 80);
+lineStyle.lineWidth = 3;
 lineStyle.lineCap = "round";
 lineStyle.stroke();
 lineStyle.closePath();
 
 // Line Join
 lineStyle.beginPath();
-lineStyle.moveTo(120, 20);
+lineStyle.moveTo(80, 20);
+lineStyle.lineTo(80, 80);
+lineStyle.lineTo(100, 20);
+lineStyle.lineTo(100, 80);
+lineStyle.lineTo(120, 20);
 lineStyle.lineTo(120, 80);
 lineStyle.lineTo(140, 20);
 lineStyle.lineTo(140, 80);
@@ -146,11 +150,7 @@ lineStyle.lineTo(160, 20);
 lineStyle.lineTo(160, 80);
 lineStyle.lineTo(180, 20);
 lineStyle.lineTo(180, 80);
-lineStyle.lineTo(200, 20);
-lineStyle.lineTo(200, 80);
-lineStyle.lineTo(220, 20);
-lineStyle.lineTo(220, 80);
-lineStyle.lineWidth = 5;
+lineStyle.lineWidth = 3;
 lineStyle.lineCap = "round";
 lineStyle.lineJoin = "round";
 lineStyle.stroke();
@@ -158,19 +158,19 @@ lineStyle.closePath();
 
 // Miter Limit
 lineStyle.beginPath();
-lineStyle.moveTo(260, 20);
+lineStyle.moveTo(200, 20);
+lineStyle.lineTo(200, 80);
+lineStyle.lineTo(220, 20);
+lineStyle.lineTo(220, 80);
+lineStyle.lineTo(240, 20);
+lineStyle.lineTo(240, 80);
+lineStyle.lineTo(260, 20);
 lineStyle.lineTo(260, 80);
 lineStyle.lineTo(280, 20);
 lineStyle.lineTo(280, 80);
 lineStyle.lineTo(300, 20);
 lineStyle.lineTo(300, 80);
-lineStyle.lineTo(320, 20);
-lineStyle.lineTo(320, 80);
-lineStyle.lineTo(340, 20);
-lineStyle.lineTo(340, 80);
-lineStyle.lineTo(360, 20);
-lineStyle.lineTo(360, 80);
-lineStyle.lineWidth = 5;
+lineStyle.lineWidth = 3;
 lineStyle.lineCap = "butt";
 lineStyle.lineJoin = "miter";
 lineStyle.miterLimit = 25;
