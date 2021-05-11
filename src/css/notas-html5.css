@@ -297,7 +297,6 @@ html, body {
                       "reference portfolio social";
 
  grid-area: footer;
-
 }
 
 .footer .footer__title { 
@@ -313,6 +312,10 @@ html, body {
 
  grid-area: text;
 }
+
+.portfolio { grid-area: portfolio; }
+.reference { grid-area: reference; }
+.social { grid-area: social; }
 
 .footer-links {
  margin: 0.5em;
@@ -343,6 +346,11 @@ html, body {
 .footer-links .linklist .linklist__object > a {
  color: white;
  font: 400 0.8em 'Montserrat', sans-serif;
+ text-decoration: none;
+}
+
+.footer-links .linklist .linklist__object > a:hover {
+ text-decoration: underline solid var(--dark) 0.15em;
 }
 
 @media screen and (max-width: 750px) {
@@ -353,6 +361,14 @@ html, body {
                        "nav     nav     nav    "
                        "content content content"
                        "footer  footer  footer ";
+ }
+
+ .footer {
+  grid-template-areas: "title     title     title    "
+                       "text      text      text     "
+                       "reference reference reference"
+                       "portfolio portfolio portfolio"
+                       "social    social    social   ";
  }
 }
 
