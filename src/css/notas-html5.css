@@ -1,5 +1,5 @@
 /* Reset the Style Sheets */
-body, p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
+body, p, h1, h2, h3, h4, h5, h6, ul, ol {margin: 0; padding: 0;}
 
 html, body {
  width: 100%;
@@ -10,9 +10,9 @@ html, body {
 
 /* Variables in the StyleSheet */
 :root {
- --blue: #66b6ff;
- --lightblue: #b3daff;
- --darkblue: #0084ff;
+ --base: #66b6ff;
+ --light: #b3daff;
+ --dark: #0084ff;
 }
 
 .wrapper {
@@ -35,7 +35,7 @@ html, body {
  border-radius: 0.5em;
  padding: 1em;
 
- background-color: var(--blue);
+ background-color: var(--base);
 
  grid-area: header;
 
@@ -55,22 +55,22 @@ html, body {
  color: white;
  font: 800 1.5em 'Montserrat', sans-serif;
 
- background-color: var(--darkblue);
+ background-color: var(--dark);
 }
 
 /* Texto junto a el Titulo */
 .header .header__text {
  color: white;
  font: 600 1.2em 'Montserrat', sans-serif;
- text-decoration: underline solid var(--lightblue) 0.15em;
+ text-decoration: underline solid var(--light) 0.15em;
 }
 
 /* ---- Navigation Menu ---- */
 .nav {
  width: 95%;
 
- border-left: 0.2em solid var(--darkblue);
- border-bottom: 0.2em solid var(--darkblue);
+ border-left: 0.2em solid var(--dark);
+ border-bottom: 0.2em solid var(--dark);
  padding: 0.6em 0.6em 1.5em 0.6em;
 
  grid-area: nav;
@@ -83,18 +83,18 @@ html, body {
  border-radius: 0.25em;
  padding: 1em;
 
- background-color: var(--blue);
+ background-color: var(--base);
  color: white;
  font: 600 1.1em 'Montserrat', sans-serif;
- text-decoration: underline solid var(--lightblue) 0.15em;
+ text-decoration: underline solid var(--light) 0.15em;
 }
 
 /* List in the Navigation */
 
 .navList { 
  margin: 0 1em;
- border-left: 0.2em solid var(--blue);
- border-bottom: 0.2em solid var(--blue);
+ border-left: 0.2em solid var(--base);
+ border-bottom: 0.2em solid var(--base);
  padding: 0.25em 0.25em 0.5em 0.25em;
 }
 
@@ -106,7 +106,7 @@ html, body {
 }
 /* marker in the object */
 .navList__object::marker {
- color: var(--blue);
+ color: var(--base);
  font: 800 1.1em 'Montserrat', sans-serif;
 }
 
@@ -117,16 +117,16 @@ html, body {
  text-decoration: none;
 }
 .navList__object a:hover {
- color: var(--blue);
- text-decoration: underline var(--blue);
+ color: var(--base);
+ text-decoration: underline var(--base);
 }
 
 /* -- SubLists in the Lists -- */
 
 .navList ol {
  margin: 0 1em 0.25em 1em;
- border-left: 0.2em solid var(--blue);
- border-bottom: 0.2em solid var(--blue);
+ border-left: 0.2em solid var(--base);
+ border-bottom: 0.2em solid var(--base);
  padding: 0.25em 0.25em 0.5em 0.5em;
 }
 
@@ -138,7 +138,7 @@ html, body {
 }
 /* marker in the object */
 .navList ol li::marker {
- color: var(--blue);
+ color: var(--base);
  font: 800 1.1em 'Montserrat', sans-serif;
 }
 
@@ -149,8 +149,8 @@ html, body {
  text-decoration: none;
 }
 .navList ol li a:hover {
- color: var(--blue);
- text-decoration: underline var(--blue);
+ color: var(--base);
+ text-decoration: underline var(--base);
 }
 
 /* ---- Main ---- */
@@ -164,8 +164,8 @@ html, body {
  width: 90%;
 
  margin: 0 auto 0.8em auto;
- border-left: 0.2em solid var(--blue);
- border-right: 0.2em solid var(--blue);
+ border-left: 0.2em solid var(--base);
+ border-right: 0.2em solid var(--base);
  border-radius: 0.5em;
  padding: 1em;
 
@@ -177,7 +177,7 @@ html, body {
  border-radius: 0.25em;
  padding: 0.5em;
  
- background-color: var(--blue);
+ background-color: var(--base);
 
  color: white;
  font: 800 1.5em 'Montserrat', sans-serif;
@@ -199,7 +199,7 @@ html, body {
 
  margin: 0.5em;
  margin-left: 2em;
- border-left: 0.18em solid var(--darkblue);
+ border-left: 0.18em solid var(--dark);
  padding-inline-start: 0.5em;
 
  list-style-position: inside;
@@ -207,7 +207,7 @@ html, body {
 
 /* Markers in the List Objects */
 .article ol li::marker, .article ul li::marker {
- color: var(--darkblue);
+ color: var(--dark);
  font: 800 1.2em 'Montserrat', sans-serif;
 }
 
@@ -215,9 +215,9 @@ html, body {
 .article ol h4 , .article ul h4 {
  margin: 0 0.25em;
 
- color: var(--darkblue);
+ color: var(--dark);
  font: 700 1em 'Montserrat', sans-serif;
- text-decoration: underline solid var(--darkblue) 0.15em;
+ text-decoration: underline solid var(--dark) 0.15em;
  
  display: inline-block;
 }
@@ -235,7 +235,7 @@ html, body {
  width: 90%;
 
  margin: 0.5em;
- border-left: 0.25em solid var(--darkblue);
+ border-left: 0.25em solid var(--dark);
  border-radius: 0.25em;
  padding: 1em;
 
@@ -252,8 +252,8 @@ html, body {
  width: 90%;
 
  margin: 0.5em auto;
- border-left: 0.125em solid var(--blue);
- border-right: 0.125em solid var(--blue);
+ border-left: 0.125em solid var(--base);
+ border-right: 0.125em solid var(--base);
  padding: 1em;
 }
 
@@ -263,10 +263,75 @@ html, body {
  border-radius: 0.25em;
  padding: 0.5em;
 
- background-color: var(--blue);
+ background-color: var(--base);
 
  color: white;
  font: 800 1.6em 'Montserrat', sans-serif;
+}
+
+/* Footer */
+
+.footer {
+ margin: 0.5em;
+ border-radius: 0.5em;
+ padding: 1em 2em;
+
+ background-color: var(--dark);
+
+ display: grid;
+
+ grid-template: auto auto 1fr / repeat(3, 1fr);
+ grid-template-areas: "title     title     title "
+                      "text      text      text  "
+                      "reference portfolio social";
+
+ grid-area: footer;
+
+}
+
+.footer .footer__title { 
+ color: white;
+ font: 800 1.6em 'Montserrat', sans-serif;
+
+ grid-area: title;
+}
+
+.footer .footer__text {
+ color: white;
+ font: 600 1em 'Montserrat', sans-serif;
+
+ grid-area: text;
+}
+
+.footer-links {
+ margin: 0.5em;
+ border-radius: 0.5em;
+ padding: 1em 0.5em;
+ 
+ background-color: var(--base);
+}
+
+.footer-links .footer-links__title {
+ color: white;
+ font: 800 1.2em 'Montserrat', sans-serif;
+}
+
+.footer-links .linklist {
+ margin-left: 0.5em;
+}
+
+.footer-links .linklist .linklist__object {
+ list-style-position: inside;
+}
+
+.footer-links .linklist .linklist__object::marker {
+ color: var(--dark);
+ font: 800 1em 'Montserrat', sans-serif;
+}
+
+.footer-links .linklist .linklist__object > a {
+ color: white;
+ font: 400 0.8em 'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 750px) {
