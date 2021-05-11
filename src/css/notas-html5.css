@@ -247,6 +247,17 @@ html, body {
  display: block;
 }
 
+.link {
+ margin: 1em;
+
+ color: var(--dark);
+ font: 600 1.05em 'Montserrat', sans-serif;
+ 
+ display: inline-block;
+}
+
+.link:hover { color: var(--base); }
+
 /* - Section in the Article - */
 .article .section {
  width: 90%;
