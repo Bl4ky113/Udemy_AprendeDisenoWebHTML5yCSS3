@@ -251,7 +251,7 @@
           <h1> Titulo h1 </h1>
           <h2> Titulo h2 </h2>
           <h3> Titulo h3 </h3>
-          <h4> Titulo h4 </h4>
+          <h4 class="list__title"> Titulo h4 </h4>
           <h5> Titulo h5 </h5>
           <h6> Titulo h6 </h6>
           <p class="article__paragraph">
@@ -390,13 +390,13 @@
             Los valores de este atributo son: <br>
           </p>
 
-          <ul>
-            <li>
-              <h4>_blank</h4>
+          <ul class="list">
+            <li class="list__object">
+              <h4 class="list__title">_blank</h4>
               Abre el link de la página web, en otra pestaña del navegador
             </li>
-            <li>
-              <h4>_self</h4>
+            <li class="list__object">
+              <h4 class="list__title">_self</h4>
               Abre el link de la página web, en la misma pestaña en donde se abrió la página web
             </li>
           </ul>
@@ -420,17 +420,17 @@
               El primero <b>Start</b>, define donde va a iniciar el conteó de la lista. <br>
               El segundo <b>type</b>, define en que tipo se va a contar & enumerar la lista, esta tiene solo unos 5 valores posibles, que son: <br>
             </p>
-            <ol>
-              <li>
-                <h4> "A" o "a" </h4>
+            <ol class="list">
+              <li class="list__object">
+                <h4 class="list__title"> "A" o "a" </h4>
                 Enumera la lista en forma alfabetica. (a, b, c, d... O A, B, C, D...).
               </li>
-              <li>
-                <h4> "I" o "i" </h4>
+              <li class="list__object">
+                <h4 class="list__title"> "I" o "i" </h4>
                 Enumera la lista en Números romanos. (I, II, III.. o i, ii, iii...).
               </li>
-              <li>
-                <h4> 1 </h4>
+              <li class="list__object">
+                <h4 class="list__title"> 1 </h4>
                 Enumera la lista en números normales. (1, 2, 3, 4, 5...)
               </li>
             </ol>
@@ -440,12 +440,12 @@
               <br>
             </p>
             <ol type="a">
-              <h4> Lista de Compras </h4>
-              <li> Tomates </li>
-              <li> Cebollas </li>
-              <li> Pepinos </li>
-              <li> Lechuga </li>
-              <li> Limones </li>
+              <h4 class="list__title"> Lista de Compras </h4>
+              <li class="list__object"> Tomates </li>
+              <li class="list__object"> Cebollas </li>
+              <li class="list__object"> Pepinos </li>
+              <li class="list__object"> Lechuga </li>
+              <li class="list__object"> Limones </li>
             </ol>
           </section>
 
@@ -458,29 +458,29 @@
               Estas listas se pueden incluir en las listas ordenadas, para crear un subgrupo en estas. <br>
               Ejemplos <br>
             </p>
-            <ul>
-              <h4>Lista desordenada</h4>
-              <li>Objeto Lista</li>
-              <li>Objeto Lista</li>
-              <li>Otro objeto Lista</li>
+            <ul class="list">
+              <h4 class="list__title">Lista desordenada</h4>
+              <li class="list__object">Objeto Lista</li>
+              <li class="list__object">Objeto Lista</li>
+              <li class="list__object">Otro objeto Lista</li>
             </ul>
-            <ol>
-              <h4>Lista Ordenada con listas desordenadas</h4>
-              <li>Gatos:</li>
-              <ul>
-                <li>Chi</li>
-                <li>Chirrin</li>
-                <li>I</li>
-                <li>E</li>
+            <ol class="list">
+              <h4 class="list__title">Lista Ordenada con listas desordenadas</h4>
+              <li class="list__object">Gatos:</li>
+              <ul class="list">
+                <li class="list__object">Chi</li>
+                <li class="list__object">Chirrin</li>
+                <li class="list__object">I</li>
+                <li class="list__object">E</li>
               </ul>
-              <li>Perros:</li>
-              <ul>
-                <li>PerroFeo</li>
-                <li>Penrro</li>
-                <li>Kitty</li>
-                <li>Zorro</li>
-                <li>Penrrito</li>
-                <li>Zonrrito</li>
+              <li class="list__object">Perros:</li>
+              <ul class="list">
+                <li class="list__object">PerroFeo</li>
+                <li class="list__object">Penrro</li>
+                <li class="list__object">Kitty</li>
+                <li class="list__object">Zorro</li>
+                <li class="list__object">Penrrito</li>
+                <li class="list__object">Zonrrito</li>
               </ul>
             </ol>
           </section>
@@ -546,7 +546,7 @@
             Ejemplo de Form:
           </p>
           <form action="">
-            <h4>Formulario de Prueba</h4>
+            <h4 class="list__title">Formulario de Prueba</h4>
             <p class="article__paragraph">Hola soy un texto de prueba</p>
             <label for="nombre-usuario">Nombre de usuario</label>
             <input id="nombre-usuario" type="text"/>
@@ -586,45 +586,45 @@
             <br>
             La principal diferencia entre estas dos categorias, son: <br>
           </p>
-          <ol>
-            <li>Contenedores de Bloque</li>
-            <ul>
-              <li>Puede dar un "enter" o un "br" despues de usarlo</li>
-              <li>Puede contener varios o todos los objetos del documento</li>
-              <li>Pueden ser usados para agregar styles de una mejor forma</li>
-              <li>Generalmente no tienen ningun style o representación visual, ademas de sus elementos o contenidos</li>
+          <ol class="list">
+            <li class="list__object">Contenedores de Bloque</li>
+            <ul class="list">
+              <li class="list__object">Puede dar un "enter" o un "br" despues de usarlo</li>
+              <li class="list__object">Puede contener varios o todos los objetos del documento</li>
+              <li class="list__object">Pueden ser usados para agregar styles de una mejor forma</li>
+              <li class="list__object">Generalmente no tienen ningun style o representación visual, ademas de sus elementos o contenidos</li>
               <br>
-              <h4>Ejemplos de Contenedores de Bloque</h4>
-              <li>div</li>
-              <li>nav</li>
-              <li>article</li>
-              <li>section</li>
-              <li>header</li>
-              <li>footer</li>
-              <li>p</li>
-              <li>Table (?</li>
-              <li>ul, ol y dl (?</li>
-              <li>entre otros...</li>
+              <h4 class="list__title">Ejemplos de Contenedores de Bloque</h4>
+              <li class="list__object">div</li>
+              <li class="list__object">nav</li>
+              <li class="list__object">article</li>
+              <li class="list__object">section</li>
+              <li class="list__object">header</li>
+              <li class="list__object">footer</li>
+              <li class="list__object">p</li>
+              <li class="list__object">Table (?</li>
+              <li class="list__object">ul, ol y dl (?</li>
+              <li class="list__object">entre otros...</li>
             </ul>
 
             <br>
 
-            <li>Contenedores de Linea</li>  
-            <ul>
-              <li>Se ejecutan y son funcionales en solo una linea</li>
-              <li>Generalmente son alteraciones & adiciones a el texto</li>
-              <li>Se pueden utilizar dentro de cualquier contenedor</li>
-              <li>Tienen & agregan un style a un objeto</li>
+            <li class="list__object">Contenedores de Linea</li>  
+            <ul class="list">
+              <li class="list__object">Se ejecutan y son funcionales en solo una linea</li>
+              <li class="list__object">Generalmente son alteraciones & adiciones a el texto</li>
+              <li class="list__object">Se pueden utilizar dentro de cualquier contenedor</li>
+              <li class="list__object">Tienen & agregan un style a un objeto</li>
               <br>
-              <h4>Ejemplos de Contenedores de Linea</h4>
-              <li>b</li>
-              <li>strong</li>
-              <li>big</li>
-              <li>i</li>
-              <li>small</li>
-              <li>sup</li>
-              <li>sub</li>
-              <li>entre otros...</li>
+              <h4 class="list__title">Ejemplos de Contenedores de Linea</h4>
+              <li class="list__object">b</li>
+              <li class="list__object">strong</li>
+              <li class="list__object">big</li>
+              <li class="list__object">i</li>
+              <li class="list__object">small</li>
+              <li class="list__object">sup</li>
+              <li class="list__object">sub</li>
+              <li class="list__object">entre otros...</li>
             </ul>
           </ol>
         </article>
@@ -643,30 +643,30 @@
             Ejemplos <br>
           </p>
 
-          <ul>
-            <li>
+          <ul class="list">
+            <li class="list__object">
               Definir el tipo de caracter: <br>
               <b>name="UTF-8"</b>
             </li>
             <br>
-            <li>
+            <li class="list__object">
               Definir Informacion del autor: <br>
               <b>name="author" content="Joe Mama"</b>
             </li>
             <br>
-            <li>
+            <li class="list__object">
               Definir la descripcion del sitio/pagina web: <br>
               <b>name="description" content="Descripcion sitio web"</b> <br>
               Esta descripcion ayuda mucho a los buscadores como Google a encontrar y recomendar tu pagina & sitio web
             </li>
             <br>
-            <li>
+            <li class="list__object">
               Definir las "Keywords" del sitio/pagina web <br>
               <b>name="keywords" content="etiquetas o keywords"</b> <br>
               Estas keywords ayuda mucho a los buscadores como Google a encontrar y recomendar tu pagina & sitio  web
             </li>
             <br>
-            <li>
+            <li class="list__object">
               Definir el "viewport" o como va a ver el usuario el documento <br>
               <b>name="viewport" content="width=(ancho de la pantalla del usuario) initial-scale=(La escala del zoom inicial del documento)"</b> <br>
               Generalmente, se usa en este content <b>width="device-width" initial-scale=1.0</b>, para que obtenga el ancho de la pantalla del usuario y se ajusta el documento a esta. <br>
@@ -749,12 +749,12 @@
             Su objetivo principal es agregar informacion que puede aportar a el contenido principal, pero que no es totalmente necesario <br> 
             ejemplo de los contenidos de un <b>aside</b>: <br>
           </p>
-            <ul>
-              <li>Informacion del Autor</li>
-              <li>Informacion Relacionada</li>
-              <li>Contenido Relacionado</li>
-              <li><b>Anuncios Publicitarios</b></li>
-              <li>Entre otros...</li>
+            <ul class="list">
+              <li class="list__object">Informacion del Autor</li>
+              <li class="list__object">Informacion Relacionada</li>
+              <li class="list__object">Contenido Relacionado</li>
+              <li class="list__object"><b>Anuncios Publicitarios</b></li>
+              <li class="list__object">Entre otros...</li>
             </ul>
           <p class="article__paragraph">
             Es muy Importante no confundir el <b>Nav</b> con el aside, son totalmente diferentes !!! <br>
@@ -772,14 +772,14 @@
             Su Objetivo principal es dar informacion de contacto y Copyright de la pagina web. <br>
             El footer puede contener: <br>
           </p>
-            <ul>
-              <li>Informacion de autor</li>
-              <li>Informacion de Copyright</li>
-              <li>Informacion de Contacto</li>
-              <li>Documentos relacionados</li>
-              <li>Links o un Nav a otras paginas del sitio</li>
-              <li>mapa del sitioweb</li>
-              <li>Entre Otros...</li>
+            <ul class="list">
+              <li class="list__object">Informacion de autor</li>
+              <li class="list__object">Informacion de Copyright</li>
+              <li class="list__object">Informacion de Contacto</li>
+              <li class="list__object">Documentos relacionados</li>
+              <li class="list__object">Links o un Nav a otras paginas del sitio</li>
+              <li class="list__object">mapa del sitioweb</li>
+              <li class="list__object">Entre Otros...</li>
             </ul>
           <p class="article__paragraph">
             Se puede usar más de una vez el footer en todo el documento, pero no se puede usar un footer, dentro de otro  footer <br>
@@ -802,16 +802,16 @@
 
           <section class="section">
             <h3 class="section__title">Etiquetas No-Semanticas</h3>
-            <ul>
-              <li>ul</li>
-              <li>ol</li>
-              <li>dl</li>
-              <li>form</li>
-              <li>canvas</li>
-              <li>table</li>
-              <li>Audio</li>
-              <li>Video</li>
-              <li>Entre otros...</li>
+            <ul class="list">
+              <li class="list__object">ul</li>
+              <li class="list__object">ol</li>
+              <li class="list__object">dl</li>
+              <li class="list__object">form</li>
+              <li class="list__object">canvas</li>
+              <li class="list__object">table</li>
+              <li class="list__object">Audio</li>
+              <li class="list__object">Video</li>
+              <li class="list__object">Entre otros...</li>
             </ul>
           </section>
 
@@ -823,16 +823,16 @@
             
           <section class="section">
             <h3 class="section__title">Etiquetas Semanticas</h3>
-            <ul>
-              <li>article</li>
-              <li>header</li>
-              <li>footer</li>
-              <li>nav</li>
-              <li>div</li>
-              <li>section</li>
-              <li>main</li>
-              <li>aside</li>
-              <li>Entre otros... </li>
+            <ul class="list">
+              <li class="list__object">article</li>
+              <li class="list__object">header</li>
+              <li class="list__object">footer</li>
+              <li class="list__object">nav</li>
+              <li class="list__object">div</li>
+              <li class="list__object">section</li>
+              <li class="list__object">main</li>
+              <li class="list__object">aside</li>
+              <li class="list__object">Entre otros... </li>
             </ul>
           </section>
         </article>
@@ -921,15 +921,15 @@
             <br>
             Algunos de los formatos ya vistos son: <br>
           </p>
-          <ul>
-            <li>Bold</li>
-            <li>Italic</li>
-            <li>Big</li>
-            <li>Small</li>
-            <li>Sub</li>
-            <li>Sup</li>
-            <li>Ins</li>
-            <li>Del</li>
+          <ul class="list">
+            <li class="list__object">Bold</li>
+            <li class="list__object">Italic</li>
+            <li class="list__object">Big</li>
+            <li class="list__object">Small</li>
+            <li class="list__object">Sub</li>
+            <li class="list__object">Sup</li>
+            <li class="list__object">Ins</li>
+            <li class="list__object">Del</li>
           </ul>
 
           <!-- Semantica Formato Negrita-->
@@ -958,12 +958,12 @@
               para que este se convierta en Italic. A diferecia del Formato de Negrita la etiqueta <b>i</b> no es la ultima opcion que existe para hacer nuestro texto Italic <br>
               La Semantica de esta etiqueta, se usa cuando necesitamos referirnos a: <br> 
             </p>
-            <ul>
-              <li>Terminos Tecnicos</li>
-              <li>Palabras en Otro Idioma</li>
-              <li>Pensamientos</li>
-              <li>Nombres</li>
-              <li>Entre otros...</li>
+            <ul class="list">
+              <li class="list__object">Terminos Tecnicos</li>
+              <li class="list__object">Palabras en Otro Idioma</li>
+              <li class="list__object">Pensamientos</li>
+              <li class="list__object">Nombres</li>
+              <li class="list__object">Entre otros...</li>
             </ul>
             <p class="article__paragraph">
               Siembargo la otra etiqueta con el mismo uso, <b>em</b>, se usa para darle enfasis o acento a las palabras. <br>
@@ -1033,12 +1033,12 @@
               la etiqueta <b>ins</b> se usa cuando debemos denotar un texto que ha sido actualizado o insertado a el documento <br>
               <b>ins</b> ademas de los atributos comunes, tiene 2 atributos que ayudan a su semantica y dan a conocer informacion del texto insertado: <br>
             </p>
-            <ul>
-              <li>
+            <ul class="list">
+              <li class="list__object">
                 cite="url"<br>
                 Especifica una URL donde se explica porque el texto fue insertado & cambiado <br>
               </li>
-              <li>
+              <li class="list__object">
                 datetime="YYYY-MM-DD hh:mm:ss" <br>
                 Especifica el tiempo cuando el texto fue insertado & modificado <br>
               </li>
@@ -1067,12 +1067,12 @@
               La etiqueta <b>del</b> se usa cuando necesitamos definir que un texto fue o esta eliminado del documento, dando un efecto de correccion <br>
               Esta etiqueta tambien tiene los atributos para tener informacion del el texto eliminado: <br>
             </p>
-            <ul>
-              <li>
+            <ul class="list">
+              <li class="list__object">
                 cite="url"<br>
                 Especifica una URL donde se explica porque el texto fue eliminado & cambiado <br>
               </li>
-              <li>
+              <li class="list__object">
                 datetime="YYYY-MM-DD hh:mm:ss" <br>
                 Especifica el tiempo cuando el texto fue eliminado & modificado <br>
               </li>
@@ -1125,13 +1125,13 @@
           <p class="article__paragraph">
             La etiqueta <b>address</b>, se usa generalmente para dar informacion de contacto como: <br>
           </p>
-          <ul>
-            <li>Email</li>
-            <li>Numero de Contacto</li>
-            <li>Informacion Personal</li>
-            <li>Nombre Y Apillidos</li>
-            <li>Organizacion</li>
-            <li>Entre otros...</li>
+          <ul class="list">
+            <li class="list__object">Email</li>
+            <li class="list__object">Numero de Contacto</li>
+            <li class="list__object">Informacion Personal</li>
+            <li class="list__object">Nombre Y Apillidos</li>
+            <li class="list__object">Organizacion</li>
+            <li class="list__object">Entre otros...</li>
           </ul>
           <p class="article__paragraph">
             Puede ser usada en varios contextos, como en un article para dar contacto con la persona que escribio el article <br>
@@ -1157,10 +1157,10 @@
             generalmente en estas etiquetas se va a cambiar el style de la letra a Cursiva o Italic, pero puedes cambiarselo usando CSS o el atributo Style <br>
             <br>
             Las etiquetas que se usan son:
-            <ul>
-              <li>q</li>
-              <li>blockquote</li>
-              <li>cite</li>
+            <ul class="list">
+              <li class="list__object">q</li>
+              <li class="list__object">blockquote</li>
+              <li class="list__object">cite</li>
             </ul>
           </p>
 
@@ -1219,11 +1219,11 @@
             <br>
             Estos le puede dar una aparencia, identificacion o funcionalidad a nuestros elementos <br>
             Algunos de los atributos que vamos a ver son: <br>
-            <ul>
-              <li>Style</li>
-              <li>Class</li>
-              <li>Id</li>
-              <li>Accesskey</li>
+            <ul class="list">
+              <li class="list__object">Style</li>
+              <li class="list__object">Class</li>
+              <li class="list__object">Id</li>
+              <li class="list__object">Accesskey</li>
             </ul>
           </p>
 
@@ -1296,10 +1296,10 @@
               No confundirlo con el elemento div <br>
               Se puede poner en 3 valores: <br>
             </p>
-              <ul>
-                <li>auto</li>
-                <li>ltr (left to right)</li>
-                <li>rtl (right to left)</li>
+              <ul class="list">
+                <li class="list__object">auto</li>
+                <li class="list__object">ltr (left to right)</li>
+                <li class="list__object">rtl (right to left)</li>
               </ul>
             <p class="article__paragraph">
               Ejemplo de dir: <br>
@@ -1366,9 +1366,9 @@
           <p class="article__paragraph">
             Se puede usar la multimedia para dar un ambiente mas vivo en nuestro sitio web, estos objetos multimedia pueden ser de dos tipos <br>
           </p>
-            <ul>
-              <li>Videos</li>
-              <li>Audios</li>
+            <ul class="list">
+              <li class="list__object">Videos</li>
+              <li class="list__object">Audios</li>
             </ul>
           <p class="article__paragraph">
             Las imagenes no llegan a esta categoria
@@ -1384,53 +1384,53 @@
               <br>
               Esta etiqueta tiene muchos atributos para su buen funcionamiento, estos atributos son:
             </p>
-              <ul>
-                <li>
+              <ul class="list">
+                <li class="list__object">
                   <b>src="URL"</b><br>
                   Se usa para darle la URL del video a el elemento <br>
                   aunque se puede usar la etiqueta <b>source</b> dentro del elemento para tener multiples fuentes <br>
                 </li>
-                <li>
+                <li class="list__object">
                   height/width="tamaño en pixeles" <br>
                   Se usa para determinar el tamaño del reproductor de video <br>
                   Asegurate que sea un rectangulo y que el video si se pueda ver bien <br>
                 </li>
-                <li>
+                <li class="list__object">
                   <b>controls="Controles"</b> <br>
                   Se usa para definir si se muestran o se ocultan los controles del reproductor de video <br>
                   puedes elegir cuales si y cuales no se pueden mostrar, esta es la lista de controles <br>
-                  <ul>
-                    <li>play</li>
-                    <li>Pause</li>
-                    <li>Seeking (Barra de progreso)</li>
-                    <li>Volume</li>
-                    <li>Fullscreen toggle</li>
-                    <li>Captions/Subtitles</li>
-                    <li>Track</li>
+                  <ul class="list">
+                    <li class="list__object">play</li>
+                    <li class="list__object">Pause</li>
+                    <li class="list__object">Seeking (Barra de progreso)</li>
+                    <li class="list__object">Volume</li>
+                    <li class="list__object">Fullscreen toggle</li>
+                    <li class="list__object">Captions/Subtitles</li>
+                    <li class="list__object">Track</li>
                   </ul>
                   Si quieres poner todos, puedes poner el atributo sencillo, sin ningun valor. <br>
                 </li>
-                <li>
+                <li class="list__object">
                   <b>preload="auto|metadata|none" </b> <br>
                   Define si se quiere que el video carge con la pagina, carge solo la metadata o que solo cargue cuando el usuario inicia el video <br>
                   Esto puede afectar o ayudar a el desempeño de las paginas web. <br>
                 </li>
-                <li>
+                <li class="list__object">
                   <b>loop="Loop"</b> <br>
                   Define si el video se va a repetir cada vez que termina <br>
                   Se puede usar sin ningun valor, sencillo <br>
                 </li>
-                <li>
+                <li class="list__object">
                   <b>autoplay="AutoPlay"</b> <br>
                   Define si el video va a iniciar una vez que este haya cargado, no importa el atributo <b>preload</b> <br>
                   Se puede usar sin ningun valor <br>
                 </li>
-                <li>
+                <li class="list__object">
                   <b>muted="Muted"</b> <br>
                   Define si el video va a estar muteado <br>
                   Se puede usar sin ningun valor <br>
                 </li>
-                <li>
+                <li class="list__object">
                   <b>poster="URL-Imagen"</b>
                   Usa una imagen como poster para cuando el video este cargando <br>
                   incompatible con autoplay <br>
@@ -1458,38 +1458,38 @@
               <br>
               Esta etiqueta tiene varios atributos para un mejor funcionamiento, estos son: <br>
             </p>
-              <ul>
-                <li>
+              <ul class="list">
+                <li class="list__object">
                   <b>src="URL"</b> <br>
                   Agrega una URL de referencia o fuente del audio <br>
                   Se puede usar la etiqueta <b>source</b> para utilizar más de una fuente, si algo llegara a pasar <br>
                 </li>
-                <li>
+                <li class="list__object">
                   <b>controls="Controles"</b> <br>
                   Agrega que controles quieres que el usuario pueda usar, estos son: <br>
-                  <ul>
-                    <li>play</li>
-                    <li>pause</li>
-                    <li>seeking (barra de progreso)</li>
-                    <li>Volume</li>
+                  <ul class="list">
+                    <li class="list__object">play</li>
+                    <li class="list__object">pause</li>
+                    <li class="list__object">seeking (barra de progreso)</li>
+                    <li class="list__object">Volume</li>
                   </ul>
                   O si quieres deja el atributo solo, para dejar todos los controles <br>
                 </li>
-                <li>
+                <li class="list__object">
                   <b>preload="auto|metadata|none"</b> <br>
                   Define si y como se va a precargar el archivo de auido <br>
                   cargar junto a el documento, cargar solo la metadata o no cargar el archivo de audio <br>
                 </li>
-                <li>
+                <li class="list__object">
                   <b>autoplay="autoplay"</b> <br>
                   Define si quieres que se reproduzca automaticamente el audio cuando se carge la pagina web <br>
                   Puede afectar el desempeño de la pagina web <br>
                 </li>
-                <li>
+                <li class="list__object">
                   <b>loop="loop"</b> <br>
                   Define si quieres que se repita el audio cada vez que este termine <br>
                 </li>
-                <li>
+                <li class="list__object">
                   <b>muted="muted"</b> <br>
                   Define si quieres que el audio este muteado o silenciado <br>
                 </li>
@@ -1530,11 +1530,11 @@
           <p class="article__paragraph">
             Anteriormente ya habiamos visto algunos imputs sencillos, pero no esta mal repasarlos <br>
             Estos eran:
-            <ul>
-              <li>input de texto</li>
-              <li>input de contraseña</li>
-              <li>input de radio o bolita</li>
-              <li>input de checkbox o cajita</li>
+            <ul class="list">
+              <li class="list__object">input de texto</li>
+              <li class="list__object">input de contraseña</li>
+              <li class="list__object">input de radio o bolita</li>
+              <li class="list__object">input de checkbox o cajita</li>
             </ul>
           </p>
 
@@ -1608,12 +1608,12 @@
             Estos inputs se usan para que se pueda enviar informacion de fechas, horas, tiempo en general, entre otros <br>
             Esto puede ayudar en casos de registros, fechas de cumpleaños, etc. <br>
             Los inputs que vamos a ver son: <br>
-            <ul>
-              <li>date</li>
-              <li>time</li>
-              <li>datetime-local</li>
-              <li>month</li>
-              <li>week</li>
+            <ul class="list">
+              <li class="list__object">date</li>
+              <li class="list__object">time</li>
+              <li class="list__object">datetime-local</li>
+              <li class="list__object">month</li>
+              <li class="list__object">week</li>
             </ul>
           </p>
 
@@ -1680,9 +1680,9 @@
           <p class="article__paragraph">
             Estos son inputs que se usan para ingresar diferentes números <br>
             los inputs que vamos a ver son: <br>
-            <ol>
-              <li>Number</li>
-              <li>Range</li>
+            <ol class="list">
+              <li class="list__object">Number</li>
+              <li class="list__object">Range</li>
             </ol>
           </p>
 
@@ -2026,20 +2026,20 @@
             <p class="article__paragraph">
               Se puede dar diferentes cambios a el Style a las Lineas o bordes de las figuras, estas son:
             </p>
-            <ul>
-              <li>
+            <ul class="list">
+              <li class="list__object">
                 <b>ctx.lineWidth = <"Número">;</b> <br>
                 Define el ancho de la linea o del borde. Medida en <em>px</em> o pixeles.
               </li>
-              <li>
+              <li class="list__object">
                 <b>ctx.lineCap = butt || round || square;</b> <br>
                 Define el style del final de la linea, ya sea redondeada, cuadrada o con un cuadrado al final.
               </li>
-              <li>
+              <li class="list__object">
                 <b>ctx.lineJoin  = bevel || round || miter;</b> <br>
                 Define el Style de los vertices entre dos lineas, ya sea plano, redondeado o cuadrado.
               </li>
-              <li>
+              <li class="list__object">
                 <b>ctx.miterLimit = <"Número"></b> <br>
                 Define el limite de radio que tienen los vertices entre dos lineas, generalmente 10 es el predeterminado.
               </li>
@@ -2056,11 +2056,11 @@
             la gradiante, existen diferentes tipos para crear una gradiante, esta es en una sola linea. Como si fuera una linea, nos va 
             a pedir los siguientes parametros:
           </p>
-          <ul>
-            <li>X inicial</li>
-            <li>Y inicial</li>
-            <li>X Final</li>
-            <li>Y Final</li>
+          <ul class="list">
+            <li class="list__object">X inicial</li>
+            <li class="list__object">Y inicial</li>
+            <li class="list__object">X Final</li>
+            <li class="list__object">Y Final</li>
           </ul>
           <p class="article__paragraph">
             Generalmente queremos que nuestra gradiante ocupe todo el canvas, para eso podemos usar unos valores de la variable de canvas, para 
@@ -2118,10 +2118,10 @@
             Teniendo todo, ahora vamos a hacer el script. Vamos a inciar por obtener la salida de los datos, que es la 
             etiqueta p con el atributo ID. Lo que le vamos a decir a el navegador es:
           </p>
-          <ol>
-            <li>Nombra esta variable "output"</li>
-            <li>Busca en el documento un elemento con el atributo ID "location-output"</li>
-            <li>Este elemento asignalo a la variable "output"</li>
+          <ol class="list">
+            <li class="list__object">Nombra esta variable "output"</li>
+            <li class="list__object">Busca en el documento un elemento con el atributo ID "location-output"</li>
+            <li class="list__object">Este elemento asignalo a la variable "output"</li>
           </ol>
           <code class="code">
             let output = document.getElementById("location-output");
