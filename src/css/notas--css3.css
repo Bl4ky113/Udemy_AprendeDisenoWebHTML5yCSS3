@@ -1,0 +1,6 @@
+/* Variables in the StyleSheet */
+:root {
+ --base: #ff33cc;
+ --light: #ffb3ec;
+ --dark: #e600ac;
+}
