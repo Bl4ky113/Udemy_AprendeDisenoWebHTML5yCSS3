@@ -163,7 +163,7 @@ html, body {
 }
 
 /* Titles in the Article */
-.article__title {
+.article .article__title {
  margin: 0.25em auto;
  border-radius: 0.25em;
  padding: 0.5em;
@@ -175,7 +175,7 @@ html, body {
 }
 
 /* Paragraphs in the Article */
-.article p {
+.article .article__paragraph {
  width: 95%;
 
  margin: 0.3em auto;
@@ -185,7 +185,7 @@ html, body {
 }
 
 /* Lists in the Article */
-.article ol, .article ul {
+.article .list {
  width: 85%;
 
  margin: 0.5em;
@@ -197,13 +197,13 @@ html, body {
 }
 
 /* Markers in the List Objects */
-.article ol li::marker, .article ul li::marker {
+.article .list .list__object::marker {
  color: var(--dark);
  font: 800 1.2em 'Montserrat', sans-serif;
 }
 
 /* Titles on the list */ 
-.article ol h4 , .article ul h4 {
+.article .list .list__title {
  margin: 0 0.25em;
 
  color: var(--dark);
@@ -215,14 +215,14 @@ html, body {
 
 /* List objects */
 
-.article ol li, .article ul li {
+.article .list .list__object {
  color: black;
  font: 500 1em 'Montserrat', sans-serif;
 }
 
 
 /* Code demonstrations in the articles and sections */
-.code {
+.article .code {
  width: 90%;
 
  margin: 0.5em;
@@ -238,7 +238,7 @@ html, body {
  display: block;
 }
 
-.link {
+.article .link {
  margin: 1em;
 
  color: var(--dark);
@@ -247,7 +247,7 @@ html, body {
  display: inline-block;
 }
 
-.link:hover { color: var(--base); }
+.article .link:hover { color: var(--base); }
 
 /* - Section in the Article - */
 .article .section {
