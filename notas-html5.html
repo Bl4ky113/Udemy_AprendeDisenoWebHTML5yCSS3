@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notas del Curso HTML</title>
-    <link rel="stylesheet" href="src/css/notas-html5.css">
+    <link rel="stylesheet" href="src/css/notas.css">
+    <link rel="stylesheet" href="src/css/notas--html5.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
@@ -23,172 +24,168 @@
       -->
       <nav class="nav">
         <h2 class="nav__title">Estructuras Básicas con HTML</h2>
-        <ol class="navList">
-          <li class="navList__object"><a href="#Etiquetas-html">Etiquetas en HTML</a></li>
-          <li class="navList__object"><a href="#Parrafos-html">Parrafos en HTML</a></li>
-          <li class="navList__object"><a href="#SaltoLinea-html">Salto de Lineas en HTML</a></li>
-          <li class="navList__object"><a href="#Headers-html">Cabeceras en HTML</a></li>
-          <li class="navList__object">
-            <a href="#Formato-html">Formatos en HTML</a>
-            <ol type="a">
-              <li><a href="#Formato_Negrita-html">Negrita</a></li>
-              <li><a href="#Formato_Italic-html">Ítalica</a></li>
-              <li><a href="#Formato_Big-html">Letra Grande</a></li>
-              <li><a href="#Formato_Small-html">Letra Pequeña</a></li>
-              <li><a href="#Formato_Sub-html">Sub</a></li>
-              <li><a href="#Formato_Sup-html">Sup</a></li>
-              <li><a href="#Formato_Ins-html">Texto Subrayado</a></li>
-              <li><a href="#Formato_Del-html">Texto "Eliminado"</a></li>
-            </ol>
-          </li>
-          <li class="navList__object"><a href="#Imagenes-html">Imagenes en HTML</a></li>
-          <li class="navList__object"><a href="#Links-html">Enlaces en HTML</a></li>
-          <li class="navList__object">
-            <a href="#Listas-html">Listas en HTML</a>
-            <ol type="a">
-              <li><a href="#Listas_Ordenadas-html">Listas Ordenadas</a></li>
-              <li><a href="#Listas_Desordenadas-html">Listas Desordenadas</a></li>
-              <li><a href="#Listas_Definiciones-html">Listas de Definiciones</a></li>
-            </ol>
-          </li>
-          <li class="navList__object"><a href="#Tablas-html">Tablas en HTML</a></li>
-          <li class="navList__object"><a href="#Form-html">Formularios en HTML</a></li>
-          <li class="navList__object"><a href="#Content-html">Contenedores en HTML</a></li>
-          <li class="navList__object"><a href="#Meta-html">Meta Datos en HTML</a></li>
+        <ol class="navlist">
+          <li class="navlist__object"><a href="#Etiquetas-html">Etiquetas en HTML</a></li>
+          <li class="navlist__object"><a href="#Parrafos-html">Parrafos en HTML</a></li>
+          <li class="navlist__object"><a href="#SaltoLinea-html">Salto de Lineas en HTML</a></li>
+          <li class="navlist__object"><a href="#Headers-html">Cabeceras en HTML</a></li>
+          <li class="navlist__object"><a href="#Formato-html">Formatos en HTML</a></li>
+          <ol class="sublist">
+            <li class="sublist__object"><a href="#Formato_Negrita-html">Negrita</a></li>
+            <li class="sublist__object"><a href="#Formato_Italic-html">Ítalica</a></li>
+            <li class="sublist__object"><a href="#Formato_Big-html">Letra Grande</a></li>
+            <li class="sublist__object"><a href="#Formato_Small-html">Letra Pequeña</a></li>
+            <li class="sublist__object"><a href="#Formato_Sub-html">Sub</a></li>
+            <li class="sublist__object"><a href="#Formato_Sup-html">Sup</a></li>
+            <li class="sublist__object"><a href="#Formato_Ins-html">Texto Subrayado</a></li>
+            <li class="sublist__object"><a href="#Formato_Del-html">Texto "Eliminado"</a></li>
+          </ol>
+          <li class="navlist__object"><a href="#Imagenes-html">Imagenes en HTML</a></li>
+          <li class="navlist__object"><a href="#Links-html">Enlaces en HTML</a></li>
+          <li class="navlist__object"><a href="#Listas-html">Listas en HTML</a></li>
+          <ol class="sublist">
+            <li class="sublist__object"><a href="#Listas_Ordenadas-html">Listas Ordenadas</a></li>
+            <li class="sublist__object"><a href="#Listas_Desordenadas-html">Listas Desordenadas</a></li>
+            <li class="sublist__object"><a href="#Listas_Definiciones-html">Listas de Definiciones</a></li>
+          </ol>
+          <li class="navlist__object"><a href="#Tablas-html">Tablas en HTML</a></li>
+          <li class="navlist__object"><a href="#Form-html">Formularios en HTML</a></li>
+          <li class="navlist__object"><a href="#Content-html">Contenedores en HTML</a></li>
+          <li class="navlist__object"><a href="#Meta-html">Meta Datos en HTML</a></li>
         </ol>
 
         <h2 class="nav__title">Estructura Moderna del Documento</h2>
-        <ol class="navList">
-          <li class="navList__object"><a href="#Header-estructura">Header En la Estructura</a></li>
-          <li class="navList__object"><a href="#Main-estructura">Main En la Estructura</a></li>
-          <li class="navList__object"><a href="#Nav-estructura">Nav En la Estructura</a></li>
-          <li class="navList__object"><a href="#Section-estructura">Secciones En la Estructura</a></li>
-          <li class="navList__object"><a href="#Article-estructura">Articulos En la Estructura</a></li>
-          <li class="navList__object"><a href="#Aside-estructura">Aside En La Estructura</a></li>
-          <li class="navList__object"><a href="#Footer-estructura">Footer En la Estructura</a></li>
+        <ol class="navlist">
+          <li class="navlist__object"><a href="#Header-estructura">Header En la Estructura</a></li>
+          <li class="navlist__object"><a href="#Main-estructura">Main En la Estructura</a></li>
+          <li class="navlist__object"><a href="#Nav-estructura">Nav En la Estructura</a></li>
+          <li class="navlist__object"><a href="#Section-estructura">Secciones En la Estructura</a></li>
+          <li class="navlist__object"><a href="#Article-estructura">Articulos En la Estructura</a></li>
+          <li class="navlist__object"><a href="#Aside-estructura">Aside En La Estructura</a></li>
+          <li class="navlist__object"><a href="#Footer-estructura">Footer En la Estructura</a></li>
         </ol>
 
         <h2 class="nav__title">Etiquetas de Texto</h2>
-        <ol class="navList">
-          <li class="navList__object"><a href="#Semantica-texto">Semantica En HTML5</a></li>
-          <li class="navList__object"><a href="#Codigo-texto">Semantica de Texto para el Codigo</a></li>
-          <ol>
-            <li><a href="#Codigo_Code-texto">Semantica para representar el Codigo</a></li>
-            <li><a href="#Codigo_Sample-texto">Semantica para representar los resultados</a></li>
-            <li><a href="#Codigo_Var-texto">Semantica para representar las variables</a></li>
-            <li><a href="#Codigo_Key-texto">Semantica para representar las teclas o los shortcuts</a></li>
+        <ol class="navlist">
+          <li class="navlist__object"><a href="#Semantica-texto">Semantica En HTML5</a></li>
+          <li class="navlist__object"><a href="#Codigo-texto">Semantica de Texto para el Codigo</a></li>
+          <ol class="sublist">
+            <li class="sublist__object"><a href="#Codigo_Code-texto">Semantica para representar el Codigo</a></li>
+            <li class="sublist__object"><a href="#Codigo_Sample-texto">Semantica para representar los resultados</a></li>
+            <li class="sublist__object"><a href="#Codigo_Var-texto">Semantica para representar las variables</a></li>
+            <li class="sublist__object"><a href="#Codigo_Key-texto">Semantica para representar las teclas o los shortcuts</a></li>
           </ol>
-          <li class="navList__object"><a href="#Formatos-texto">Semantica para los Formatos de texto</a></li>
-          <ol>
-            <li><a href="#Formatos_Bold-texto">Formato Bold</a></li>
-            <li><a href="#Formatos_Italic-texto">Formato Cursiva</a></li>
-            <li><a href="#Formatos_Big-texto">Formato Big</a></li>
-            <li><a href="#Formatos_Small-texto">Formato Small</a></li>
-            <li><a href="#Formatos_Sub-texto">Formato Sub</a></li>
-            <li><a href="#Formatos_Sup-texto">Formato Sup</a></li>
-            <li><a href="#Formatos_Ins-texto">Formato Subrayado</a></li>
-            <li><a href="#Formatos_Del-texto">Formato Eliminado</a></li>
-            <li><a href="#Formatos_Mark-texto">Formato Mark</a></li>
+          <li class="navlist__object"><a href="#Formatos-texto">Semantica para los Formatos de texto</a></li>
+          <ol class="sublist">
+            <li class="sublist__object"><a href="#Formatos_Bold-texto">Formato Bold</a></li>
+            <li class="sublist__object"><a href="#Formatos_Italic-texto">Formato Cursiva</a></li>
+            <li class="sublist__object"><a href="#Formatos_Big-texto">Formato Big</a></li>
+            <li class="sublist__object"><a href="#Formatos_Small-texto">Formato Small</a></li>
+            <li class="sublist__object"><a href="#Formatos_Sub-texto">Formato Sub</a></li>
+            <li class="sublist__object"><a href="#Formatos_Sup-texto">Formato Sup</a></li>
+            <li class="sublist__object"><a href="#Formatos_Ins-texto">Formato Subrayado</a></li>
+            <li class="sublist__object"><a href="#Formatos_Del-texto">Formato Eliminado</a></li>
+            <li class="sublist__object"><a href="#Formatos_Mark-texto">Formato Mark</a></li>
           </ol>
-          <li class="navList__object"><a href="#Abbr-texto">Semantica para Abreviaciones</a></li>
-          <li class="navList__object"><a href="#Address-texto">Semantica para Contacto</a></li>
-          <li class="navList__object"><a href="#Quote-texto">Semantica para las citaciones</a></li>
-          <ol>
-            <li><a href="#Quote_InlineQuote-texto">Citacion de linea</a></li>
-            <li><a href="#Quote_BlockQuote-texto">Citacion de Bloque</a></li>
-            <li><a href="#Quote_Cite-texto">Citacion de Obra</a></li>
+          <li class="navlist__object"><a href="#Abbr-texto">Semantica para Abreviaciones</a></li>
+          <li class="navlist__object"><a href="#Address-texto">Semantica para Contacto</a></li>
+          <li class="navlist__object"><a href="#Quote-texto">Semantica para las citaciones</a></li>
+          <ol class="sublist">
+            <li class="sublist__object"><a href="#Quote_InlineQuote-texto">Citacion de linea</a></li>
+            <li class="sublist__object"><a href="#Quote_BlockQuote-texto">Citacion de Bloque</a></li>
+            <li class="sublist__object"><a href="#Quote_Cite-texto">Citacion de Obra</a></li>
           </ol>
         </ol>
 
         <h2 class="nav__title">Atributos</h2>
-        <ol class="navList">
-          <li class="navList__object"><a href="#Atributos-atributos">Atributos en Html5</a></li>
-          <li class="navList__object"><a href="#Style-atributos">Atributo Style</a></li>
-          <li class="navList__object"><a href="#Class-atributos">Atributo Class</a></li>
-          <li class="navList__object"><a href="#Id-atributos">Atributo Id</a></li>
-          <li class="navList__object"><a href="#Accesskey-atributos">Atributo Accesskey</a></li>
-          <li class="navList__object"><a href="#EditableSpell-atributos">Atributos contentEditable y SpellCheck</a></li>
-          <li class="navList__object"><a href="#Dir-atributos">Atributo Dir</a></li>
-          <li class="navList__object"><a href="#Draggable-atributos">Atributo Draggable</a></li>
-          <li class="navList__object"><a href="#Hidden-atributos">Atributo Hidden</a></li>
-          <li class="navList__object"><a href="#Tabindex-atributos">Atributo TabIndex</a></li>
-          <li class="navList__object"><a href="#Title-atributos">Artibuto Title</a></li>
+        <ol class="navlist">
+          <li class="navlist__object"><a href="#Atributos-atributos">Atributos en Html5</a></li>
+          <li class="navlist__object"><a href="#Style-atributos">Atributo Style</a></li>
+          <li class="navlist__object"><a href="#Class-atributos">Atributo Class</a></li>
+          <li class="navlist__object"><a href="#Id-atributos">Atributo Id</a></li>
+          <li class="navlist__object"><a href="#Accesskey-atributos">Atributo Accesskey</a></li>
+          <li class="navlist__object"><a href="#EditableSpell-atributos">Atributos contentEditable y SpellCheck</a></li>
+          <li class="navlist__object"><a href="#Dir-atributos">Atributo Dir</a></li>
+          <li class="navlist__object"><a href="#Draggable-atributos">Atributo Draggable</a></li>
+          <li class="navlist__object"><a href="#Hidden-atributos">Atributo Hidden</a></li>
+          <li class="navlist__object"><a href="#Tabindex-atributos">Atributo TabIndex</a></li>
+          <li class="navlist__object"><a href="#Title-atributos">Artibuto Title</a></li>
         </ol>
 
         <h2 class="nav__title">Multimedia</h2>
-        <ol class="navList">
-          <li class="navList__object"><a href="#Multimedia-multimedia">Multimedia en Html5</a></li>
-          <li class="navList__object"><a href="#Video-multimedia">Video en Html5</a></li>
-          <li class="navList__object"><a href="#Audio-multimedia">Audio en Html5</a></li>
+        <ol class="navlist">
+          <li class="navlist__object"><a href="#Multimedia-multimedia">Multimedia en Html5</a></li>
+          <li class="navlist__object"><a href="#Video-multimedia">Video en Html5</a></li>
+          <li class="navlist__object"><a href="#Audio-multimedia">Audio en Html5</a></li>
         </ol>
 
         <h2 class="nav__title">Inputs</h2>
-        <ol class="navList">
-          <li class="navList__object"><a href="#InputsYForms-inputs">Inputs y Formularios en Html5</a></li>
-          <li class="navList__object"><a href="#Label-inputs">Etiqueta Label</a></li>
-          <li class="navList__object"><a href="#Vistos-inputs">Inputs anteriormente vistos</a></li>
-          <ol>
-            <li><a href="#Vistos_Text-inputs">Input de Texto</a></li>
-            <li><a href="#Vistos_Password-inputs">Input de Claves</a></li>
-            <li><a href="#Vistos_Radio-inputs">Input de Radio</a></li>
-            <li><a href="#Vistos_Checkbox-inputs">Input de Checkbox</a></li>
+        <ol class="navlist">
+          <li class="navlist__object"><a href="#InputsYForms-inputs">Inputs y Formularios en Html5</a></li>
+          <li class="navlist__object"><a href="#Label-inputs">Etiqueta Label</a></li>
+          <li class="navlist__object"><a href="#Vistos-inputs">Inputs anteriormente vistos</a></li>
+          <ol class="sublist">
+            <li class="sublist__object"><a href="#Vistos_Text-inputs">Input de Texto</a></li>
+            <li class="sublist__object"><a href="#Vistos_Password-inputs">Input de Claves</a></li>
+            <li class="sublist__object"><a href="#Vistos_Radio-inputs">Input de Radio</a></li>
+            <li class="sublist__object"><a href="#Vistos_Checkbox-inputs">Input de Checkbox</a></li>
           </ol>
-          <li class="navList__object"><a href="#Tiempo-inputs">Inputs de Tiempo</a></li>
-          <ol>
-            <li><a href="#Tiempo_Date-inputs">Input de Fecha</a></li>
-            <li><a href="#Tiempo_Time-inputs">Input de Hora</a></li>
-            <li><a href="#Tiempo_DateTime-inputs">Input de Fecha Y Hora</a></li>
-            <li><a href="#Tiempo_Month-inputs">Input de Mes y Año</a></li>
-            <li><a href="#Tiempo_Week-inputs">Input de Semana de un Año</a></li>
+          <li class="navlist__object"><a href="#Tiempo-inputs">Inputs de Tiempo</a></li>
+          <ol class="sublist">
+            <li class="sublist__object"><a href="#Tiempo_Date-inputs">Input de Fecha</a></li>
+            <li class="sublist__object"><a href="#Tiempo_Time-inputs">Input de Hora</a></li>
+            <li class="sublist__object"><a href="#Tiempo_DateTime-inputs">Input de Fecha Y Hora</a></li>
+            <li class="sublist__object"><a href="#Tiempo_Month-inputs">Input de Mes y Año</a></li>
+            <li class="sublist__object"><a href="#Tiempo_Week-inputs">Input de Semana de un Año</a></li>
           </ol>
-          <li class="navList__object"><a href="#Numero-inputs">Inputs Númericos</a></li>
-          <ol>
-            <li><a href="#Numero_Numbers-inputs">Input de Números</a></li>
-            <li><a href="#Numero_Range-inputs">Input de Rango</a></li>
+          <li class="navlist__object"><a href="#Numero-inputs">Inputs Númericos</a></li>
+          <ol class="sublist">
+            <li class="sublist__object"><a href="#Numero_Numbers-inputs">Input de Números</a></li>
+            <li class="sublist__object"><a href="#Numero_Range-inputs">Input de Rango</a></li>
           </ol>
-          <li class="navList__object"><a href="#Search-inputs">Input de Barra de Busqueda</a></li>
-          <li class="navList__object"><a href="#Email-inputs">Input de Email</a></li>
-          <li class="navList__object"><a href="#Color-inputs">Input de Colores</a></li>
-          <li class="navList__object"><a href="#Form-inputs">Elementos en los Formularios</a></li>
-          <ol>
-            <li><a href="#Form_Progress-inputs">Elemento de progreso</a></li>
-            <li><a href="#Form_Meter-inputs">Elemento de Medir</a></li>
-            <li><a href="#Form_Datalist-inputs">Listas de Información</a></li>
+          <li class="navlist__object"><a href="#Search-inputs">Input de Barra de Busqueda</a></li>
+          <li class="navlist__object"><a href="#Email-inputs">Input de Email</a></li>
+          <li class="navlist__object"><a href="#Color-inputs">Input de Colores</a></li>
+          <li class="navlist__object"><a href="#Form-inputs">Elementos en los Formularios</a></li>
+          <ol class="sublist">
+            <li class="sublist__object"><a href="#Form_Progress-inputs">Elemento de progreso</a></li>
+            <li class="sublist__object"><a href="#Form_Meter-inputs">Elemento de Medir</a></li>
+            <li class="sublist__object"><a href="#Form_Datalist-inputs">Listas de Información</a></li>
           </ol>
         </ol>
 
         <h2 class="nav__title">Canvas</h2>
-        <ol class="navList"> 
-          <li class="navList__object"><a href="#QueEs-canvas">¿Que es Canvas?</a></li>
-          <li class="navList__object"><a href="#Usar-canvas">Usar Canvas</a></li>
-          <ol>
-            <li><a href="#Usar_EjemploComplejo-canvas">Ejemplo Complejo</a></li>
+        <ol class="navlist"> 
+          <li class="navlist__object"><a href="#QueEs-canvas">¿Que es Canvas?</a></li>
+          <li class="navlist__object"><a href="#Usar-canvas">Usar Canvas</a></li>
+          <ol class="sublist">
+            <li class="sublist__object"><a href="#Usar_EjemploComplejo-canvas">Ejemplo Complejo</a></li>
           </ol>
-          <li class="navList__object"><a href="#Figuras-canvas">Figuras para usar en Canvas</a></li>
-          <ol>
-            <li><a href="#Figuras_RectaguloRelleno-canvas">Rectangulo Relleno</a></li>
-            <li><a href="#Figuras_RectanguloVacio-canvas">Rectangulo Vacio</a></li>
-            <li><a href="#Figuras_RectanguloBorde-canvas">Rectangulo Con Bordes</a></li>
+          <li class="navlist__object"><a href="#Figuras-canvas">Figuras para usar en Canvas</a></li>
+          <ol class="sublist">
+            <li class="sublist__object"><a href="#Figuras_RectaguloRelleno-canvas">Rectangulo Relleno</a></li>
+            <li class="sublist__object"><a href="#Figuras_RectanguloVacio-canvas">Rectangulo Vacio</a></li>
+            <li class="sublist__object"><a href="#Figuras_RectanguloBorde-canvas">Rectangulo Con Bordes</a></li>
           </ol>
-          <li class="navList__object"><a href="#PropiasFiguras-canvas">Tus Propias Figuras en Canvas</a></li>
-          <li class="navList__object"><a href="#Styles-canvas">Styles en Canvas</a></li>
-          <ol>
-            <li><a href="#Styles_ColorRelleno-canvas">Relleno de Colores</a></li>
-            <li><a href="#Styles_ColorBorde-canvas">Bordes de Colores</a></li>
-            <li><a href="#Styles_Bordes-canvas">Styles de Bordes & Lineas</a></li>
+          <li class="navlist__object"><a href="#PropiasFiguras-canvas">Tus Propias Figuras en Canvas</a></li>
+          <li class="navlist__object"><a href="#Styles-canvas">Styles en Canvas</a></li>
+          <ol class="sublist">
+            <li class="sublist__object"><a href="#Styles_ColorRelleno-canvas">Relleno de Colores</a></li>
+            <li class="sublist__object"><a href="#Styles_ColorBorde-canvas">Bordes de Colores</a></li>
+            <li class="sublist__object"><a href="#Styles_Bordes-canvas">Styles de Bordes & Lineas</a></li>
           </ol>
-          <li class="navList__object"><a href="#Gradiante-canvas">Gradiantes en Canvas</a></li>
+          <li class="navlist__object"><a href="#Gradiante-canvas">Gradiantes en Canvas</a></li>
         </ol>
 
         <h2 class="nav__title">API Geolocalización</h2>
-        <ol class="navList">
-          <li class="navList__object"><a href="#Coordenadas-apigeo">Geolocalización con Coórdenadas<a></li>
-          <li class="navList__object"><a href="#Mapa-apigeo">Geolocalización en el Mapa</a></li>
+        <ol class="navlist">
+          <li class="navlist__object"><a href="#Coordenadas-apigeo">Geolocalización con Coórdenadas<a></li>
+          <li class="navlist__object"><a href="#Mapa-apigeo">Geolocalización en el Mapa</a></li>
         </ol>
 
         <h2 class="nav__title">Finalización de las Notas</h2>
-        <ol class="navList">
-          <li class="navList__object"><a href="#Despedida-finalnotas">Despedida de las Notas de Html5</a></li>
+        <ol class="navlist">
+          <li class="navlist__object"><a href="#Despedida-finalnotas">Despedida de las Notas de Html5</a></li>
         </ol>
       </nav>
 

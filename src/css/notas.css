@@ -4,15 +4,6 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol {margin: 0; padding: 0;}
 html, body {
  width: 100%;
  height: 100%;
-
- overflow-x: hidden;
-}
-
-/* Variables in the StyleSheet */
-:root {
- --base: #66b6ff;
- --light: #b3daff;
- --dark: #0084ff;
 }
 
 .wrapper {
@@ -91,7 +82,7 @@ html, body {
 
 /* List in the Navigation */
 
-.navList { 
+.nav .navlist { 
  margin: 0 1em;
  border-left: 0.2em solid var(--base);
  border-bottom: 0.2em solid var(--base);
@@ -99,31 +90,31 @@ html, body {
 }
 
 /* Objects in List in the Nav */
-.navList .navList__object {
+.nav .navlist .navlist__object {
  margin: 0.2em;
 
  list-style-position: inside;
 }
 /* marker in the object */
-.navList__object::marker {
+.nav .navlist .navlist__object::marker {
  color: var(--base);
  font: 800 1.1em 'Montserrat', sans-serif;
 }
 
 /* Links in the object */
-.navList__object a {
+.nav .navlist .navlist__object a {
  color: black;
  font: 500 1em 'Montserrat', sans-serif;
  text-decoration: none;
 }
-.navList__object a:hover {
+.nav .navlist .navlist__object a:hover {
  color: var(--base);
  text-decoration: underline var(--base);
 }
 
 /* -- SubLists in the Lists -- */
 
-.navList ol {
+.nav .navlist .sublist {
  margin: 0 1em 0.25em 1em;
  border-left: 0.2em solid var(--base);
  border-bottom: 0.2em solid var(--base);
@@ -131,24 +122,24 @@ html, body {
 }
 
 /* Objects in SubList in the Lists */
-.navList ol li {
+.nav .navlist .sublist .sublist__object {
  margin: 0.2em;
 
  list-style-position: inside;
 }
 /* marker in the object */
-.navList ol li::marker {
+.nav .navlist .sublist .sublist__object::marker {
  color: var(--base);
  font: 800 1.1em 'Montserrat', sans-serif;
 }
 
 /* Link in the Sublist */
-.navList ol li a {
+.nav .navlist .sublist .sublist__object a {
  color: black;
  font: 500 1em 'Montserrat', sans-serif;
  text-decoration: none;
 }
-.navList ol li a:hover {
+.nav .navlist .sublist .sublist__object a:hover {
  color: var(--base);
  text-decoration: underline var(--base);
 }
