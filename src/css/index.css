@@ -76,7 +76,7 @@
 }
 
 .content .content__subtitle {
-  padding: 0.5em 0;
+  padding-top: 0.25em;
 
   color: black;
   font: 600 1.4em 'Montserrat', sans-serif;
@@ -99,7 +99,6 @@
 
   margin: 0.25em 0;
   border-left: 0.15em solid var(--base);
-  border-bottom: 0.15em solid var(--base);
   padding: 0.5em;
 } 
 
@@ -124,6 +123,97 @@
 }
 
 .content .link:hover { color: var(--base); }
+
+/* Notes Sections */
+.content .notes-wrapper {
+  display: grid;
+
+  grid-template: repeat(1, auto 1fr auto) / repeat(2, 5% 1fr 5%);
+  grid-gap: 1.5em;
+}
+
+.content .notes-wrapper .notes {
+  border-radius: 1em;
+  padding: 1em 1.5em;
+
+  background-color: var(--light);
+
+  grid-column: span 3;
+  grid-row: span 3;
+
+  display: grid;
+
+  grid-template-columns: 5% 1fr 5%;
+  grid-template-columns: subgrid; /* Firefox Only */
+
+  grid-template-rows: auto 1fr auto;
+  grid-template-rows: subgrid; /* Firefox Only */
+
+  grid-gap: 0.5em;
+}
+
+.content .notes-wrapper .notes .notes__title {
+  border-bottom: 0.15em solid var(--base);
+
+  color: white;
+  font: 800 1.8em 'Montserrat', sans-serif;
+  text-align: center;
+
+  grid-column: 2 / -2;
+  grid-row: 1 / 2;
+}
+
+.content .notes-wrapper .notes .notes__img {
+  width: 20vw;
+  height: auto;
+
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+.content .notes-wrapper .notes .notes--img__link {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  
+  justify-self: center;
+
+  display: block;
+}
+
+.content .notes-wrapper .notes .notes__link {
+  grid-column: 2 / -2;
+  grid-row: 3 / 4;
+
+  border-radius: 0.5em;
+  padding: 0.5em 2em;
+
+  background-color: var(--base);
+
+  color: white;
+  font: 800 1.4em 'Montserrat', sans-serif;
+  text-decoration: none;
+
+  justify-self: center;
+
+  display: block;
+}
+.content .notes-wrapper .notes .notes__link:hover {
+  background-color: var(--dark);
+
+  text-decoration: underline solid var(--light) 0.15em;
+}
+
+/* Colors in sections */
+.content .notes-wrapper .notes--html5 {
+  --base: var(--html-base);
+  --light: var(--html-light);
+  --dark: var(--html-dark)
+} 
+.content .notes-wrapper .notes--css3 {
+  --base: var(--css-base);
+  --light: var(--css-light);
+  --dark: var(--css-dark)
+} 
 
 /* Footer Style */
 .footer {
