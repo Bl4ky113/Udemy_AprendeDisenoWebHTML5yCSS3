@@ -24,6 +24,7 @@
         <li class="navlist__object"><a href="QueEs-css">¿Que es Css3?</a></li>
         <li class="navlist__object"><a href="Estructura-css">La Estructura de Css3</a></li>
         <li class="navlist__object"><a href="Familia-css">Padres, Hijos y Hermanos en Css3</a></li>
+        <li class="navlist__object"><a href="AgregarAHtml-css">Agregar Estilos con Css3 a un Archivo Html5</a></li>
       </ol>
     </nav>
 
@@ -53,16 +54,16 @@
           Este consiste de 3 principales partes:
         </p>
         <ul class="list">
+          <h4 class="list__title">Selector: " p "</h4>
           <li class="list__object">
-            <h4 class="list__title">Selector: " p "</h4>
             El selector es un elemento que nos va a permitir agregarle un estilo o diseño a un grupo de elementos.
           </li>
+          <h4 class="list__title">Propiedad: " color: "</h4>
           <li class="list__object">
-            <h4 class="list__title">Propiedad: " color: "</h4>
             La propiedad, es el estilo o diseño que queremos aplicar a el elemento.
           </li>
+          <h4 class="list__title">Valor: "white"</h4>
           <li class="list__object">
-            <h4 class="list__title">Valor: "white"</h4>
             Es el valor que va a tomar la propiedad, que va a definir el estilo o diseño.
           </li>
         </ul>
@@ -84,21 +85,61 @@
           diferentes familiares de Css3.
         </p>
         <ul class="list">
+          <h4 class="list__title">Padre:</h4>
           <li class="list__object">
-            <h4 class="list__title">Padre:</h4>
             El Padre, es el elemento que contiene a otro Elemento.
           </li>
+          <h4 class="list__title">Hijo:</h4>
           <li class="list__object">
-            <h4 class="list__title">Hijo:</h4>
             El Hijo, son los elementos que hay dentro de otro Elemento. 
           </li>
+          <h4 class="list__title">Hermano:</h4>
           <li class="list__object">
-            <h4 class="list__title">Hermano:</h4>
             El Hermano, son los elementos que comparten mismo padre con otro Elemento.
           </li>
         </ul>
         <p class="article__paragraph">
-          Esta familia nos va a ayudar a usar diferentes propiedadaes y selectores, para aplicar un mejor y efectivo diseño
+          Esta familia nos va a ayudar a usar diferentes propiedadaes y selectores, para aplicar un mejor y efectivo diseño.
+        </p>
+      </article>
+
+      <article class="article">
+        <h2 class="article__title" id="AgregarAHtml-css">Cómo Agregar Css3 a una estructura de Html5</h2>
+        <p class="article__paragraph">
+          Se puede agregar de diferentes formas un estilo a los elementos de una estructura html5. Estas varian dependiendo de su uso y finalidad. 
+        </p>
+        <ul class="list">
+          <h4 class="list__title">Atributos Style</h4>
+          <li class="list__object">
+            Se usa el tributo style, para darle un estilo en Css3 a cualquier elemento, pero esto es una forma muy lenta y inapropiada para 
+            agregar un estilo, ya que debemos hacerlo con cada elemento dentro de la estructura, y puede que esto lleve algunos problemas 
+            al momento de modificar grandes razgos del sitio web. Pero esto puede ser util al momento de agregar un estilo con JavaScript, pero 
+            tampoco es muy recomendado. Es mejor agregar o poner nuevos atributos de clases al elemento al momento de usar JS.
+            <code class="code">
+              < p style=" PropiedadCss: ValorCss; "> contenido < /p >
+            </code>
+          </li>
+          <h4 class="list__title">Estiqueta Style en Head</h4>
+          <li class="list__object">
+            Es una etiqueta en la parte de metadatos o Head. En esta podemos escribir como si fuera un archivo .css, pero tampoco es muy recomendado, 
+            ya que esto puede afectar el momento de leer el contenido de la estrucutra html. Y entre más larga sea esta estructura, más dificil va 
+            a ser modificar esta etiqueta, sin contar que esta también va a ir creciendo con el contenido de la estructura.
+            <code class="code">
+              < style > SelectorCss { PropiedadCss: ValorCss; } < /style >
+            </code>
+          </li>
+          <h4 class="list__title">Archivo de .css y llamado con Etiqueta Link</h4>
+          <li class="list__object">
+            Se crea un archivo nuevo en la misma carpeta o en otra, se escribe todo el contenido de los estilos .css, y se agrega a la estructura 
+            html usando la etiqueta link. Este es el mejor metodo, más efectivo, sencillo y limpio.
+            <code class="code">
+              < link rel="stylesheet" href="dirrección archivo Css" />
+            </code>
+          </li>
+        </ul>
+        <p class="article__paragraph">
+          Aún que el usar el archivo aparte de la estructura es la mejor forma, esto depende del contexto y del estilo que queremos aplicar 
+          en nuestra estrutura, pero siempre deberiamos usar los archivos apartes.
         </p>
       </article>
     </main>
