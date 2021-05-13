@@ -21,10 +21,11 @@
     <nav class="nav">
       <h2 class="nav__title">Estilos En Css3</h2>
       <ol class="navlist">
-        <li class="navlist__object"><a href="QueEs-css">¿Que es Css3?</a></li>
-        <li class="navlist__object"><a href="Estructura-css">La Estructura de Css3</a></li>
-        <li class="navlist__object"><a href="Familia-css">Padres, Hijos y Hermanos en Css3</a></li>
-        <li class="navlist__object"><a href="AgregarAHtml-css">Agregar Estilos con Css3 a un Archivo Html5</a></li>
+        <li class="navlist__object"><a href="#QueEs-css">¿Que es Css3?</a></li>
+        <li class="navlist__object"><a href="#Estructura-css">La Estructura de Css3</a></li>
+        <li class="navlist__object"><a href="#Familia-css">Padres, Hijos y Hermanos en Css3</a></li>
+        <li class="navlist__object"><a href="#AgregarAHtml-css">Agregar Estilos con Css3 a un Archivo Html5</a></li>
+        <li class="navlist__object"><a href="#Cascada-css">Cascada de Estilos en Css3</a></li>
       </ol>
     </nav>
 
@@ -142,12 +143,30 @@
           en nuestra estrutura, pero siempre deberiamos usar los archivos apartes.
         </p>
       </article>
+
+      <article class="article">
+        <h2 class="article__title" id="Cascada-css">La Cascada en Css3</h2>
+        <p class="article__paragraph">
+          Al momento de definir un valor con un selector, propiedades y valores en css. Siempre se va a tomar el ultimo valor definido, 
+          es decir, cuando en un archivo css definimos el siguiente estilo:
+        </p>
+        <code class="code">
+          p { color: red; } <br>
+          p { color: green; }
+        </code>
+        <p class="article__paragraph">
+          El navegador va a mirar la cascada o el ultimo valor que se tiene definido en el archivo css. Y va aplicar el <strong>color: green</strong>
+          a los elementos <strong>p</strong>. Esto es importante, ya que nuestro archivo de Css, puede que se empiece a desorganizar y empezar a volver infeciciente 
+          al nivel de que al momento de intentar agregar un estilo, este no se aplique. Esto también ocurre sí en el mismo bloque de estilo se define una 
+          misma propiedad, pero con diferente valor. Siempre va a elegir a el ultimo en la cascada.
+        </p>
+      </article>
     </main>
 
     <footer class="footer">
       <h2 class="footer__title">Gracias por ver Mis Notas!!!</h2>
       <p class="footer__text">
-        Te agradezco por ver mis notas de Html5 sobre el curso de Walter Coto. La Web desde Cero. Aprende diseño Web con Html5 y Css3.
+        Te agradezco por ver mis notas de Css3 sobre el curso de Walter Coto. La Web desde Cero. Aprende diseño Web con Html5 y Css3.
       </p>
       <div class="reference footer-links">
         <h4 class="footer-links__title">Referencia del Curso</h4>
