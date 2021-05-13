@@ -14,22 +14,91 @@
   <div class="wrapper">
     <!-- Introducción -->
     <header class="header">
-      <h1 class="header__title"> Notas de Html5 </h1>
+      <h1 class="header__title"> Notas de Css3 </h1>
       <p class="header__text">Hecho por Martín Steven Hernández Ortiz</p>
     </header>
 
     <nav class="nav">
-      <h2 class="nav__title"></h2>
+      <h2 class="nav__title">Estilos En Css3</h2>
       <ol class="navlist">
-        <li class="navlist__object"><a href=""></a></li>
+        <li class="navlist__object"><a href="QueEs-css">¿Que es Css3?</a></li>
+        <li class="navlist__object"><a href="Estructura-css">La Estructura de Css3</a></li>
+        <li class="navlist__object"><a href="Familia-css">Padres, Hijos y Hermanos en Css3</a></li>
       </ol>
     </nav>
 
     <main class="main">
       <article class="article">
-        <h2 class="article__title"></h2>
+        <h2 class="article__title" id="QueEs-css">¿Qué es Css3?</h2>
         <p class="article__paragraph">
-          
+          Css3 o <strong>Cascading Styles Sheets</strong>, es un lenguaje de hojas de estilos, que van a controlar y darle un estilo a los elementos de html5. Este lenguaje 
+          esta ahora en su 3 versión, en donde se ha casí perfeccionado y mejorado todo el funcionamiento, uso y demás del lenguaje.
+        </p>
+        <p class="article__paragraph">
+          Con esto podemos agregar y crear variados estilos y diseños para nuestro sitio web. Este es un gran complemento para Html5 y es muy poderoso junto a JavaScript, pero 
+          eso es un cuento para otro tiempo.
+        </p>
+      </article>
+
+      <article class="article">
+        <h2 class="article__title" id="Estructura-css">La Estructura de Css3</h2>
+        <p class="article__paragraph">
+          En Css se usa una estructura sencilla, como en Html5, esta es sencilla, breve y rapida. Aúnque se debe hacer de una forma correcta, por que a diferencia de 
+          html5, css3 tiende a romperse mucho y dejar de funcionar por cualquier error.
+        </p>
+        <code class="code">
+          <span style="color: lightcoral">p</span> { <span style="text-decoration: underline solid white 0.15em;"><span style="color: lightgoldenrodyellow">color: </span><span style="color: lightgray">white</span>;</span> }
+        </code>
+        <p class="article__paragraph">
+          Este consiste de 3 principales partes:
+        </p>
+        <ul class="list">
+          <li class="list__object">
+            <h4 class="list__title">Selector: " p "</h4>
+            El selector es un elemento que nos va a permitir agregarle un estilo o diseño a un grupo de elementos.
+          </li>
+          <li class="list__object">
+            <h4 class="list__title">Propiedad: " color: "</h4>
+            La propiedad, es el estilo o diseño que queremos aplicar a el elemento.
+          </li>
+          <li class="list__object">
+            <h4 class="list__title">Valor: "white"</h4>
+            Es el valor que va a tomar la propiedad, que va a definir el estilo o diseño.
+          </li>
+        </ul>
+        <p class="article__paragraph">
+          Es importante siempre al momento de usar un selector y querer usar las propiedades con un valor, que estos esten dentro de un par de corchetes " {} ", 
+          ya que de esta forma se reconocera que estas propiedades y valores pertenecen a un selector.
+        </p>
+        <p class="article__paragraph">
+          También es igual de importante el terminar cada propiedad y valor con un punto y coma " ; ", ya que esto hace reconocer que la propiedad termina y solo tiene 
+          ese valor, si no se hace esto, el navegador va a intentar agregar todo lo que tenga alfente & restante del documento como un valor para la propiedad.
+        </p>
+      </article>
+
+      <article class="article">
+        <h2 class="article__title" id="Familia-css">Padres, Hijos y Hermanos; La Familia Css3</h2>
+        <p class="article__paragraph">
+          En Css3, se tienen que usar estos conceptos muy frecuentemente, casí siempre, por eso es importante saber como se conforma la familia Css3. Estos terminos 
+          se originan a partir de los lazos que tiene cada elemento en la estructura Html5, es decir dependiendo de que "familia" tenga el elemento, se tendran 
+          diferentes familiares de Css3.
+        </p>
+        <ul class="list">
+          <li class="list__object">
+            <h4 class="list__title">Padre:</h4>
+            El Padre, es el elemento que contiene a otro Elemento.
+          </li>
+          <li class="list__object">
+            <h4 class="list__title">Hijo:</h4>
+            El Hijo, son los elementos que hay dentro de otro Elemento. 
+          </li>
+          <li class="list__object">
+            <h4 class="list__title">Hermano:</h4>
+            El Hermano, son los elementos que comparten mismo padre con otro Elemento.
+          </li>
+        </ul>
+        <p class="article__paragraph">
+          Esta familia nos va a ayudar a usar diferentes propiedadaes y selectores, para aplicar un mejor y efectivo diseño
         </p>
       </article>
     </main>
