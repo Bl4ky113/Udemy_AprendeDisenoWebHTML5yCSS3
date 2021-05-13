@@ -117,7 +117,7 @@
             al momento de modificar grandes razgos del sitio web. Pero esto puede ser util al momento de agregar un estilo con JavaScript, pero 
             tampoco es muy recomendado. Es mejor agregar o poner nuevos atributos de clases al elemento al momento de usar JS.
             <code class="code">
-              < p style=" PropiedadCss: ValorCss; "> contenido < /p >
+              < p <span>style=" PropiedadCss</span>: ValorCss; "> contenido < /p >
             </code>
           </li>
           <h4 class="list__title">Estiqueta Style en Head</h4>
@@ -126,7 +126,7 @@
             ya que esto puede afectar el momento de leer el contenido de la estrucutra html. Y entre más larga sea esta estructura, más dificil va 
             a ser modificar esta etiqueta, sin contar que esta también va a ir creciendo con el contenido de la estructura.
             <code class="code">
-              < style > SelectorCss { PropiedadCss: ValorCss; } < /style >
+              < styl<span>e</span> > SelectorCss { PropiedadCss: ValorCss; } < /style >
             </code>
           </li>
           <h4 class="list__title">Archivo de .css y llamado con Etiqueta Link</h4>
@@ -154,12 +154,37 @@
           p { color: red; } <br>
           p { color: green; }
         </code>
+        <p style="color: red; color: green;">Lorem ipsum dolor sit amet.</p>
         <p class="article__paragraph">
           El navegador va a mirar la cascada o el ultimo valor que se tiene definido en el archivo css. Y va aplicar el <strong>color: green</strong>
           a los elementos <strong>p</strong>. Esto es importante, ya que nuestro archivo de Css, puede que se empiece a desorganizar y empezar a volver infeciciente 
           al nivel de que al momento de intentar agregar un estilo, este no se aplique. Esto también ocurre sí en el mismo bloque de estilo se define una 
           misma propiedad, pero con diferente valor. Siempre va a elegir a el ultimo en la cascada.
         </p>
+      </article>
+
+      <article class="article">
+        <h2 class="article__title" id="Herencia-css">Herencia en Css3</h2>
+        <p class="article__paragraph">
+          Algunas veces necesitamos que los elementos tengan un estilo definido por su padre, ya sea el color de la letra o del fondo, esto 
+          la mayoria de veces va a funcionar de forma muy sencilla de esta forma. Simplmente agregando los estilos que se necesiten los elementos 
+          hijos al el elemento padre. De esta forma, se aplican estos valores y propiedades de forma hereditaria a los elementos hijos.
+        </p>
+          
+        <p class="article__paragraph">
+          Pero algunas veces, esto no hace efecto en algunos elementos como los links con "< a >". En estos casos tenemos 
+          dos posibles soluciones, agregar el valor de forma manual, pero esto no va tener corelación con el elemento padre, es decir, si el 
+          padre llega a cambiar el valor, también se tendra que cambiar a el elemento que no tiene herencia. O podemos agregar el valor <strong>inherit</strong>
+          para que el mismo elemento busque en su elemento padre y obtenga el valor de este. En caso de no tener algun valor, simplemente se va a tomar un 
+          valor predeterminado.
+        </p>
+        <code class="code">
+          .contenedor { color: red; } <br>
+          p { color: inherit; }
+        </code>
+        <div class="contentedor" style="color: red;">
+          <p style="color: inherit">Lorem ipsum dolor sit amet.</p>
+        </div>
       </article>
     </main>
 
